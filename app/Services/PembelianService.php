@@ -70,4 +70,28 @@ class PembelianService
 
         return array_diff_key($produkPesan, array_flip($sudah));
     }
+
+    /**
+     * Data pembelian satu tanggal untuk dashboard.
+     */
+    public function daftar(Carbon $tgl): ?Pembelian
+    {
+        return Pembelian::with(['details.produk', 'details.sisaStok'])
+            ->whereDate('tgl_beli', $tgl->toDateString())
+            ->first();
+    }
+
+    /**
+     * Data form input actual: produk + rekomendasi prediksi + yang sudah diinput.
+     */
+    public function formData(Carbon $tgl): array
+    {
+        $tglStr = $tgl->toDateString();
+
+        return [
+            'produks' => \App\Models\Produk::with('kategori')->where('is_available', true)->orderBy('nama')->get(),
+            'rekomendasi' => Prediksi::whereDate('tgl_prediksi', $tglStr)->pluck('qty_dengan_buffer', 'produk_id'),
+            'sudah' => Pembelian::whereDate('tgl_beli', $tglStr)->first()?->details->keyBy('produk_id') ?? collect(),
+        ];
+    }
 }

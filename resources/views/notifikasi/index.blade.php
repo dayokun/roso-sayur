@@ -25,7 +25,17 @@
             @if ($preview['terkunci'])
                 <div class="bg-amber-100 border border-amber-400 text-amber-800 px-4 py-3 rounded">
                     Tombol terkunci — notifikasi sudah dikirim untuk tanggal ini.
-                    <a href="{{ route('notifikasi.unlock', ['tgl' => $tgl]) }}" class="underline font-semibold">Minta unlock (Admin IT)</a>
+                    @if(auth()->user()->isAdminIt())
+                        <a href="{{ route('notifikasi.unlock', ['tgl' => $tgl]) }}" class="underline font-semibold">Minta unlock (Admin IT)</a>
+                    @else
+                        Hubungi Admin IT untuk unlock.
+                    @endif
+                </div>
+            @endif
+
+            @if(auth()->user()->isAdminIt())
+                <div class="text-sm">
+                    <a href="{{ route('notifikasi.log') }}" class="text-blue-600 underline">Lihat riwayat unlock (audit trail)</a>
                 </div>
             @endif
 
