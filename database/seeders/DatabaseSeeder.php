@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
             ProdukSeeder::class,
             KonsumenSeeder::class,
             PesananSeeder::class,
+            MfConfigSeeder::class,
         ]);
     }
 }
