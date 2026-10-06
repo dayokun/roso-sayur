@@ -35,4 +35,9 @@ return [
         ],
     ],
 
+    'fonnte' => [
+        'token' => env('FONNTE_TOKEN', ''),
+        'fake' => env('FONNTE_FAKE', true),
+    ],
+
 ];
