@@ -65,6 +65,13 @@ return [
             'replace_placeholders' => true,
         ],
 
+        'fonnte' => [
+            'driver' => 'single',
+            'path' => storage_path('logs/fonnte.log'),
+            'level' => 'debug',
+            'replace_placeholders' => true,
+        ],
+
         'daily' => [
             'driver' => 'daily',
             'path' => storage_path('logs/laravel.log'),
