@@ -62,4 +62,14 @@ class SisaStokService
 
         return $sisa->fresh();
     }
+
+    /**
+     * Daftar sisa stok per tanggal untuk dashboard.
+     */
+    public function daftar(Carbon $tgl): \Illuminate\Database\Eloquent\Collection
+    {
+        return SisaStok::with(['pembelianDetail.produk'])
+            ->whereDate('tgl', $tgl->toDateString())
+            ->get();
+    }
 }

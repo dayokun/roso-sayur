@@ -2,57 +2,42 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Pembelian;
-use App\Models\Prediksi;
-use App\Models\Produk;
+use App\Http\Requests\StorePembelianRequest;
 use App\Services\PembelianService;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 /**
  * Input actual pembelian harian oleh staff (PRD 6.8).
+ * Thin controller: query & logika di PembelianService.
  */
 class PembelianController extends Controller
 {
+    public function __construct(protected PembelianService $service = new PembelianService()) {}
+
     public function index(Request $request)
     {
-        $tgl = $request->get('tgl', Carbon::today()->toDateString());
+        $tgl = Carbon::parse($request->get('tgl', Carbon::today()->toDateString()));
 
-        $pembelian = Pembelian::with(['details.produk'])
-            ->whereDate('tgl_beli', $tgl)
-            ->first();
-
-        return view('pembelian.index', compact('pembelian', 'tgl'));
+        return view('pembelian.index', [
+            'pembelian' => $this->service->daftar($tgl),
+            'tgl' => $tgl->toDateString(),
+        ]);
     }
 
     public function create(Request $request)
     {
-        $tgl = $request->get('tgl', Carbon::today()->toDateString());
+        $tgl = Carbon::parse($request->get('tgl', Carbon::today()->toDateString()));
 
-        $produks = Produk::with(['kategori'])
-            ->where('is_available', true)
-            ->orderBy('nama')
-            ->get();
-
-        // Referensi rekomendasi prediksi hari ini
-        $rekomendasi = Prediksi::whereDate('tgl_prediksi', $tgl)->pluck('qty_dengan_buffer', 'produk_id');
-
-        $sudah = Pembelian::whereDate('tgl_beli', $tgl)->first()?->details->keyBy('produk_id') ?? collect();
-
-        return view('pembelian.create', compact('produks', 'tgl', 'rekomendasi', 'sudah'));
+        return view('pembelian.create', array_merge(
+            ['tgl' => $tgl->toDateString()],
+            $this->service->formData($tgl),
+        ));
     }
 
-    public function store(Request $request, PembelianService $service)
+    public function store(StorePembelianRequest $request)
     {
-        $data = $request->validate([
-            'tgl' => 'required|date',
-            'items' => 'required|array',
-            'items.*.produk_id' => 'required|exists:produk,id',
-            'items.*.qty_beli' => 'nullable|numeric|min:0',
-            'items.*.harga_beli' => 'nullable|numeric|min:0',
-            'items.*.is_available_today' => 'nullable|boolean',
-            'catatan' => 'nullable|string',
-        ]);
+        $data = $request->validated();
 
         $items = [];
         foreach ($data['items'] as $row) {
@@ -64,7 +49,7 @@ class PembelianController extends Controller
             ];
         }
 
-        $service->simpanActual(Carbon::parse($data['tgl']), $items, $data['catatan'] ?? null);
+        $this->service->simpanActual(Carbon::parse($data['tgl']), $items, $data['catatan'] ?? null);
 
         return redirect()->route('pembelian.index', ['tgl' => $data['tgl']])
             ->with('sukses', 'Actual pembelian tersimpan.');
