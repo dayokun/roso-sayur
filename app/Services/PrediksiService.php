@@ -189,4 +189,16 @@ class PrediksiService
             'alasan' => $alasan,
         ];
     }
+
+    /**
+     * Daftar hasil prediksi per tanggal untuk dashboard,
+     * lengkap dengan rincian aturan aktif (transparansi fuzzy).
+     */
+    public function daftarHasil(Carbon $tgl): \Illuminate\Database\Eloquent\Collection
+    {
+        return Prediksi::with(['produk.kategori', 'details'])
+            ->whereDate('tgl_prediksi', $tgl->toDateString())
+            ->orderBy('id')
+            ->get();
+    }
 }

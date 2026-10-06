@@ -24,9 +24,26 @@
                     <x-nav-link :href="route('notifikasi.index')" :active="request()->routeIs('notifikasi.*')">
                         {{ __('Notifikasi') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('prediksi.index')" :active="request()->routeIs('prediksi.*')">
+                        {{ __('Prediksi') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('produk.index')" :active="request()->routeIs('produk.*')">
+                        {{ __('Produk') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('konsumen.index')" :active="request()->routeIs('konsumen.*')">
+                        {{ __('Konsumen') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('sisa-stok.index')" :active="request()->routeIs('sisa-stok.*')">
+                        {{ __('Sisa Stok') }}
+                    </x-nav-link>
                     <x-nav-link :href="route('laporan.index')" :active="request()->routeIs('laporan.*')">
                         {{ __('Laporan') }}
                     </x-nav-link>
+                    @if(auth()->user()?->isAdminIt())
+                        <x-nav-link :href="route('users.index')" :active="request()->routeIs('users.*')">
+                            {{ __('Pengguna') }}
+                        </x-nav-link>
+                    @endif
                 </div>
             </div>
 

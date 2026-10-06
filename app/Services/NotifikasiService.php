@@ -197,4 +197,12 @@ class NotifikasiService
             self::SKENARIO_KOSONG => "- {$nama}: mohon maaf tidak tersedia hari ini.",
         };
     }
+
+    /**
+     * Riwayat audit unlock untuk dashboard.
+     */
+    public function daftarLog(): \Illuminate\Contracts\Pagination\LengthAwarePaginator
+    {
+        return NotifikasiUnlockLog::with('admin')->latest('timestamp_unlock')->paginate(20);
+    }
 }
