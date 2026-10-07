@@ -85,9 +85,25 @@ class EvaluasiService
             ->get()
             ->keyBy('nama');
 
+        // Waste rate per produk: qty_dibuang / qty_beli (target PRD < 10%)
+        $wasteRate = \App\Models\SisaStok::query()
+            ->join('pembelian_detail', 'pembelian_detail.id', '=', 'sisa_stok.pembelian_detail_id')
+            ->join('pembelian', 'pembelian.id', '=', 'pembelian_detail.pembelian_id')
+            ->join('produk', 'produk.id', '=', 'pembelian_detail.produk_id')
+            ->whereDate('sisa_stok.tgl', '>=', $dari->toDateString())
+            ->whereDate('sisa_stok.tgl', '<=', $sampai->toDateString())
+            ->groupBy('produk.id', 'produk.nama')
+            ->selectRaw('produk.nama,
+                SUM(pembelian_detail.qty_beli) as total_beli,
+                SUM(COALESCE(sisa_stok.qty_dibuang, 0)) as total_dibuang,
+                SUM(COALESCE(sisa_stok.qty_terjual_murah, 0)) as total_jual_murah')
+            ->get()
+            ->keyBy('nama');
+
         return [
             'akurasi' => $rows,
             'fulfillment' => $waste,
+            'waste_rate' => $wasteRate,
         ];
     }
 }
