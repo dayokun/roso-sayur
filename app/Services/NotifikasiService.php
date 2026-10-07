@@ -66,32 +66,43 @@ class NotifikasiService
         $terkirim = 0;
 
         DB::transaction(function () use ($tglStr, $evaluasi, &$terkirim) {
-            $pesanans = Pesanan::with(['konsumen', 'details.produk'])
+            $perKonsumen = Pesanan::with(['konsumen', 'details.produk'])
                 ->whereDate('tgl_ambil', $tglStr)
                 ->whereIn('status', [Pesanan::STATUS_PENDING, Pesanan::STATUS_DITERIMA, Pesanan::STATUS_SIAP_DIAMBIL])
                 ->whereNull('notified_at')
-                ->get();
+                ->get()
+                ->groupBy('konsumen_id');
 
-            foreach ($pesanans as $pesanan) {
-                $baris = [];
-                foreach ($pesanan->details as $detail) {
-                    $ev = $evaluasi[$detail->produk_id] ?? null;
-                    if (! $ev) {
-                        continue;
+            // Satu pesan per konsumen: gabung semua kode pesanannya
+            foreach ($perKonsumen as $pesanans) {
+                $blok = [];
+                foreach ($pesanans as $pesanan) {
+                    $baris = [];
+                    foreach ($pesanan->details as $detail) {
+                        $ev = $evaluasi[$detail->produk_id] ?? null;
+                        if (! $ev) {
+                            continue;
+                        }
+                        $baris[] = $this->pesanProduk($detail->produk->nama, $ev['skenario']);
                     }
-                    $baris[] = $this->pesanProduk($detail->produk->nama, $ev['skenario']);
+
+                    if ($baris) {
+                        $kode = $pesanan->kode ?? "#{$pesanan->id}";
+                        $blok[] = "*{$kode}*\n" . implode("\n", $baris);
+                    }
+
+                    $pesanan->update([
+                        'status' => Pesanan::STATUS_SIAP_DIAMBIL,
+                        'notified_at' => now(),
+                    ]);
                 }
 
-                if ($baris) {
-                    $pesan = "Pesanan Anda siap diambil.\n" . implode("\n", $baris);
-                    $this->fonnte->kirim($pesanan->konsumen->no_hp, $pesan);
+                if ($blok) {
+                    $pesan = "Pesanan Anda siap diambil. Tunjukkan kode saat pengambilan.\n\n"
+                        . implode("\n\n", $blok);
+                    $this->fonnte->kirim($pesanans->first()->konsumen->no_hp, $pesan);
                     $terkirim++;
                 }
-
-                $pesanan->update([
-                    'status' => Pesanan::STATUS_SIAP_DIAMBIL,
-                    'notified_at' => now(),
-                ]);
             }
         });
 

@@ -45,7 +45,8 @@ class PesananService
         }
 
         $pesanan->update(['status' => Pesanan::STATUS_DITERIMA]);
-        $this->fonnte->kirim($pesanan->konsumen->no_hp, 'Pesanan Anda sedang kami proses.');
+        $kode = $pesanan->kode ?? "#{$pesanan->id}";
+        $this->fonnte->kirim($pesanan->konsumen->no_hp, "Pesanan Anda (kode {$kode}) sedang kami proses.");
     }
 
     public function batalkan(Pesanan $pesanan, string $alasan): void
