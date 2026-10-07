@@ -15,6 +15,11 @@ use Carbon\Carbon;
  */
 class BotService
 {
+    /**
+     * Batas maksimal tanggal pengambilan: 30 hari dari hari ini.
+     */
+    private const MAX_TGL_AMBIL_HARI = 30;
+
     public function __construct(protected FonnteService $fonnte = new FonnteService()) {}
 
     /**
@@ -184,6 +189,11 @@ class BotService
 
         if ($tgl < Carbon::today()->toDateString()) {
             return $this->gagal($session, 'Maaf, tanggal pengambilan tidak tersedia (sudah lewat). Pilih tanggal lain.');
+        }
+
+        $maks = Carbon::today()->addDays(self::MAX_TGL_AMBIL_HARI)->toDateString();
+        if ($tgl > $maks) {
+            return $this->gagal($session, "Maaf, tanggal pengambilan maksimal " . self::MAX_TGL_AMBIL_HARI . " hari dari hari ini ({$maks}). Pilih tanggal lain.");
         }
 
         $session->sentuh(BotSession::STATE_KONFIRMASI, ['tgl_ambil' => $tgl]);
