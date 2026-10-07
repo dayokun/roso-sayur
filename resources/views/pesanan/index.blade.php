@@ -36,7 +36,7 @@
                 <table class="datatable w-full text-sm">
                     <thead class="bg-gray-100">
                         <tr>
-                            <th class="p-2 text-left">#</th>
+                            <th class="p-2 text-left">Kode</th>
                             <th class="p-2 text-left">Konsumen</th>
                             <th class="p-2 text-left">Item</th>
                             <th class="p-2 text-left">Tgl Pesan</th>
@@ -47,7 +47,7 @@
                     <tbody>
                         @forelse ($pesanans as $p)
                             <tr class="border-t">
-                                <td class="p-2">{{ $p->id }}</td>
+                                <td class="p-2 font-mono font-semibold text-green-800 whitespace-nowrap">{{ $p->kode ?? $p->id }}</td>
                                 <td class="p-2">{{ $p->konsumen->nama }}<br><span class="text-gray-500">{{ $p->konsumen->no_hp }}</span></td>
                                 <td class="p-2">
                                     @foreach ($p->details as $d)

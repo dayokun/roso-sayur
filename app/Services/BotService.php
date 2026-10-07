@@ -252,8 +252,9 @@ class BotService
 
         $session->reset();
 
-        $msg = "Pesanan Anda telah diterima.\n" . implode("\n", $baris)
-            . "\nTanggal ambil: {$tglAmbil}\nTerima kasih telah berbelanja di Roso Sayur!";
+        $msg = "Pesanan Anda telah diterima.\nKode pesanan: *{$pesanan->kode}*\n"
+            . implode("\n", $baris)
+            . "\nTanggal ambil: {$tglAmbil}\nTunjukkan kode ini saat pengambilan.\nTerima kasih telah berbelanja di Roso Sayur!";
 
         if ($isLate) {
             $msg .= "\n\nCatatan: pesanan ini masuk sebagai *late order* dan menunggu persetujuan staff.";
