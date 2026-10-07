@@ -48,7 +48,7 @@ class PesananService
         $this->fonnte->kirim($pesanan->konsumen->no_hp, 'Pesanan Anda sedang kami proses.');
     }
 
-    public function batalkan(Pesanan $pesanan): void
+    public function batalkan(Pesanan $pesanan, string $alasan): void
     {
         if ($pesanan->status === Pesanan::STATUS_SIAP_DIAMBIL) {
             throw new \RuntimeException('Pesanan yang sudah siap diambil tidak bisa dibatalkan.');
@@ -57,8 +57,16 @@ class PesananService
             throw new \RuntimeException('Pesanan yang sudah selesai tidak bisa dibatalkan.');
         }
 
-        $pesanan->update(['status' => Pesanan::STATUS_CANCELLED]);
-        $this->fonnte->kirim($pesanan->konsumen->no_hp, 'Pesanan Anda telah dibatalkan. Mohon maaf.');
+        $pesanan->update([
+            'status' => Pesanan::STATUS_CANCELLED,
+            'cancel_reason' => $alasan,
+        ]);
+
+        $kode = $pesanan->kode ?? "#{$pesanan->id}";
+        $this->fonnte->kirim(
+            $pesanan->konsumen->no_hp,
+            "Pesanan Anda (kode {$kode}) telah dibatalkan.\nAlasan: {$alasan}\nMohon maaf atas ketidaknyamanannya."
+        );
     }
 
     /**

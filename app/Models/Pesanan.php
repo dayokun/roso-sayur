@@ -13,7 +13,7 @@ class Pesanan extends Model
 
     protected $fillable = [
         'kode', 'konsumen_id', 'tgl_pesan', 'tgl_ambil', 'input_source', 'status',
-        'is_late_order', 'late_order_status', 'late_order_rejection_reason', 'notified_at',
+        'is_late_order', 'late_order_status', 'late_order_rejection_reason', 'cancel_reason', 'notified_at',
     ];
 
     protected $casts = [

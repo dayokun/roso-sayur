@@ -55,7 +55,7 @@
                                     @endforeach
                                 </td>
                                 <td class="p-2">{{ $p->tgl_pesan->format('d/m H:i') }}</td>
-                                <td class="p-2">{{ $p->status }}{{ $p->is_late_order ? ' (late)' : '' }}</td>
+                                <td class="p-2">{{ $p->status }}{{ $p->is_late_order ? ' (late)' : '' }}@if($p->status === 'cancelled' && $p->cancel_reason)<br><span class="text-xs text-gray-500">Alasan: {{ $p->cancel_reason }}</span>@endif</td>
                                 <td class="p-2 whitespace-nowrap">
                                     @if ($p->status === 'pending')
                                         <form method="POST" action="{{ route('pesanan.terima', $p) }}" class="inline">@csrf<button class="text-blue-600 underline">Terima</button></form>
@@ -64,7 +64,7 @@
                                         <a href="{{ route('pesanan.delivered', $p) }}" class="text-green-600 underline">Input Delivered</a>
                                     @endif
                                     @if (! in_array($p->status, ['selesai','cancelled','siap_diambil']))
-                                        <form method="POST" action="{{ route('pesanan.batal', $p) }}" class="inline" onsubmit="return confirm('Batalkan pesanan?')">@csrf<button class="text-red-600 underline">Batal</button></form>
+                                        <button type="button" onclick="bukaModalBatal('{{ route('pesanan.batal', $p) }}', '{{ $p->kode ?? $p->id }}')" class="text-red-600 underline">Batal</button>
                                     @endif
                                 </td>
                             </tr>
@@ -76,4 +76,51 @@
             </div>
         </div>
     </div>
+
+    {{-- Modal konfirmasi pembatalan + alasan --}}
+    <div id="modal-batal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
+        <div class="bg-white rounded-2xl shadow-xl w-full max-w-md overflow-hidden">
+            <div class="bg-red-600 px-6 py-4">
+                <h3 class="text-lg font-semibold text-white">Batalkan Pesanan</h3>
+                <p class="text-red-100 text-sm">Kode: <span id="modal-batal-kode" class="font-mono font-semibold"></span></p>
+            </div>
+            <form id="modal-batal-form" method="POST" class="px-6 py-5">
+                @csrf
+                <label for="alasan-batal" class="block text-sm font-medium text-gray-700 mb-1">Alasan pembatalan <span class="text-red-600">*</span></label>
+                <textarea id="alasan-batal" name="alasan" rows="3" required maxlength="255"
+                    placeholder="Contoh: Stok habis, pesanan ganda, customer meminta batal..."
+                    class="w-full rounded-lg border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500 text-sm"></textarea>
+                <div class="flex flex-wrap gap-2 mt-2">
+                    <button type="button" onclick="isiAlasan('Stok produk habis')" class="text-xs px-3 py-1 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700">Stok habis</button>
+                    <button type="button" onclick="isiAlasan('Pesanan ganda')" class="text-xs px-3 py-1 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700">Pesanan ganda</button>
+                    <button type="button" onclick="isiAlasan('Customer meminta dibatalkan')" class="text-xs px-3 py-1 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700">Customer meminta batal</button>
+                </div>
+                <p class="text-xs text-gray-500 mt-3">Customer akan menerima notifikasi WhatsApp berisi alasan ini.</p>
+                <div class="flex justify-end gap-3 mt-5">
+                    <button type="button" onclick="tutupModalBatal()" class="px-4 py-2 rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-50 text-sm font-medium">Kembali</button>
+                    <button type="submit" class="px-4 py-2 rounded-lg bg-red-600 hover:bg-red-700 text-white text-sm font-semibold">Ya, Batalkan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function bukaModalBatal(action, kode) {
+            document.getElementById('modal-batal-form').action = action;
+            document.getElementById('modal-batal-kode').textContent = kode;
+            document.getElementById('alasan-batal').value = '';
+            document.getElementById('modal-batal').classList.remove('hidden');
+        }
+        function tutupModalBatal() {
+            document.getElementById('modal-batal').classList.add('hidden');
+        }
+        function isiAlasan(teks) {
+            document.getElementById('alasan-batal').value = teks;
+        }
+        document.getElementById('modal-batal').addEventListener('click', function (e) {
+            if (e.target === this) tutupModalBatal();
+        });
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') tutupModalBatal();
+        });
+    </script>
 </x-app-layout>

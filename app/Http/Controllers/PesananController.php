@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\BatalkanPesananRequest;
 use App\Http\Requests\LateTolakRequest;
 use App\Http\Requests\UpdateDeliveredRequest;
 use App\Models\Pesanan;
@@ -56,15 +57,15 @@ class PesananController extends Controller
             ->with('sukses', "Pesanan #{$pesanan->id} selesai.");
     }
 
-    public function batal(Pesanan $pesanan)
+    public function batal(BatalkanPesananRequest $request, Pesanan $pesanan)
     {
         try {
-            $this->service->batalkan($pesanan);
+            $this->service->batalkan($pesanan, $request->validated()['alasan']);
         } catch (\RuntimeException $e) {
             return back()->with('error', $e->getMessage());
         }
 
-        return back()->with('sukses', "Pesanan #{$pesanan->id} dibatalkan.");
+        return back()->with('sukses', "Pesanan {$pesanan->kode} dibatalkan.");
     }
 
     public function lateIndex()
