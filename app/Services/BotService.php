@@ -59,11 +59,26 @@ class BotService
 
     protected function mulai(BotSession $session, string $text): string
     {
-        if (! preg_match('/pesan/i', $text)) {
-            return "Halo, selamat datang di *Roso Sayur*!\nKetik *pesan* untuk mulai memesan sayur & buah segar.";
+        $konsumen = Konsumen::where('no_hp', $session->no_hp)->first();
+
+        // Mode pesan cepat: "kol 3kg, sawi 2kg" — tanpa ketik "pesan" dulu
+        $cepat = $this->parseCepat($text);
+        if ($cepat !== null) {
+            if ($konsumen) {
+                $session->sentuh(BotSession::STATE_PRODUK, ['konsumen_id' => $konsumen->id]);
+
+                return "Halo kembali, {$konsumen->nama}!\n" . $this->tambahCepat($session, $cepat);
+            }
+            // Konsumen baru: simpan dulu, minta nama, lalu proses otomatis
+            $session->sentuh(BotSession::STATE_NAMA, ['pending_cepat' => $cepat]);
+
+            return "Selamat datang di *Roso Sayur*! Siapa nama Anda?";
         }
 
-        $konsumen = Konsumen::where('no_hp', $session->no_hp)->first();
+        if (! preg_match('/pesan/i', $text)) {
+            return "Halo, selamat datang di *Roso Sayur*!\nKetik *pesan* untuk mulai memesan sayur & buah segar.\n\nTips pesan cepat: ketik langsung, mis. *kol 3kg, sawi 2kg*";
+        }
+
         if ($konsumen) {
             $session->sentuh(BotSession::STATE_PRODUK, ['konsumen_id' => $konsumen->id]);
 
@@ -87,13 +102,26 @@ class BotService
             $konsumen = Konsumen::create(['nama' => $text, 'no_hp' => $session->no_hp]);
         }
         $session->update(['nama' => $konsumen->nama]);
-        $session->sentuh(BotSession::STATE_PRODUK, ['konsumen_id' => $konsumen->id]);
+
+        // Ada pesanan cepat yang menunggu? Langsung proses setelah registrasi
+        $pending = ($session->data ?? [])['pending_cepat'] ?? null;
+        $session->sentuh(BotSession::STATE_PRODUK, ['konsumen_id' => $konsumen->id, 'pending_cepat' => null]);
+
+        if (is_array($pending) && count($pending) > 0) {
+            return "Halo {$konsumen->nama}!\n" . $this->tambahCepat($session, $pending);
+        }
 
         return "Halo {$konsumen->nama}!\n" . $this->daftarProduk();
     }
 
     protected function pilihProduk(BotSession $session, string $text): string
     {
+        // Mode pesan cepat: "kol 3kg" atau "kol 3kg, sawi 2kg"
+        $cepat = $this->parseCepat($text);
+        if ($cepat !== null) {
+            return $this->tambahCepat($session, $cepat);
+        }
+
         $produk = $this->cariProduk($text);
         if (! $produk) {
             return $this->gagal($session, "Produk tidak ditemukan. Pilih dari daftar:\n" . $this->daftarProduk());
@@ -259,6 +287,77 @@ class BotService
             ->where('nama', 'like', "%{$text}%")
             ->orderBy('nama')
             ->first();
+    }
+
+    /**
+     * Parse format pesan cepat: "kol 3kg" atau "kol 3kg, sawi 2kg".
+     * Kembalikan null jika bukan format cepat (fallback ke alur biasa).
+     *
+     * @return ?array<int, array{nama_input: string, produk_id: ?int, qty: float}>
+     */
+    protected function parseCepat(string $text): ?array
+    {
+        $segments = array_values(array_filter(array_map('trim', preg_split('/[,;\n]+/', $text) ?? [])));
+        if ($segments === []) {
+            return null;
+        }
+
+        $items = [];
+        foreach ($segments as $seg) {
+            if (! preg_match('/^(.+?)\s+(\d+(?:[.,]\d+)?)\s*(kg|kilogram|g|gr|gram|ikat|pcs|pack|buah|butir|sisir|ons)?$/iu', $seg, $m)) {
+                return null;
+            }
+            $nama = trim($m[1]);
+            $qty = (float) str_replace(',', '.', $m[2]);
+            if ($nama === '' || $qty <= 0) {
+                return null;
+            }
+            $items[] = [
+                'nama_input' => $nama,
+                'produk_id' => $this->cariProduk($nama)?->id,
+                'qty' => $qty,
+            ];
+        }
+
+        return $items;
+    }
+
+    /**
+     * Masukkan hasil parse cepat ke keranjang, lanjut ke state tambah.
+     */
+    protected function tambahCepat(BotSession $session, array $items): string
+    {
+        $keranjang = $session->keranjang();
+        $ok = [];
+        $gagal = [];
+
+        foreach ($items as $item) {
+            $produk = $item['produk_id'] ? Produk::find($item['produk_id']) : null;
+            if (! $produk) {
+                $gagal[] = $item['nama_input'];
+                continue;
+            }
+            $keranjang[] = [
+                'produk_id' => $produk->id,
+                'nama' => $produk->nama,
+                'satuan' => $produk->satuan,
+                'qty' => $item['qty'],
+            ];
+            $ok[] = "{$produk->nama} {$item['qty']} {$produk->satuan}";
+        }
+
+        if ($ok === []) {
+            return $this->gagal($session, "Produk tidak ditemukan. Pilih dari daftar:\n" . $this->daftarProduk());
+        }
+
+        $session->sentuh(BotSession::STATE_TAMBAH, ['keranjang' => $keranjang, 'produk_id' => null]);
+
+        $teks = "Ditambahkan:\n- " . implode("\n- ", $ok);
+        if ($gagal !== []) {
+            $teks .= "\n\nTidak ditemukan: '" . implode("', '", $gagal) . "'.";
+        }
+
+        return $teks . "\nIngin tambah produk lain? (Ya/Tidak)";
     }
 
     protected function ringkasan(BotSession $session): string
