@@ -14,6 +14,9 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
+        <!-- DataTables -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/datatables.net-dt@2.3.7/css/dataTables.dataTables.min.css">
+
         <style>
             [x-cloak] { display: none !important; }
             /* Scrollbar sidebar */
@@ -27,6 +30,45 @@
                 to   { opacity: 1; transform: translateY(0); }
             }
             .page-enter { animation: pageIn .45s cubic-bezier(.21,1.02,.73,1) both; }
+
+            /* ===== DataTables: tema Roso Sayur ===== */
+            .dt-container { font-size: .875rem; }
+            .dt-layout-table { overflow-x: auto; border-radius: .75rem; }
+            .dt-layout-row { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; margin: .9rem 0; }
+            .dt-search label, .dt-length label { display: flex; align-items: center; gap: .5rem; color: #4b5563; font-size: .875rem; }
+            .dt-search input, .dt-length select {
+                border: 1px solid #d1d5db; border-radius: .75rem; padding: .5rem .75rem;
+                font-size: .875rem; background: #fff; transition: border-color .15s, box-shadow .15s;
+            }
+            .dt-search input:focus, .dt-length select:focus {
+                outline: none; border-color: #16a34a; box-shadow: 0 0 0 3px rgba(22,163,74,.15);
+            }
+            .dt-info { color: #6b7280; font-size: .8rem; }
+            .dt-paging nav { display: flex; gap: .25rem; }
+            .dt-paging .dt-paging-button {
+                min-width: 2.25rem; height: 2.25rem; padding: 0 .55rem; margin: 0;
+                display: inline-flex; align-items: center; justify-content: center;
+                border-radius: .75rem; border: 1px solid #e5e7eb; background: #fff;
+                color: #374151; font-size: .875rem; cursor: pointer; transition: all .15s;
+            }
+            .dt-paging .dt-paging-button:hover:not(.disabled):not(.current) { border-color: #16a34a; color: #15803d; transform: translateY(-1px); }
+            .dt-paging .dt-paging-button.current { background: #16a34a; border-color: #16a34a; color: #fff; font-weight: 700; box-shadow: 0 2px 6px rgba(22,163,74,.35); }
+            .dt-paging .dt-paging-button.disabled { opacity: .35; cursor: default; }
+            table.datatable { border-collapse: separate; border-spacing: 0; width: 100%; }
+            table.datatable thead th {
+                background: linear-gradient(to bottom, #f0fdf4, #dcfce7);
+                color: #166534; font-weight: 700; text-transform: uppercase;
+                font-size: .7rem; letter-spacing: .06em; padding: .8rem .75rem;
+                white-space: nowrap; border-bottom: 2px solid #86efac; text-align: left;
+            }
+            table.datatable thead th:first-child { border-top-left-radius: .75rem; }
+            table.datatable thead th:last-child { border-top-right-radius: .75rem; }
+            table.datatable tbody td { padding: .7rem .75rem; border-bottom: 1px solid #f3f4f6; vertical-align: middle; }
+            table.datatable tbody tr { transition: background .15s ease; }
+            table.datatable tbody tr:hover { background: #f0fdf4; }
+            table.datatable tbody tr:last-child td { border-bottom: none; }
+            table.datatable thead .dt-orderable-asc .dt-column-order::before,
+            table.datatable thead .dt-orderable-desc .dt-column-order::after { color: #16a34a; }
         </style>
     </head>
     <body class="font-sans antialiased bg-gray-100 text-gray-900">
@@ -124,6 +166,29 @@
                 </footer>
             </div>
         </div>
+        <!-- DataTables -->
+        <script src="https://cdn.jsdelivr.net/npm/datatables.net-dt@2.3.7/js/dataTables.dataTables.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                document.querySelectorAll('table.datatable').forEach((el) => {
+                    new DataTable(el, {
+                        pageLength: 10,
+                        lengthMenu: [10, 25, 50, 100],
+                        language: {
+                            search: 'Cari:',
+                            searchPlaceholder: 'Ketik kata kunci…',
+                            lengthMenu: 'Tampilkan _MENU_ data',
+                            info: 'Menampilkan _START_–_END_ dari _TOTAL_ data',
+                            infoEmpty: 'Tidak ada data',
+                            infoFiltered: '(disaring dari _MAX_ total data)',
+                            zeroRecords: 'Data tidak ditemukan',
+                            emptyTable: 'Belum ada data',
+                            paginate: { first: '«', previous: '‹', next: '›', last: '»' },
+                        },
+                    });
+                });
+            });
+        </script>
         @stack('scripts')
     </body>
 </html>

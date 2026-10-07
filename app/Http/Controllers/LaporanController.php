@@ -25,7 +25,7 @@ class LaporanController extends Controller
             ->whereDate('tgl_prediksi', '>=', $dari->toDateString())
             ->whereDate('tgl_prediksi', '<=', $sampai->toDateString())
             ->orderBy('tgl_prediksi', 'desc')
-            ->paginate(20);
+            ->get();
 
         return view('laporan.index', [
             'dari' => $dari->toDateString(),

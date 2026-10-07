@@ -4,7 +4,7 @@ namespace App\Services;
 
 use App\Models\Pesanan;
 use Carbon\Carbon;
-use Illuminate\Contracts\Pagination\LengthAwarePaginator;
+use Illuminate\Database\Eloquent\Collection;
 
 /**
  * Operasi pesanan untuk dashboard. Controller hanya meneruskan request.
@@ -16,7 +16,7 @@ class PesananService
         protected SisaStokService $sisaStok = new SisaStokService(),
     ) {}
 
-    public function daftar(Carbon $tgl, ?string $status): LengthAwarePaginator
+    public function daftar(Carbon $tgl, ?string $status): Collection
     {
         $query = Pesanan::with(['konsumen', 'details.produk'])
             ->whereDate('tgl_ambil', $tgl->toDateString())
@@ -26,16 +26,16 @@ class PesananService
             $query->where('status', $status);
         }
 
-        return $query->paginate(20);
+        return $query->get();
     }
 
-    public function daftarLateOrder(): LengthAwarePaginator
+    public function daftarLateOrder(): Collection
     {
         return Pesanan::with(['konsumen', 'details.produk'])
             ->where('is_late_order', true)
             ->where('late_order_status', 'pending_approval')
             ->latest('tgl_pesan')
-            ->paginate(20);
+            ->get();
     }
 
     public function terima(Pesanan $pesanan): void

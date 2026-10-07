@@ -201,8 +201,8 @@ class NotifikasiService
     /**
      * Riwayat audit unlock untuk dashboard.
      */
-    public function daftarLog(): \Illuminate\Contracts\Pagination\LengthAwarePaginator
+    public function daftarLog(): \Illuminate\Database\Eloquent\Collection
     {
-        return NotifikasiUnlockLog::with('admin')->latest('timestamp_unlock')->paginate(20);
+        return NotifikasiUnlockLog::with('admin')->latest('timestamp_unlock')->get();
     }
 }

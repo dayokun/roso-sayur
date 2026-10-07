@@ -33,7 +33,7 @@
             </div>
 
             <div class="bg-white shadow-sm sm:rounded-lg overflow-hidden">
-                <table class="w-full text-sm">
+                <table class="datatable w-full text-sm">
                     <thead class="bg-gray-100">
                         <tr>
                             <th class="p-2 text-left">#</th>
@@ -73,7 +73,6 @@
                         @endforelse
                     </tbody>
                 </table>
-                <div class="p-4">{{ $pesanans->links() }}</div>
             </div>
         </div>
     </div>

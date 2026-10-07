@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-use Illuminate\Contracts\Pagination\LengthAwarePaginator;
+use Illuminate\Database\Eloquent\Collection;
 use App\Models\Konsumen;
 
 /**
@@ -10,10 +10,10 @@ use App\Models\Konsumen;
  */
 class KonsumenService
 {
-    public function daftar(): LengthAwarePaginator
+    public function daftar(): Collection
     {
         return Konsumen::withCount('pesanans')
             ->orderBy('nama')
-            ->paginate(20);
+            ->get();
     }
 }
