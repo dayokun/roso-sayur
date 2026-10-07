@@ -6,7 +6,7 @@
     <div class="py-6">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-4">
             <div class="bg-white shadow-sm sm:rounded-lg p-4">
-                <form method="GET" action="{{ route('laporan.index') }}" class="flex gap-3 items-end">
+                <form method="GET" action="{{ route('laporan.index') }}" class="flex gap-3 items-end flex-wrap">
                     <div>
                         <label class="text-sm text-gray-600">Dari</label>
                         <input type="date" name="dari" value="{{ $dari }}" class="block border rounded px-2 py-1" />
@@ -16,6 +16,10 @@
                         <input type="date" name="sampai" value="{{ $sampai }}" class="block border rounded px-2 py-1" />
                     </div>
                     <button class="bg-gray-800 text-white px-4 py-2 rounded">Tampilkan</button>
+                    <span class="ms-auto flex gap-2">
+                        <a href="{{ route('laporan.export-excel', ['dari' => $dari, 'sampai' => $sampai]) }}" class="bg-green-700 text-white px-4 py-2 rounded text-sm">Export Excel</a>
+                        <a href="{{ route('laporan.export-pdf', ['dari' => $dari, 'sampai' => $sampai]) }}" class="bg-red-700 text-white px-4 py-2 rounded text-sm">Export PDF</a>
+                    </span>
                 </form>
             </div>
 
@@ -83,6 +87,40 @@
                             </tr>
                         @empty
                             <tr><td colspan="4" class="p-4 text-center text-gray-500">Belum ada data.</td></tr>
+                        @endforelse
+                    </tbody>
+                </table>
+            </div>
+            <div class="bg-white shadow-sm sm:rounded-lg overflow-hidden">
+                <div class="p-4 border-b font-semibold">Waste Rate (dibuang / dibeli) — target &lt;10%</div>
+                <table class="w-full text-sm">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="p-2 text-left">Produk</th>
+                            <th class="p-2 text-left">Total Beli</th>
+                            <th class="p-2 text-left">Total Dibuang</th>
+                            <th class="p-2 text-left">Total Jual Murah</th>
+                            <th class="p-2 text-left">Waste Rate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @forelse ($ringkasan['waste_rate'] as $w)
+                            @php $rate = $w->total_beli > 0 ? $w->total_dibuang / $w->total_beli * 100 : null; @endphp
+                            <tr class="border-t">
+                                <td class="p-2">{{ $w->nama }}</td>
+                                <td class="p-2">{{ number_format($w->total_beli, 2) }}</td>
+                                <td class="p-2">{{ number_format($w->total_dibuang, 2) }}</td>
+                                <td class="p-2">{{ number_format($w->total_jual_murah, 2) }}</td>
+                                <td class="p-2">
+                                    @if ($rate !== null)
+                                        <span class="{{ $rate < 10 ? 'text-green-700 font-semibold' : 'text-red-700 font-semibold' }}">{{ number_format($rate, 2) }}%</span>
+                                    @else
+                                        <span class="text-gray-500">-</span>
+                                    @endif
+                                </td>
+                            </tr>
+                        @empty
+                            <tr><td colspan="5" class="p-4 text-center text-gray-500">Belum ada data.</td></tr>
                         @endforelse
                     </tbody>
                 </table>

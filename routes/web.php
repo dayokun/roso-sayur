@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BotWebhookController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\KonsumenController;
 use App\Http\Controllers\LaporanController;
 use App\Http\Controllers\NotifikasiController;
@@ -63,6 +64,8 @@ Route::middleware(['auth', 'role:admin_it,admin_roso'])->group(function () {
 
     // Laporan
     Route::get('/laporan', [LaporanController::class, 'index'])->name('laporan.index');
+    Route::get('/laporan/export-excel', [LaporanController::class, 'exportExcel'])->name('laporan.export-excel');
+    Route::get('/laporan/export-pdf', [LaporanController::class, 'exportPdf'])->name('laporan.export-pdf');
 });
 
 // Khusus Admin IT
@@ -79,9 +82,8 @@ Route::middleware(['auth', 'role:admin_it'])->group(function () {
     Route::delete('/pengguna/{user}', [UserController::class, 'destroy'])->name('users.destroy');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', [DashboardController::class, 'index'])
+    ->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
