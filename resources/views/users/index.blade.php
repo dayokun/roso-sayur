@@ -17,7 +17,7 @@
                     Akun Dashboard
                     <a href="{{ route('users.create') }}" class="ms-auto bg-green-700 text-white px-4 py-2 rounded text-sm">Tambah Akun</a>
                 </div>
-                <table class="w-full text-sm">
+                <table class="datatable w-full text-sm">
                     <thead class="bg-gray-100">
                         <tr>
                             <th class="p-2 text-left">Nama</th>

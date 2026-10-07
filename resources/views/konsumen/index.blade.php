@@ -6,7 +6,7 @@
     <div class="py-6">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white shadow-sm sm:rounded-lg overflow-hidden">
-                <table class="w-full text-sm">
+                <table class="datatable w-full text-sm">
                     <thead class="bg-gray-100">
                         <tr>
                             <th class="p-2 text-left">Nama</th>
@@ -28,7 +28,6 @@
                         @endforelse
                     </tbody>
                 </table>
-                <div class="p-4">{{ $konsumens->links() }}</div>
             </div>
         </div>
     </div>

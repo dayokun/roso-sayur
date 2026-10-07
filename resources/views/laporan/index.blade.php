@@ -25,7 +25,7 @@
 
             <div class="bg-white shadow-sm sm:rounded-lg overflow-hidden">
                 <div class="p-4 border-b font-semibold">Akurasi Prediksi (MAPE / MAE)</div>
-                <table class="w-full text-sm">
+                <table class="datatable w-full text-sm">
                     <thead class="bg-gray-100">
                         <tr>
                             <th class="p-2 text-left">Produk</th>
@@ -61,7 +61,7 @@
 
             <div class="bg-white shadow-sm sm:rounded-lg overflow-hidden">
                 <div class="p-4 border-b font-semibold">Fulfillment Rate (delivered / dipesan)</div>
-                <table class="w-full text-sm">
+                <table class="datatable w-full text-sm">
                     <thead class="bg-gray-100">
                         <tr>
                             <th class="p-2 text-left">Produk</th>
@@ -93,7 +93,7 @@
             </div>
             <div class="bg-white shadow-sm sm:rounded-lg overflow-hidden">
                 <div class="p-4 border-b font-semibold">Waste Rate (dibuang / dibeli) — target &lt;10%</div>
-                <table class="w-full text-sm">
+                <table class="datatable w-full text-sm">
                     <thead class="bg-gray-100">
                         <tr>
                             <th class="p-2 text-left">Produk</th>

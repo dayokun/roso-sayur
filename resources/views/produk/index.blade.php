@@ -22,7 +22,7 @@
                     Produk
                     <a href="{{ route('produk.create') }}" class="ms-auto bg-green-700 text-white px-4 py-2 rounded text-sm">Tambah Produk</a>
                 </div>
-                <table class="w-full text-sm">
+                <table class="datatable w-full text-sm">
                     <thead class="bg-gray-100">
                         <tr>
                             <th class="p-2 text-left">Nama</th>
@@ -53,7 +53,7 @@
 
             <div class="bg-white shadow-sm sm:rounded-lg overflow-hidden">
                 <div class="p-4 border-b font-semibold">Kategori & Safety Buffer</div>
-                <table class="w-full text-sm">
+                <table class="datatable w-full text-sm">
                     <thead class="bg-gray-100">
                         <tr>
                             <th class="p-2 text-left">Kategori</th>

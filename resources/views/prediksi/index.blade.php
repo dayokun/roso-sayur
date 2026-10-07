@@ -42,7 +42,7 @@
                         </div>
                     </div>
                     @if ($isFuzzy)
-                        <table class="w-full text-sm">
+                        <table class="datatable w-full text-sm">
                             <thead class="bg-gray-50">
                                 <tr>
                                     <th class="p-2 text-left">Aturan</th>
