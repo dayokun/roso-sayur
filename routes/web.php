@@ -15,8 +15,8 @@ use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('landing');
+})->name('landing');
 
 // Webhook WhatsApp (Fonnte)
 Route::post('/webhook/fonnte', BotWebhookController::class)->name('webhook.fonnte');
