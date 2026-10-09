@@ -26,6 +26,7 @@ class ProdukService
         return Produk::create([
             'nama' => $data['nama'],
             'satuan' => $data['satuan'],
+            'harga_jual' => $data['harga_jual'] ?? null,
             'kategori_id' => $data['kategori_id'],
             'is_available' => (bool) ($data['is_available'] ?? false),
             'is_seasonal' => (bool) ($data['is_seasonal'] ?? false),
@@ -37,6 +38,7 @@ class ProdukService
         $produk->update([
             'nama' => $data['nama'],
             'satuan' => $data['satuan'],
+            'harga_jual' => $data['harga_jual'] ?? null,
             'kategori_id' => $data['kategori_id'],
             'is_available' => (bool) ($data['is_available'] ?? false),
             'is_seasonal' => (bool) ($data['is_seasonal'] ?? false),
