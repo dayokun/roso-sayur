@@ -39,7 +39,7 @@ class PesananController extends Controller
             return back()->with('error', $e->getMessage());
         }
 
-        return back()->with('sukses', "Pesanan #{$pesanan->id} diterima.");
+        return back()->with('sukses', "Pesanan " . ($pesanan->kode ?? "#{$pesanan->id}") . " diterima.");
     }
 
     public function deliveredForm(Pesanan $pesanan)
@@ -54,7 +54,7 @@ class PesananController extends Controller
         $this->service->simpanDelivered($pesanan, $request->validated()['qty'] ?? []);
 
         return redirect()->route('pesanan.index', ['tgl' => $pesanan->tgl_ambil->toDateString()])
-            ->with('sukses', "Pesanan #{$pesanan->id} selesai.");
+            ->with('sukses', "Pesanan " . ($pesanan->kode ?? "#{$pesanan->id}") . " selesai.");
     }
 
     public function batal(BatalkanPesananRequest $request, Pesanan $pesanan)
@@ -65,7 +65,7 @@ class PesananController extends Controller
             return back()->with('error', $e->getMessage());
         }
 
-        return back()->with('sukses', "Pesanan {$pesanan->kode} dibatalkan.");
+        return back()->with('sukses', "Pesanan " . ($pesanan->kode ?? "#{$pesanan->id}") . " dibatalkan.");
     }
 
     public function lateIndex()
@@ -77,13 +77,13 @@ class PesananController extends Controller
     {
         $service->terima($pesanan->load(['konsumen', 'details.produk']));
 
-        return back()->with('sukses', "Late order #{$pesanan->id} diterima.");
+        return back()->with('sukses', "Late order " . ($pesanan->kode ?? "#{$pesanan->id}") . " diterima.");
     }
 
     public function lateTolak(LateTolakRequest $request, Pesanan $pesanan, LateOrderService $service)
     {
         $service->tolak($pesanan->load(['konsumen', 'details.produk']), $request->validated()['alasan']);
 
-        return back()->with('sukses', "Late order #{$pesanan->id} ditolak.");
+        return back()->with('sukses', "Late order " . ($pesanan->kode ?? "#{$pesanan->id}") . " ditolak.");
     }
 }
