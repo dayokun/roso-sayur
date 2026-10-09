@@ -16,6 +16,7 @@ class UpdateProdukRequest extends FormRequest
         return [
             'nama' => 'required|string|max:100|unique:produk,nama,' . $this->route('produk')->id,
             'satuan' => 'required|string|max:20',
+            'harga_jual' => 'nullable|numeric|min:0',
             'kategori_id' => 'required|exists:kategori_produk,id',
             'is_available' => 'nullable|boolean',
             'is_seasonal' => 'nullable|boolean',

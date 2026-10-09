@@ -11,10 +11,11 @@ class Produk extends Model
     protected $table = 'produk';
 
     protected $fillable = [
-        'nama', 'satuan', 'kategori_id', 'is_seasonal', 'is_available',
+        'nama', 'satuan', 'harga_jual', 'kategori_id', 'is_seasonal', 'is_available',
     ];
 
     protected $casts = [
+        'harga_jual' => 'decimal:2',
         'is_seasonal' => 'boolean',
         'is_available' => 'boolean',
     ];

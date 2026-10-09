@@ -22,6 +22,10 @@
                         <input type="text" name="satuan" value="{{ old('satuan', $produk->satuan) }}" class="block w-full border rounded px-2 py-1" required />
                     </div>
                     <div class="mb-4">
+                        <label class="text-sm text-gray-600">Harga Jual (Rp / satuan) — untuk invoice</label>
+                        <input type="number" step="0.01" min="0" name="harga_jual" value="{{ old('harga_jual', $produk->harga_jual) }}" placeholder="cth: 15000" class="block w-full border rounded px-2 py-1" />
+                    </div>
+                    <div class="mb-4">
                         <label class="text-sm text-gray-600">Kategori</label>
                         <select name="kategori_id" class="block w-full border rounded px-2 py-1" required>
                             @foreach ($kategoris as $k)

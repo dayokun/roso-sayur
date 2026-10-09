@@ -65,6 +65,49 @@ class FonnteService
     }
 
     /**
+     * Kirim file (PDF/gambar) ke satu nomor via URL publik.
+     *
+     * @return array{ok: bool, detail: string}
+     */
+    public function kirimFile(string $noHp, string $fileUrl, string $filename, string $caption = ''): array
+    {
+        $noHp = $this->normalisasi($noHp);
+
+        if ($this->isFake()) {
+            Log::channel('fonnte')->info("[FAKE] file ke {$noHp}: {$filename} ({$fileUrl}) caption: {$caption}");
+
+            return ['ok' => true, 'detail' => 'fake-sent'];
+        }
+
+        try {
+            $payload = [
+                'target' => $noHp,
+                'url' => $fileUrl,
+                'filename' => $filename,
+            ];
+            if ($caption !== '') {
+                $payload['message'] = $caption;
+            }
+
+            $res = Http::asForm()
+                ->withHeaders(['Authorization' => $this->token])
+                ->timeout(15)
+                ->post('https://api.fonnte.com/send', $payload);
+
+            $ok = $res->successful();
+            if (! $ok) {
+                Log::channel('fonnte')->warning("Gagal kirim file ke {$noHp}: {$res->body()}");
+            }
+
+            return ['ok' => $ok, 'detail' => $res->body()];
+        } catch (\Throwable $e) {
+            Log::channel('fonnte')->error("Exception kirim file ke {$noHp}: {$e->getMessage()}");
+
+            return ['ok' => false, 'detail' => $e->getMessage()];
+        }
+    }
+
+    /**
      * Normalisasi ke format 628xx (tanpa +, tanpa spasi).
      */
     public function normalisasi(string $noHp): string

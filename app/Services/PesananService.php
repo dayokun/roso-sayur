@@ -14,6 +14,7 @@ class PesananService
     public function __construct(
         protected FonnteService $fonnte = new FonnteService(),
         protected SisaStokService $sisaStok = new SisaStokService(),
+        protected InvoiceService $invoice = new InvoiceService(),
     ) {}
 
     public function daftar(Carbon $tgl, ?string $status): Collection
@@ -101,5 +102,20 @@ class PesananService
                 fn ($d) => "{$d->produk->nama} {$d->qty_delivered} {$d->satuan}"
             )->implode(', ')
         );
+
+        // Kirim invoice PDF via WA
+        try {
+            $inv = $this->invoice->buatPdf($pesanan->fresh(['details.produk', 'konsumen']));
+            $this->fonnte->kirimFile(
+                $pesanan->konsumen->no_hp,
+                $inv['url'],
+                $inv['filename'],
+                "Berikut invoice pesanan {$kode} — total Rp " . number_format($inv['total'], 0, ',', '.') . ". Terima kasih."
+            );
+        } catch (\Throwable $e) {
+            \Illuminate\Support\Facades\Log::channel('fonnte')->error(
+                "Gagal buat/kirim invoice {$kode}: {$e->getMessage()}"
+            );
+        }
     }
 }
