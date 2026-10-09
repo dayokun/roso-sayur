@@ -12,6 +12,21 @@
                     </div>
                 @endif
 
+                @if ($rekomendasi->isEmpty())
+                    <div class="bg-yellow-50 border border-yellow-300 text-yellow-800 px-4 py-3 rounded mb-4 text-sm">
+                        Belum ada prediksi untuk tanggal {{ $tgl }}. Prediksi dibuat otomatis setiap pukul 20:00 untuk keesokan harinya —
+                        angka rekomendasi akan muncul di sini setelah prediksi tersedia.
+                    </div>
+                @else
+                    <div class="flex items-center justify-between mb-4">
+                        <p class="text-sm text-gray-600">Rekomendasi dari hasil prediksi (Fuzzy Tsukamoto + buffer).</p>
+                        <button type="button" id="btn-pakai-rekomendasi"
+                            class="bg-green-100 text-green-800 border border-green-300 px-3 py-1.5 rounded text-sm hover:bg-green-200">
+                            Pakai semua rekomendasi
+                        </button>
+                    </div>
+                @endif
+
                 <form method="POST" action="{{ route('pembelian.store') }}">
                     @csrf
                     <input type="hidden" name="tgl" value="{{ $tgl }}" />
@@ -33,7 +48,17 @@
                                         {{ $p->nama }} ({{ $p->satuan }})
                                         <input type="hidden" name="items[{{ $i }}][produk_id]" value="{{ $p->id }}" />
                                     </td>
-                                    <td class="p-2 text-gray-600">{{ isset($rekomendasi[$p->id]) ? number_format($rekomendasi[$p->id], 2) . ' ' . $p->satuan : '-' }}</td>
+                                    <td class="p-2 text-gray-600">
+                                        @if (isset($rekomendasi[$p->id]))
+                                            <button type="button" class="btn-pakai-satu text-green-700 underline hover:text-green-900"
+                                                data-produk="{{ $p->id }}" data-idx="{{ $i }}"
+                                                title="Isi qty beli dengan rekomendasi">
+                                                {{ number_format($rekomendasi[$p->id], 2) }} {{ $p->satuan }}
+                                            </button>
+                                        @else
+                                            -
+                                        @endif
+                                    </td>
                                     <td class="p-2">
                                         <input type="checkbox" name="items[{{ $i }}][is_available_today]" value="1" @checked(old("items.$i.is_available_today", $row?->is_available_today ?? true)) />
                                     </td>
@@ -53,4 +78,27 @@
             </div>
         </div>
     </div>
+
+    @push('scripts')
+    <script>
+        const rekomendasi = @json($rekomendasi);
+
+        function isiQty(idx, produkId) {
+            const val = rekomendasi[produkId];
+            if (val === undefined || val === null) return;
+            const input = document.querySelector(`input[name="items[${idx}][qty_beli]"]`);
+            if (input) input.value = val;
+        }
+
+        document.getElementById('btn-pakai-rekomendasi')?.addEventListener('click', () => {
+            document.querySelectorAll('.btn-pakai-satu').forEach(btn => {
+                isiQty(btn.dataset.idx, btn.dataset.produk);
+            });
+        });
+
+        document.querySelectorAll('.btn-pakai-satu').forEach(btn => {
+            btn.addEventListener('click', () => isiQty(btn.dataset.idx, btn.dataset.produk));
+        });
+    </script>
+    @endpush
 </x-app-layout>
