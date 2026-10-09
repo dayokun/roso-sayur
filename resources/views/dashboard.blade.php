@@ -65,6 +65,26 @@
                     @endif
                 </div>
             </div>
+
+            <div class="bg-white shadow-sm sm:rounded-lg p-4">
+                <div class="text-sm text-gray-500 mb-2">Pesanan mendatang <span class="text-xs">(tanggal ambil setelah hari ini)</span></div>
+                @if ($ringkasan['pesanan_mendatang']->isEmpty())
+                    <p class="text-sm text-gray-400">Tidak ada pesanan mendatang.</p>
+                @else
+                    <ul class="divide-y divide-gray-100 text-sm">
+                        @foreach ($ringkasan['pesanan_mendatang'] as $p)
+                            <li class="py-2 flex items-center justify-between gap-3">
+                                <div class="min-w-0">
+                                    <span class="font-mono font-semibold">{{ $p->kode }}</span>
+                                    <span class="text-gray-600">{{ $p->konsumen->nama ?? '-' }}</span>
+                                    <span class="text-gray-400">· {{ $p->tgl_ambil->format('d M Y') }} · {{ $p->status }}</span>
+                                </div>
+                                <a href="{{ route('pesanan.index', ['tgl' => $p->tgl_ambil->toDateString()]) }}" class="text-blue-600 underline shrink-0">Lihat</a>
+                            </li>
+                        @endforeach
+                    </ul>
+                @endif
+            </div>
         </div>
     </div>
 </x-app-layout>

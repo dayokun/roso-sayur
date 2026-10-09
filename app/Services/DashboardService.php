@@ -25,11 +25,22 @@ class DashboardService
             ->where('status', '!=', Pesanan::STATUS_CANCELLED)
             ->count();
 
+        // Pesanan dengan tanggal ambil setelah hari ini — jebakan UX: halaman
+        // Pesanan default memfilter hari ini, sehingga order masa depan tak terlihat.
+        $pesananMendatang = Pesanan::with('konsumen')
+            ->whereDate('tgl_ambil', '>', $hariIni)
+            ->where('status', '!=', Pesanan::STATUS_CANCELLED)
+            ->orderBy('tgl_ambil')
+            ->orderBy('id')
+            ->limit(20)
+            ->get();
+
         return [
             'tgl' => $hariIni,
             'pesanan_hari_ini' => $pesananHariIni,
             'total_pesanan_hari_ini' => $pesananHariIni->sum(),
             'pesanan_besok' => $pesananBesok,
+            'pesanan_mendatang' => $pesananMendatang,
             'prediksi_hari_ini' => Prediksi::whereDate('tgl_prediksi', $hariIni)->count(),
             'prediksi_besok' => Prediksi::whereDate('tgl_prediksi', $besok)->count(),
             'notifikasi_terkirim' => Pesanan::whereDate('tgl_ambil', $hariIni)->whereNotNull('notified_at')->exists(),
