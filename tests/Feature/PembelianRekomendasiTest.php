@@ -41,6 +41,9 @@ class PembelianRekomendasiTest extends TestCase
             'tgl_prediksi' => today()->toDateString(),
             'qty_rekomendasi' => 18.13,
             'qty_dengan_buffer' => 21.00,
+            'input_pesanan' => 10.00,
+            'input_historis' => 12.00,
+            'input_tren' => 0.5,
         ]);
 
         $res = $this->actingAs($this->roso)->get(route('pembelian.create', ['tgl' => today()->toDateString()]));
