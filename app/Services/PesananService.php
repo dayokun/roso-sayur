@@ -94,9 +94,10 @@ class PesananService
             $this->sisaStok->catatDelivered($detail->fresh());
         }
 
+        $kode = $pesanan->kode ?? "#{$pesanan->id}";
         $this->fonnte->kirim(
             $pesanan->konsumen->no_hp,
-            'Terima kasih. Pesanan selesai. ' . $pesanan->details->map(
+            "Terima kasih. Pesanan (kode {$kode}) selesai. " . $pesanan->details->map(
                 fn ($d) => "{$d->produk->nama} {$d->qty_delivered} {$d->satuan}"
             )->implode(', ')
         );
