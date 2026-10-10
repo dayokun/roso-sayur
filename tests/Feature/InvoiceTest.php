@@ -44,7 +44,7 @@ class InvoiceTest extends TestCase
         $hasil = app(InvoiceService::class)->buatPdf($pesanan);
 
         $this->assertEquals(15000.0, $hasil['total']);
-        $this->assertEquals('kwitansi-RS-20261009-0001.pdf', $hasil['filename']);
+        $this->assertEquals('KWI-RS-20261009-0001.pdf', $hasil['filename']);
         Storage::disk('public')->assertExists($hasil['path']);
     }
 
