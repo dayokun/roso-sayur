@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Invoice {{ $kode }}</title>
+    <title>Kwitansi {{ $kode }}</title>
     <style>
         body { font-family: sans-serif; font-size: 12px; color: #333; margin: 0; padding: 24px; }
         .header { text-align: center; border-bottom: 2px solid #15803d; padding-bottom: 12px; margin-bottom: 16px; }
@@ -25,12 +25,13 @@
     <div class="header">
         <h1>ROSO SAYUR</h1>
         <p>Sayur &amp; Buah Segar</p>
+        <h2 style="margin: 8px 0 0; font-size: 16px; letter-spacing: 2px;">KWITANSI</h2>
     </div>
 
     <div class="info">
         <table>
             <tr>
-                <td class="label">No. Invoice</td>
+                <td class="label">No. Kwitansi</td>
                 <td>: <strong>{{ $kode }}</strong></td>
                 <td class="label">Tanggal</td>
                 <td>: {{ \Carbon\Carbon::parse($pesanan->tgl_ambil)->format('d M Y') }}</td>
@@ -73,7 +74,7 @@
 
     <div class="footer">
         <p>Terima kasih telah berbelanja di Roso Sayur.</p>
-        <p>Tunjukkan invoice ini saat pengambilan barang.</p>
+        <p>Simpan kwitansi ini sebagai bukti pembayaran yang sah.</p>
     </div>
 </body>
 </html>

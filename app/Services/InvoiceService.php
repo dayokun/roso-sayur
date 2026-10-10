@@ -40,7 +40,7 @@ class InvoiceService
 
         $total = round($total, 2);
         $kode = $pesanan->kode ?? 'RS-' . $pesanan->id;
-        $filename = "invoice-{$kode}.pdf";
+        $filename = "kwitansi-{$kode}.pdf";
 
         $pdf = Pdf::loadView('invoice.pdf', [
             'pesanan' => $pesanan,

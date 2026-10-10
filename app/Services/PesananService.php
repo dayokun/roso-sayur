@@ -110,11 +110,11 @@ class PesananService
                 $pesanan->konsumen->no_hp,
                 $inv['url'],
                 $inv['filename'],
-                "Berikut invoice pesanan {$kode} — total Rp " . number_format($inv['total'], 0, ',', '.') . ". Terima kasih."
+                "Berikut kwitansi pembayaran pesanan {$kode} — total Rp " . number_format($inv['total'], 0, ',', '.') . ". Terima kasih."
             );
         } catch (\Throwable $e) {
             \Illuminate\Support\Facades\Log::channel('fonnte')->error(
-                "Gagal buat/kirim invoice {$kode}: {$e->getMessage()}"
+                "Gagal buat/kirim kwitansi {$kode}: {$e->getMessage()}"
             );
         }
     }
