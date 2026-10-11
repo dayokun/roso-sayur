@@ -1,1 +1,136 @@
-PHgtYXBwLWxheW91dD4KICAgIDx4LXNsb3QgbmFtZT0iaGVhZGVyIj4KICAgICAgICA8ZGl2PgogICAgICAgICAgICA8aDIgY2xhc3M9ImZvbnQtZXh0cmFib2xkIHRleHQteGwgbGVhZGluZy10aWdodCIgc3R5bGU9ImNvbG9yOiB2YXIoLS1ycy1pbmspOyI+UHJlZGlrc2k8L2gyPgogICAgICAgICAgICA8cCBjbGFzcz0idGV4dC14cyIgc3R5bGU9ImNvbG9yOiB2YXIoLS1ycy1tdXRlZCk7Ij5SZWtvbWVuZGFzaSBwZW1iZWxpYW4gYmVyYmFzaXMgRnV6enkgVHN1a2Ftb3RvPC9wPgogICAgICAgIDwvZGl2PgogICAgPC94LXNsb3Q+CgogICAgPGRpdiBjbGFzcz0ic3BhY2UteS01Ij4KICAgICAgICB7ey0tIFBhZ2UgaGVhZCAtLX19CiAgICAgICAgPGRpdiBjbGFzcz0iZmxleCBmbGV4LXdyYXAgaXRlbXMtZW5kIGp1c3RpZnktYmV0d2VlbiBnYXAtNCI+CiAgICAgICAgICAgIDxkaXY+CiAgICAgICAgICAgICAgICA8aDEgY2xhc3M9InRleHQtMnhsIHNtOnRleHQtM3hsIGZvbnQtZXh0cmFib2xkIHRyYWNraW5nLXRpZ2h0IiBzdHlsZT0iY29sb3I6IHZhcigtLXJzLWluayk7Ij5QcmVkaWtzaSBzdG9rIGJlc29rPC9oMT4KICAgICAgICAgICAgICAgIDxwIGNsYXNzPSJ0ZXh0LXNtIG10LTEiIHN0eWxlPSJjb2xvcjogdmFyKC0tcnMtbXV0ZWQpOyI+UmVrb21lbmRhc2kgcGVtYmVsaWFuIHVudHVrIHt7IFxDYXJib25cQ2FyYm9uOjpwYXJzZSgkdGdsKS0+dHJhbnNsYXRlZEZvcm1hdCgnbCwgZCBGIFknKSB9fS48L3A+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICBAaWYgKCRoYXNpbC0+aXNOb3RFbXB0eSgpKQogICAgICAgICAgICAgICAgPGEgaHJlZj0ie3sgcm91dGUoJ3BlbWJlbGlhbi5jcmVhdGUnLCBbJ3RnbCcgPT4gJHRnbF0pIH19IiBjbGFzcz0icnMtYnRuIHJzLWJ0bi1wcmltYXJ5Ij4KICAgICAgICAgICAgICAgICAgICA8c3ZnIGNsYXNzPSJ3LTQgaC00IiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0iTTMgM2gybC40IDJNNyAxM2gxMGw0LThINS40TTcgMTNMNS40IDVNNyAxM2wtMi4yOTMgMi4yOTNjLS42My42My0uMTg0IDEuNzA3LjcwNyAxLjcwN0gxN20wIDBhMiAyIDAgMTAwIDQgMiAyIDAgMDAwLTR6bS04IDJhMiAyIDAgMTEtNCAwIDIgMiAwIDAxNCAweiIvPjwvc3ZnPgogICAgICAgICAgICAgICAgICAgIFBha2FpIHNlbXVhIHJla29tZW5kYXNpCiAgICAgICAgICAgICAgICA8L2E+CiAgICAgICAgICAgIEBlbmRpZgogICAgICAgIDwvZGl2PgoKICAgICAgICB7ey0tIEZpbHRlciB0YW5nZ2FsIC0tfX0KICAgICAgICA8ZGl2IGNsYXNzPSJycy1jYXJkIHAtNCI+CiAgICAgICAgICAgIDxmb3JtIG1ldGhvZD0iR0VUIiBhY3Rpb249Int7IHJvdXRlKCdwcmVkaWtzaS5pbmRleCcpIH19IiBjbGFzcz0iZmxleCBmbGV4LXdyYXAgZ2FwLTMgaXRlbXMtZW5kIj4KICAgICAgICAgICAgICAgIDxkaXY+CiAgICAgICAgICAgICAgICAgICAgPGxhYmVsIGNsYXNzPSJycy1sYWJlbCI+VGFuZ2dhbCBwcmVkaWtzaTwvbGFiZWw+CiAgICAgICAgICAgICAgICAgICAgPGlucHV0IHR5cGU9ImRhdGUiIG5hbWU9InRnbCIgdmFsdWU9Int7ICR0Z2wgfX0iIGNsYXNzPSJycy1pbnB1dCAhdy1hdXRvIiAvPgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICA8YnV0dG9uIGNsYXNzPSJycy1idG4gcnMtYnRuLWRhcmsiPkxpaGF0PC9idXR0b24+CiAgICAgICAgICAgIDwvZm9ybT4KICAgICAgICA8L2Rpdj4KCiAgICAgICAgQGlmICgkaGFzaWwtPmlzTm90RW1wdHkoKSkKICAgICAgICAgICAge3stLSBJbmZvIHN0cmlwOiBtZXRvZGUgKyBsYW5na2FoIC0tfX0KICAgICAgICAgICAgPGRpdiBjbGFzcz0iZ3JpZCBncmlkLWNvbHMtMSBsZzpncmlkLWNvbHMtMyBnYXAtNCI+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJsZzpjb2wtc3Bhbi0yIHJvdW5kZWQtMnhsIHAtNSBmbGV4IGdhcC00IGl0ZW1zLXN0YXJ0IiBzdHlsZT0iYmFja2dyb3VuZDogdmFyKC0tcnMtZGFyayk7IGNvbG9yOiAjZTVmMWU4OyI+CiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0idy0xMSBoLTExIHJvdW5kZWQteGwgZ3JpZCBwbGFjZS1pdGVtcy1jZW50ZXIgZm9udC1leHRyYWJvbGQgdGV4dC1sZyBzaHJpbmstMCIgc3R5bGU9ImJhY2tncm91bmQ6IHZhcigtLXJzLWxpbWUpOyBjb2xvcjogIzE4MzkxZjsiPsaSPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgPGRpdj4KICAgICAgICAgICAgICAgICAgICAgICAgPGgzIGNsYXNzPSJmb250LWJvbGQgdGV4dC1zbSI+RnV6enkgVHN1a2Ftb3RvIMK3IDI3IGF0dXJhbjwvaDM+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzPSJ0ZXh0LXhzIG10LTEgbGVhZGluZy1yZWxheGVkIiBzdHlsZT0iY29sb3I6ICNhOWJkYWY7Ij5SZWtvbWVuZGFzaSBkaWhpdHVuZyBkYXJpIHBlbmp1YWxhbiwgaGlzdG9yaSA3IGhhcmksIGRhbiB0cmVuLiBTYWZldHkgYnVmZmVyIGRpdGVyYXBrYW4gc2VzdWFpIGthdGVnb3JpIHByb2R1ay4gS2xpayBrYXJ0dSB1bnR1ayBtZWxpaGF0IHJpbmNpYW4gYXR1cmFuLjwvcD4KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0icnMtY2FyZCBwLTQgZmxleCBqdXN0aWZ5LWFyb3VuZCBpdGVtcy1jZW50ZXIiPgogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InRleHQtY2VudGVyIj4KICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9InctNyBoLTcgcm91bmRlZC1mdWxsIGdyaWQgcGxhY2UtaXRlbXMtY2VudGVyIHRleHQteHMgZm9udC1leHRyYWJvbGQgbXgtYXV0byBtYi0xIiBzdHlsZT0iYmFja2dyb3VuZDogdmFyKC0tcnMtZ3JlZW4pOyBjb2xvcjogI2ZmZjsiPjE8L3NwYW4+CiAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJ0ZXh0LVsxMHB4XSBmb250LWJvbGQiIHN0eWxlPSJjb2xvcjogdmFyKC0tcnMtbXV0ZWQpOyI+UHJlZGlrc2k8L3NwYW4+CiAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0idGV4dC1jZW50ZXIgb3BhY2l0eS00MCI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJ3LTcgaC03IHJvdW5kZWQtZnVsbCBncmlkIHBsYWNlLWl0ZW1zLWNlbnRlciB0ZXh0LXhzIGZvbnQtZXh0cmFib2xkIG14LWF1dG8gbWItMSIgc3R5bGU9ImJhY2tncm91bmQ6IHZhcigtLXJzLWdyZWVuLXNvZnQpOyBjb2xvcjogdmFyKC0tcnMtZ3JlZW4pOyI+Mjwvc3Bhbj4KICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9InRleHQtWzEwcHhdIGZvbnQtYm9sZCIgc3R5bGU9ImNvbG9yOiB2YXIoLS1ycy1tdXRlZCk7Ij5QZW1iZWxpYW48L3NwYW4+CiAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0idGV4dC1jZW50ZXIgb3BhY2l0eS00MCI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJ3LTcgaC03IHJvdW5kZWQtZnVsbCBncmlkIHBsYWNlLWl0ZW1zLWNlbnRlciB0ZXh0LXhzIGZvbnQtZXh0cmFib2xkIG14LWF1dG8gbWItMSIgc3R5bGU9ImJhY2tncm91bmQ6IHZhcigtLXJzLWdyZWVuLXNvZnQpOyBjb2xvcjogdmFyKC0tcnMtZ3JlZW4pOyI+Mzwvc3Bhbj4KICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9InRleHQtWzEwcHhdIGZvbnQtYm9sZCIgc3R5bGU9ImNvbG9yOiB2YXIoLS1ycy1tdXRlZCk7Ij5Ob3RpZmlrYXNpPC9zcGFuPgogICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgICAge3stLSBHcmlkIGthcnR1IHByb2R1ayAtLX19CiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImdyaWQgZ3JpZC1jb2xzLTEgc206Z3JpZC1jb2xzLTIgeGw6Z3JpZC1jb2xzLTMgZ2FwLTQiPgogICAgICAgICAgICAgICAgQGZvcmVhY2ggKCRoYXNpbCBhcyAkcCkKICAgICAgICAgICAgICAgICAgICBAcGhwCiAgICAgICAgICAgICAgICAgICAgICAgICRpc0Z1enp5ID0gJHAtPmRldGFpbHMtPmlzTm90RW1wdHkoKTsKICAgICAgICAgICAgICAgICAgICAgICAgJGJ1ZmZlciA9ICRwLT5wcm9kdWstPmthdGVnb3JpLT5zYWZldHlfYnVmZmVyX3BlcnNlbiA/PyAwOwogICAgICAgICAgICAgICAgICAgIEBlbmRwaHAKICAgICAgICAgICAgICAgICAgICA8ZGV0YWlscyBjbGFzcz0icnMtY2FyZCBwLTQgZ3JvdXAgY3Vyc29yLXBvaW50ZXIiPgogICAgICAgICAgICAgICAgICAgICAgICA8c3VtbWFyeSBjbGFzcz0ibGlzdC1ub25lIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImZsZXgganVzdGlmeS1iZXR3ZWVuIGl0ZW1zLXN0YXJ0IGdhcC0zIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0idy0xMCBoLTEwIHJvdW5kZWQteGwgZ3JpZCBwbGFjZS1pdGVtcy1jZW50ZXIgZm9udC1leHRyYWJvbGQgdGV4dC1zbSBzaHJpbmstMCIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzdHlsZT0iYmFja2dyb3VuZDogdmFyKC0tcnMtZ3JlZW4tc29mdCk7IGNvbG9yOiB2YXIoLS1ycy1ncmVlbik7Ij4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAge3sgc3RydG91cHBlcihzdWJzdHIoJHAtPnByb2R1ay0+bmFtYSwgMCwgMikpIH19CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zcGFuPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJycy1iYWRnZSB7eyAkaXNGdXp6eSA/ICdpbmZvJyA6ICdtZXRob2QnIH19Ij57eyAkaXNGdXp6eSA/ICdmdXp6eV90c3VrYW1vdG8nIDogJ3NlYXNvbmFsX3N1bScgfX08L3NwYW4+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxoMyBjbGFzcz0iZm9udC1ib2xkIHRleHQtc20gbXQtMyIgc3R5bGU9ImNvbG9yOiB2YXIoLS1ycy1pbmspOyI+e3sgJHAtPnByb2R1ay0+bmFtYSB9fTwvaDM+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzcz0idGV4dC1bMTBweF0iIHN0eWxlPSJjb2xvcjogdmFyKC0tcnMtbXV0ZWQpOyI+e3sgJHAtPnByb2R1ay0+a2F0ZWdvcmktPm5hbWEgPz8gJ+KAkycgfX0gwrcgU2F0dWFuIHt7ICRwLT5wcm9kdWstPnNhdHVhbiB9fTwvcD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImZsZXggaXRlbXMtZW5kIGp1c3RpZnktYmV0d2VlbiBtdC00IHB0LTMgYm9yZGVyLXQiIHN0eWxlPSJib3JkZXItY29sb3I6IHZhcigtLXJzLWxpbmUpOyI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9InRleHQtWzEwcHhdIiBzdHlsZT0iY29sb3I6IHZhcigtLXJzLW11dGVkKTsiPlJla29tZW5kYXNpIGJlbGk8L3NwYW4+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InRleHQtWzEwcHhdIGZvbnQtYm9sZCIgc3R5bGU9ImNvbG9yOiB2YXIoLS1ycy1hbWJlcik7Ij4re3sgbnVtYmVyX2Zvcm1hdCgkYnVmZmVyLCAwKSB9fSUgc2FmZXR5IGJ1ZmZlcjwvZGl2PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzdHJvbmcgY2xhc3M9InRleHQtMnhsIGZvbnQtZXh0cmFib2xkIiBzdHlsZT0iY29sb3I6IHZhcigtLXJzLWluayk7Ij4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAge3sgbnVtYmVyX2Zvcm1hdCgkcC0+cXR5X2Rlbmdhbl9idWZmZXIsIDApIH19CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzbWFsbCBjbGFzcz0idGV4dC14cyBmb250LXNlbWlib2xkIiBzdHlsZT0iY29sb3I6IHZhcigtLXJzLW11dGVkKTsiPnt7ICRwLT5wcm9kdWstPnNhdHVhbiB9fTwvc21hbGw+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zdHJvbmc+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzPSJ0ZXh0LVsxMHB4XSBtdC0yIGZvbnQtc2VtaWJvbGQgZ3JvdXAtb3BlbjpoaWRkZW4iIHN0eWxlPSJjb2xvcjogdmFyKC0tcnMtZ3JlZW4pOyI+S2xpayB1bnR1ayByaW5jaWFuIGF0dXJhbiDilr48L3A+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvc3VtbWFyeT4KICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0ibXQtMyBwdC0zIGJvcmRlci10IHRleHQteHMgc3BhY2UteS0xLjUiIHN0eWxlPSJib3JkZXItY29sb3I6IHZhcigtLXJzLWxpbmUpOyBjb2xvcjogdmFyKC0tcnMtbXV0ZWQpOyI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cD5JbnB1dCDigJQgcGVzYW46IDxzdHJvbmcgc3R5bGU9ImNvbG9yOiB2YXIoLS1ycy1pbmspOyI+e3sgbnVtYmVyX2Zvcm1hdCgkcC0+aW5wdXRfcGVzYW5hbiwgMikgfX08L3N0cm9uZz4sCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBoaXN0b3JpIDcgaGFyaTogPHN0cm9uZyBzdHlsZT0iY29sb3I6IHZhcigtLXJzLWluayk7Ij57eyBudW1iZXJfZm9ybWF0KCRwLT5pbnB1dF9oaXN0b3JpcywgMikgfX08L3N0cm9uZz4sCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB0cmVuOiA8c3Ryb25nIHN0eWxlPSJjb2xvcjogdmFyKC0tcnMtaW5rKTsiPnt7IG51bWJlcl9mb3JtYXQoJHAtPmlucHV0X3RyZW4sIDQpIH19PC9zdHJvbmc+PC9wPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHA+SGFzaWwgZnV6enk6IDxzdHJvbmcgc3R5bGU9ImNvbG9yOiB2YXIoLS1ycy1pbmspOyI+e3sgbnVtYmVyX2Zvcm1hdCgkcC0+cXR5X3Jla29tZW5kYXNpLCAyKSB9fSB7eyAkcC0+cHJvZHVrLT5zYXR1YW4gfX08L3N0cm9uZz48L3A+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBAaWYgKCRpc0Z1enp5KQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9Im92ZXJmbG93LXgtYXV0byAtbXgtMSI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0YWJsZSBjbGFzcz0idy1mdWxsIHRleHQtWzEwcHhdIG10LTIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRoZWFkPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ciBjbGFzcz0idGV4dC1sZWZ0IHVwcGVyY2FzZSIgc3R5bGU9ImNvbG9yOiB2YXIoLS1ycy1tdXRlZCk7Ij4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRoIGNsYXNzPSJweS0xIHByLTIiPkF0dXJhbjwvdGg+PHRoIGNsYXNzPSJweS0xIHByLTIiPs6xIG1pbjwvdGg+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0aCBjbGFzcz0icHktMSBwci0yIj5PdXRwdXQ8L3RoPjx0aCBjbGFzcz0icHktMSBwci0yIj56PC90aD48dGggY2xhc3M9InB5LTEiPs6xw5d6PC90aD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RyPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90aGVhZD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0Ym9keT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBAZm9yZWFjaCAoJHAtPmRldGFpbHMtPnRha2UoOCkgYXMgJGQpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ciBjbGFzcz0iYm9yZGVyLXQiIHN0eWxlPSJib3JkZXItY29sb3I6IHZhcigtLXJzLWxpbmUpOyI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQgY2xhc3M9InB5LTEgcHItMiBmb250LW1vbm8iPnt7ICRkLT5ydWxlX2lkIH19PC90ZD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZCBjbGFzcz0icHktMSBwci0yIj57eyBudW1iZXJfZm9ybWF0KCRkLT5hbHBoYV92YWx1ZSwgNCkgfX08L3RkPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkIGNsYXNzPSJweS0xIHByLTIiPnt7ICRkLT5vdXRwdXRfdGVybSB9fTwvdGQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQgY2xhc3M9InB5LTEgcHItMiI+e3sgbnVtYmVyX2Zvcm1hdCgkZC0+el92YWx1ZSwgMikgfX08L3RkPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkIGNsYXNzPSJweS0xIj57eyBudW1iZXJfZm9ybWF0KCRkLT5ib2JvdCwgMikgfX08L3RkPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RyPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEBlbmRmb3JlYWNoCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3Rib2R5PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RhYmxlPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBAaWYgKCRwLT5kZXRhaWxzLT5jb3VudCgpID4gOCkKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzPSJtdC0xIGl0YWxpYyI+KyB7eyAkcC0+ZGV0YWlscy0+Y291bnQoKSAtIDggfX0gYXR1cmFuIGxhaW5ueWE8L3A+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEBlbmRpZgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgQGVuZGlmCiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgIDwvZGV0YWlscz4KICAgICAgICAgICAgICAgIEBlbmRmb3JlYWNoCiAgICAgICAgICAgIDwvZGl2PgogICAgICAgIEBlbHNlCiAgICAgICAgICAgIDxkaXYgY2xhc3M9InJzLWNhcmQgcC0xMCB0ZXh0LWNlbnRlciI+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJ3LTE0IGgtMTQgcm91bmRlZC0yeGwgZ3JpZCBwbGFjZS1pdGVtcy1jZW50ZXIgbXgtYXV0byBtYi00IiBzdHlsZT0iYmFja2dyb3VuZDogdmFyKC0tcnMtYW1iZXItc29mdCk7Ij4KICAgICAgICAgICAgICAgICAgICA8c3ZnIGNsYXNzPSJ3LTcgaC03IiBzdHlsZT0iY29sb3I6IHZhcigtLXJzLWFtYmVyKTsiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMiI+PHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBkPSJNMTIgOHY0bDMgM202LTNhOSA5IDAgMTEtMTggMCA5IDkgMCAwMTE4IDB6Ii8+PC9zdmc+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDxoMyBjbGFzcz0iZm9udC1ib2xkIiBzdHlsZT0iY29sb3I6IHZhcigtLXJzLWluayk7Ij5CZWx1bSBhZGEgcHJlZGlrc2kgdW50dWsgdGFuZ2dhbCBpbmk8L2gzPgogICAgICAgICAgICAgICAgPHAgY2xhc3M9InRleHQtc20gbXQtMSIgc3R5bGU9ImNvbG9yOiB2YXIoLS1ycy1tdXRlZCk7Ij5QcmVkaWtzaSBvdG9tYXRpcyBqYWxhbiB0aWFwIGphbSAyMDowMCBXSUIuPC9wPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICBAZW5kaWYKICAgIDwvZGl2Pgo8L3gtYXBwLWxheW91dD4K
+<x-app-layout>
+    <x-slot name="header">
+        <div>
+            <h2 class="font-extrabold text-xl leading-tight" style="color: var(--rs-ink);">Prediksi</h2>
+            <p class="text-xs" style="color: var(--rs-muted);">Rekomendasi pembelian berbasis Fuzzy Tsukamoto</p>
+        </div>
+    </x-slot>
+
+    <div class="space-y-5">
+        {{-- Page head --}}
+        <div class="flex flex-wrap items-end justify-between gap-4">
+            <div>
+                <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight" style="color: var(--rs-ink);">Prediksi stok besok</h1>
+                <p class="text-sm mt-1" style="color: var(--rs-muted);">Rekomendasi pembelian untuk {{ \Carbon\Carbon::parse($tgl)->translatedFormat('l, d F Y') }}.</p>
+            </div>
+            @if ($hasil->isNotEmpty())
+                <a href="{{ route('pembelian.create', ['tgl' => $tgl]) }}" class="rs-btn rs-btn-primary">
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                    Pakai semua rekomendasi
+                </a>
+            @endif
+        </div>
+
+        {{-- Filter tanggal --}}
+        <div class="rs-card p-4">
+            <form method="GET" action="{{ route('prediksi.index') }}" class="flex flex-wrap gap-3 items-end">
+                <div>
+                    <label class="rs-label">Tanggal prediksi</label>
+                    <input type="date" name="tgl" value="{{ $tgl }}" class="rs-input !w-auto" />
+                </div>
+                <button class="rs-btn rs-btn-dark">Lihat</button>
+            </form>
+        </div>
+
+        @if ($hasil->isNotEmpty())
+            {{-- Info strip: metode + langkah --}}
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                <div class="lg:col-span-2 rounded-2xl p-5 flex gap-4 items-start" style="background: var(--rs-dark); color: #e5f1e8;">
+                    <div class="w-11 h-11 rounded-xl grid place-items-center font-extrabold text-lg shrink-0" style="background: var(--rs-lime); color: #18391f;">ƒ</div>
+                    <div>
+                        <h3 class="font-bold text-sm">Fuzzy Tsukamoto · 27 aturan</h3>
+                        <p class="text-xs mt-1 leading-relaxed" style="color: #a9bdaf;">Rekomendasi dihitung dari penjualan, histori 7 hari, dan tren. Safety buffer diterapkan sesuai kategori produk. Klik kartu untuk melihat rincian aturan.</p>
+                    </div>
+                </div>
+                <div class="rs-card p-4 flex justify-around items-center">
+                    <div class="text-center">
+                        <span class="w-7 h-7 rounded-full grid place-items-center text-xs font-extrabold mx-auto mb-1" style="background: var(--rs-green); color: #fff;">1</span>
+                        <span class="text-[10px] font-bold" style="color: var(--rs-muted);">Prediksi</span>
+                    </div>
+                    <div class="text-center opacity-40">
+                        <span class="w-7 h-7 rounded-full grid place-items-center text-xs font-extrabold mx-auto mb-1" style="background: var(--rs-green-soft); color: var(--rs-green);">2</span>
+                        <span class="text-[10px] font-bold" style="color: var(--rs-muted);">Pembelian</span>
+                    </div>
+                    <div class="text-center opacity-40">
+                        <span class="w-7 h-7 rounded-full grid place-items-center text-xs font-extrabold mx-auto mb-1" style="background: var(--rs-green-soft); color: var(--rs-green);">3</span>
+                        <span class="text-[10px] font-bold" style="color: var(--rs-muted);">Notifikasi</span>
+                    </div>
+                </div>
+            </div>
+
+            {{-- Grid kartu produk --}}
+            <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
+                @foreach ($hasil as $p)
+                    @php
+                        $isFuzzy = $p->details->isNotEmpty();
+                        $buffer = $p->produk->kategori->safety_buffer_persen ?? 0;
+                    @endphp
+                    <details class="rs-card p-4 group cursor-pointer">
+                        <summary class="list-none">
+                            <div class="flex justify-between items-start gap-3">
+                                <span class="w-10 h-10 rounded-xl grid place-items-center font-extrabold text-sm shrink-0"
+                                      style="background: var(--rs-green-soft); color: var(--rs-green);">
+                                    {{ strtoupper(substr($p->produk->nama, 0, 2)) }}
+                                </span>
+                                <span class="rs-badge {{ $isFuzzy ? 'info' : 'method' }}">{{ $isFuzzy ? 'fuzzy_tsukamoto' : 'seasonal_sum' }}</span>
+                            </div>
+                            <h3 class="font-bold text-sm mt-3" style="color: var(--rs-ink);">{{ $p->produk->nama }}</h3>
+                            <p class="text-[10px]" style="color: var(--rs-muted);">{{ $p->produk->kategori->nama ?? '–' }} · Satuan {{ $p->produk->satuan }}</p>
+                            <div class="flex items-end justify-between mt-4 pt-3 border-t" style="border-color: var(--rs-line);">
+                                <div>
+                                    <span class="text-[10px]" style="color: var(--rs-muted);">Rekomendasi beli</span>
+                                    <div class="text-[10px] font-bold" style="color: var(--rs-amber);">+{{ number_format($buffer, 0) }}% safety buffer</div>
+                                </div>
+                                <strong class="text-2xl font-extrabold" style="color: var(--rs-ink);">
+                                    {{ number_format($p->qty_dengan_buffer, 0) }}
+                                    <small class="text-xs font-semibold" style="color: var(--rs-muted);">{{ $p->produk->satuan }}</small>
+                                </strong>
+                            </div>
+                            <p class="text-[10px] mt-2 font-semibold group-open:hidden" style="color: var(--rs-green);">Klik untuk rincian aturan ▾</p>
+                        </summary>
+                        <div class="mt-3 pt-3 border-t text-xs space-y-1.5" style="border-color: var(--rs-line); color: var(--rs-muted);">
+                            <p>Input — pesan: <strong style="color: var(--rs-ink);">{{ number_format($p->input_pesanan, 2) }}</strong>,
+                               histori 7 hari: <strong style="color: var(--rs-ink);">{{ number_format($p->input_historis, 2) }}</strong>,
+                               tren: <strong style="color: var(--rs-ink);">{{ number_format($p->input_tren, 4) }}</strong></p>
+                            <p>Hasil fuzzy: <strong style="color: var(--rs-ink);">{{ number_format($p->qty_rekomendasi, 2) }} {{ $p->produk->satuan }}</strong></p>
+                            @if ($isFuzzy)
+                                <div class="overflow-x-auto -mx-1">
+                                    <table class="w-full text-[10px] mt-2">
+                                        <thead>
+                                            <tr class="text-left uppercase" style="color: var(--rs-muted);">
+                                                <th class="py-1 pr-2">Aturan</th><th class="py-1 pr-2">α min</th>
+                                                <th class="py-1 pr-2">Output</th><th class="py-1 pr-2">z</th><th class="py-1">α×z</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach ($p->details->take(8) as $d)
+                                                <tr class="border-t" style="border-color: var(--rs-line);">
+                                                    <td class="py-1 pr-2 font-mono">{{ $d->rule_id }}</td>
+                                                    <td class="py-1 pr-2">{{ number_format($d->alpha_value, 4) }}</td>
+                                                    <td class="py-1 pr-2">{{ $d->output_term }}</td>
+                                                    <td class="py-1 pr-2">{{ number_format($d->z_value, 2) }}</td>
+                                                    <td class="py-1">{{ number_format($d->bobot, 2) }}</td>
+                                                </tr>
+                                            @endforeach
+                                        </tbody>
+                                    </table>
+                                    @if ($p->details->count() > 8)
+                                        <p class="mt-1 italic">+ {{ $p->details->count() - 8 }} aturan lainnya</p>
+                                    @endif
+                                </div>
+                            @endif
+                        </div>
+                    </details>
+                @endforeach
+            </div>
+        @else
+            <div class="rs-card p-10 text-center">
+                <div class="w-14 h-14 rounded-2xl grid place-items-center mx-auto mb-4" style="background: var(--rs-amber-soft);">
+                    <svg class="w-7 h-7" style="color: var(--rs-amber);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <h3 class="font-bold" style="color: var(--rs-ink);">Belum ada prediksi untuk tanggal ini</h3>
+                <p class="text-sm mt-1" style="color: var(--rs-muted);">Prediksi otomatis jalan tiap jam 20:00 WIB.</p>
+            </div>
+        @endif
+    </div>
+</x-app-layout>
