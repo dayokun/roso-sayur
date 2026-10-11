@@ -1,1 +1,122 @@
-QHBocAokaWNvbnMgPSBbCiAgICAnZGFzaGJvYXJkJyA9PiAnPHN2ZyBjbGFzcz0idy02IGgtNiIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxLjgiPjxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0iTTMgMTJsMi0ybTAgMGw3LTcgNyA3TTUgMTB2MTBhMSAxIDAgMDAxIDFoM20xMC0xMWwyIDJtLTItMnYxMGExIDEgMCAwMS0xIDFoLTNtLTYgMGExIDEgMCAwMDEtMXYtNGExIDEgMCAwMTEtMWgyYTEgMSAwIDAxMSAxdjRhMSAxIDAgMDAxIDFtLTYgMGg2Ii8+PC9zdmc+JywKICAgICdwZXNhbmFuJyAgID0+ICc8c3ZnIGNsYXNzPSJ3LTYgaC02IiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjEuOCI+PHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBkPSJNOSA1SDdhMiAyIDAgMDAtMiAydjEyYTIgMiAwIDAwMiAyaDEwYTIgMiAwIDAwMi0yVjdhMiAyIDAgMDAtMi0yaC0yTTkgNWEyIDIgMCAwMDIgMmgyYTIgMiAwIDAwMi0yTTkgNWEyIDIgMCAwMTItMmgyYTIgMiAwIDAxMiAybS0zIDdoM20tMyA0aDNtLTYtNGguMDFNOSAxNmguMDEiLz48L3N2Zz4nLAogICAgJ3BlbWJlbGlhbicgPT4gJzxzdmcgY2xhc3M9InctNiBoLTYiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMS44Ij48cGF0aCBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGQ9Ik0zIDNoMmwuNCAyTTcgMTNoMTBsNC04SDUuNE03IDEzTDUuNCA1TTcgMTNsLTIuMjkzIDIuMjkzYy0uNjMuNjMtLjE4NCAxLjcwNy43MDcgMS43MDdIMTdtMCAwYTIgMiAwIDEwMCA0IDIgMiAwIDAwMC00em0tOCAyYTIgMiAwIDExLTQgMCAyIDIgMCAwMTQgMHoiLz48L3N2Zz4nLAogICAgJ3ByZWRpa3NpJyAgPT4gJzxzdmcgY2xhc3M9InctNiBoLTYiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMS44Ij48cGF0aCBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGQ9Ik05IDE5di02YTIgMiAwIDAwLTItMkg1YTIgMiAwIDAwLTIgMnY2YTIgMiAwIDAwMiAyaDJhMiAyIDAgMDAyLTJ6bTAgMFY5YTIgMiAwIDAxMi0yaDJhMiAyIDAgMDEyIDJ2MTBtLTYgMGEyIDIgMCAwMDIgMmgyYTIgMiAwIDAwMi0ybTAgMFY1YTIgMiAwIDAxMi0yaDJhMiAyIDAgMDEyIDJ2MTRhMiAyIDAgMDEtMiAyaC0yYTIgMiAwIDAxLTItMnoiLz48L3N2Zz4nLAogICAgJ25vdGlmaWthc2knPT4gJzxzdmcgY2xhc3M9InctNiBoLTYiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMS44Ij48cGF0aCBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGQ9Ik0xNSAxN2g1bC0xLjQwNS0xLjQwNUEyLjAzMiAyLjAzMiAwIDAxMTggMTQuMTU4VjExYTYuMDAyIDYuMDAyIDAgMDAtNC01LjY1OVY1YTIgMiAwIDEwLTQgMHYuMzQxQzcuNjcgNi4xNjUgNiA4LjM4OCA2IDExdjMuMTU5YzAgLjUzOC0uMjE0IDEuMDU1LS41OTUgMS40MzZMNCAxN2g1bTYgMHYxYTMgMyAwIDExLTYgMHYtMW02IDBIOSIvPjwvc3ZnPicsCiAgICAnc2lzYS1zdG9rJyA9PiAnPHN2ZyBjbGFzcz0idy02IGgtNiIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxLjgiPjxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0iTTUgOGgxNE01IDhhMiAyIDAgMTEwLTRoMTRhMiAyIDAgMTEwIDRNNSA4djEyYTIgMiAwIDAwMiAyaDEwYTIgMiAwIDAwMi0yVjhtLTkgNGg0Ii8+PC9zdmc+JywKICAgICdwcm9kdWsnICAgID0+ICc8c3ZnIGNsYXNzPSJ3LTYgaC02IiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjEuOCI+PHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBkPSJNMjAgN2wtOC00LTggNG0xNiAwbC04IDRtOC00djEwbC04IDRtMC0xMEw0IDdtOCA0djEwTTQgN3YxMGw4IDQiLz48L3N2Zz4nLAogICAgJ2tvbnN1bWVuJyAgPT4gJzxzdmcgY2xhc3M9InctNiBoLTYiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMS44Ij48cGF0aCBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGQ9Ik0xMiA0LjM1NGE0IDQgMCAxMTAgNS4yOTJNMTUgMjFIM3YtMWE2IDYgMCAwMTEyIDB2MXptMCAwaDZ2LTFhNiA2IDAgMDAtOS01LjE5N00xMyA3YTQgNCAwIDExLTggMCA0IDQgMCAwMTggMHoiLz48L3N2Zz4nLAogICAgJ2xhcG9yYW4nICAgPT4gJzxzdmcgY2xhc3M9InctNiBoLTYiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMS44Ij48cGF0aCBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGQ9Ik05IDE3di0ybTMgMnYtNG0zIDR2LTZtMiAxMEg3YTIgMiAwIDAxLTItMlY1YTIgMiAwIDAxMi0yaDUuNTg2YTEgMSAwIDAxLjcwNy4yOTNsNS40MTQgNS40MTRhMSAxIDAgMDEuMjkzLjcwN1YxOWEyIDIgMCAwMS0yIDJ6Ii8+PC9zdmc+JywKICAgICdwZW5nZ3VuYScgID0+ICc8c3ZnIGNsYXNzPSJ3LTYgaC02IiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjEuOCI+PHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBkPSJNOSAxMmwyIDIgNC00bTUuNjE4LTQuMDE2QTExLjk1NSAxMS45NTUgMCAwMTEyIDIuOTQ0YTExLjk1NSAxMS45NTUgMCAwMS04LjYxOCAzLjA0QTEyLjAyIDEyLjAyIDAgMDAzIDljMCA1LjU5MSAzLjgyNCAxMC4yOSA5IDExLjYyMiA1LjE3Ni0xLjMzMiA5LTYuMDMgOS0xMS42MjIgMC0xLjA0Mi0uMTMzLTIuMDUyLS4zODItMy4wMTZ6Ii8+PC9zdmc+JywKXTsKCiRsYXRlQ291bnQgPSBcQXBwXE1vZGVsc1xQZXNhbmFuOjp3aGVyZSgnbGF0ZV9vcmRlcl9zdGF0dXMnLCAncGVuZGluZ19hcHByb3ZhbCcpLT5jb3VudCgpOwoKJGdyb3VwcyA9IFsKICAgIFsnbGFiZWwnID0+ICdOYXZpZ2FzaScsICdpdGVtcycgPT4gWwogICAgICAgIFsnbGFiZWwnID0+ICdEYXNoYm9hcmQnLCAncm91dGUnID0+ICdkYXNoYm9hcmQnLCAnbWF0Y2gnID0+ICdkYXNoYm9hcmQnLCAnaWNvbicgPT4gJ2Rhc2hib2FyZCddLAogICAgXV0sCiAgICBbJ2xhYmVsJyA9PiAnT3BlcmFzaW9uYWwnLCAnaXRlbXMnID0+IFsKICAgICAgICBbJ2xhYmVsJyA9PiAnUGVzYW5hbicsICdyb3V0ZScgPT4gJ3Blc2FuYW4uaW5kZXgnLCAnbWF0Y2gnID0+ICdwZXNhbmFuLionLCAnaWNvbicgPT4gJ3Blc2FuYW4nLCAnYmFkZ2UnID0+ICRsYXRlQ291bnRdLAogICAgICAgIFsnbGFiZWwnID0+ICdQZW1iZWxpYW4nLCAncm91dGUnID0+ICdwZW1iZWxpYW4uaW5kZXgnLCAnbWF0Y2gnID0+ICdwZW1iZWxpYW4uKicsICdpY29uJyA9PiAncGVtYmVsaWFuJ10sCiAgICAgICAgWydsYWJlbCcgPT4gJ1ByZWRpa3NpJywgJ3JvdXRlJyA9PiAncHJlZGlrc2kuaW5kZXgnLCAnbWF0Y2gnID0+ICdwcmVkaWtzaS4qJywgJ2ljb24nID0+ICdwcmVkaWtzaSddLAogICAgICAgIFsnbGFiZWwnID0+ICdOb3RpZmlrYXNpJywgJ3JvdXRlJyA9PiAnbm90aWZpa2FzaS5pbmRleCcsICdtYXRjaCcgPT4gJ25vdGlmaWthc2kuKicsICdpY29uJyA9PiAnbm90aWZpa2FzaSddLAogICAgICAgIFsnbGFiZWwnID0+ICdTaXNhIFN0b2snLCAncm91dGUnID0+ICdzaXNhLXN0b2suaW5kZXgnLCAnbWF0Y2gnID0+ICdzaXNhLXN0b2suKicsICdpY29uJyA9PiAnc2lzYS1zdG9rJ10sCiAgICBdXSwKICAgIFsnbGFiZWwnID0+ICdEYXRhIE1hc3RlcicsICdpdGVtcycgPT4gWwogICAgICAgIFsnbGFiZWwnID0+ICdQcm9kdWsnLCAncm91dGUnID0+ICdwcm9kdWsuaW5kZXgnLCAnbWF0Y2gnID0+ICdwcm9kdWsuKicsICdpY29uJyA9PiAncHJvZHVrJ10sCiAgICAgICAgWydsYWJlbCcgPT4gJ0tvbnN1bWVuJywgJ3JvdXRlJyA9PiAna29uc3VtZW4uaW5kZXgnLCAnbWF0Y2gnID0+ICdrb25zdW1lbi4qJywgJ2ljb24nID0+ICdrb25zdW1lbiddLAogICAgXV0sCiAgICBbJ2xhYmVsJyA9PiAnTGFwb3JhbicsICdpdGVtcycgPT4gWwogICAgICAgIFsnbGFiZWwnID0+ICdMYXBvcmFuJywgJ3JvdXRlJyA9PiAnbGFwb3Jhbi5pbmRleCcsICdtYXRjaCcgPT4gJ2xhcG9yYW4uKicsICdpY29uJyA9PiAnbGFwb3JhbiddLAogICAgXV0sCl07CgppZiAoYXV0aCgpLT51c2VyKCk/LT5pc0FkbWluSXQoKSkgewogICAgJGdyb3Vwc1tdID0gWydsYWJlbCcgPT4gJ1Npc3RlbScsICdpdGVtcycgPT4gWwogICAgICAgIFsnbGFiZWwnID0+ICdQZW5nZ3VuYScsICdyb3V0ZScgPT4gJ3VzZXJzLmluZGV4JywgJ21hdGNoJyA9PiAndXNlcnMuKicsICdpY29uJyA9PiAncGVuZ2d1bmEnXSwKICAgIF1dOwp9CkBlbmRwaHAKCjxhc2lkZQogICAgOmNsYXNzPSJ7CiAgICAgICAgJ3RyYW5zbGF0ZS14LTAnOiBzaWRlYmFyT3BlbiwKICAgICAgICAnLXRyYW5zbGF0ZS14LWZ1bGwnOiAhc2lkZWJhck9wZW4sCiAgICAgICAgJ2xnOnctMjAnOiBjb2xsYXBzZWQsCiAgICAgICAgJ2xnOnctNjQnOiAhY29sbGFwc2VkCiAgICB9IgogICAgY2xhc3M9ImZpeGVkIGluc2V0LXktMCBsZWZ0LTAgei00MCBmbGV4IGZsZXgtY29sIHctNjQgbGc6dHJhbnNsYXRlLXgtMCB0cmFuc2l0aW9uLWFsbCBkdXJhdGlvbi0zMDAgc2hhZG93LTJ4bCIKICAgIHN0eWxlPSJiYWNrZ3JvdW5kOiB2YXIoLS1ycy1kYXJrKTsgY29sb3I6ICNkOWU3ZGQ7Igo+CiAgICA8IS0tIExvZ28gYWxhIG1vY2t1cCAtLT4KICAgIDxkaXYgY2xhc3M9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0zIHB4LTUgaC0xNiBzaHJpbmstMCBib3JkZXItYiBib3JkZXItd2hpdGUvMTAiPgogICAgICAgIDxhIGhyZWY9Int7IHJvdXRlKCdkYXNoYm9hcmQnKSB9fSIgY2xhc3M9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0zIG1pbi13LTAiPgogICAgICAgICAgICA8c3BhbiBjbGFzcz0idy0xMCBoLTEwIHNocmluay0wIHJvdW5kZWQteGwgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgZm9udC1leHRyYWJvbGQgdGV4dC1sZyIKICAgICAgICAgICAgICAgICAgc3R5bGU9ImJhY2tncm91bmQ6IHZhcigtLXJzLWxpbWUpOyBjb2xvcjogIzE4MzkxZjsiPlJTPC9zcGFuPgogICAgICAgICAgICA8c3BhbiBjbGFzcz0ibWluLXctMCIgOmNsYXNzPSJjb2xsYXBzZWQgJiYgJ2xnOmhpZGRlbiciPgogICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9ImJsb2NrIGZvbnQtZXh0cmFib2xkIHRleHQtYmFzZSB0cmFja2luZy10aWdodCB0ZXh0LXdoaXRlIGxlYWRpbmctdGlnaHQgd2hpdGVzcGFjZS1ub3dyYXAiPlJvc28gU2F5dXI8L3NwYW4+CiAgICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0iYmxvY2sgdGV4dC1bMTFweF0gbGVhZGluZy10aWdodCIgc3R5bGU9ImNvbG9yOiAjOGZhOTlhOyI+U3RvayBBZGFwdGlmPC9zcGFuPgogICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgPC9hPgogICAgICAgIDxidXR0b24gQGNsaWNrPSJ0b2dnbGVDb2xsYXBzZSgpIiB0aXRsZT0iQ2l1dGthbiBtZW51IgogICAgICAgICAgICAgICAgY2xhc3M9ImhpZGRlbiBsZzpmbGV4IG1sLWF1dG8gdy04IGgtOCBzaHJpbmstMCByb3VuZGVkLWxnIGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciB0ZXh0LWdyZWVuLTIwMC83MCBob3ZlcjpiZy13aGl0ZS8xMCBob3Zlcjp0ZXh0LXdoaXRlIHRyYW5zaXRpb24iPgogICAgICAgICAgICA8c3ZnIGNsYXNzPSJ3LTUgaC01IHRyYW5zaXRpb24tdHJhbnNmb3JtIGR1cmF0aW9uLTMwMCIgOmNsYXNzPSJjb2xsYXBzZWQgJiYgJ3JvdGF0ZS0xODAnIiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjIiPgogICAgICAgICAgICAgICAgPHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBkPSJNMTUgMTlsLTctNyA3LTciLz4KICAgICAgICAgICAgPC9zdmc+CiAgICAgICAgPC9idXR0b24+CiAgICA8L2Rpdj4KCiAgICA8IS0tIE1lbnUgLS0+CiAgICA8bmF2IGNsYXNzPSJmbGV4LTEgb3ZlcmZsb3cteS1hdXRvIG5pY2Utc2Nyb2xsIHB4LTMgcHktNCI+CiAgICAgICAgQGZvcmVhY2goJGdyb3VwcyBhcyAkZ2kgPT4gJGdyb3VwKQogICAgICAgICAgICA8cCBjbGFzcz0icHgtMyB7eyAkZ2kgPiAwID8gJ3B0LTYnIDogJ3B0LTEnIH19IHBiLTIgdGV4dC1bMTFweF0gZm9udC1ib2xkIHVwcGVyY2FzZSB0cmFja2luZy1bMC4xNWVtXSB3aGl0ZXNwYWNlLW5vd3JhcCBvdmVyZmxvdy1oaWRkZW4iCiAgICAgICAgICAgICAgIHN0eWxlPSJjb2xvcjogIzhmYTk5YTsiIDpjbGFzcz0iY29sbGFwc2VkICYmICdsZzpoaWRkZW4nIj57eyAkZ3JvdXBbJ2xhYmVsJ10gfX08L3A+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9InNwYWNlLXktMSI+CiAgICAgICAgICAgICAgICBAZm9yZWFjaCgkZ3JvdXBbJ2l0ZW1zJ10gYXMgJGl0ZW0pCiAgICAgICAgICAgICAgICAgICAgQHBocCAkYWN0aXZlID0gcmVxdWVzdCgpLT5yb3V0ZUlzKCRpdGVtWydtYXRjaCddKTsgQGVuZHBocAogICAgICAgICAgICAgICAgICAgIDxhIGhyZWY9Int7IHJvdXRlKCRpdGVtWydyb3V0ZSddKSB9fSIgdGl0bGU9Int7ICRpdGVtWydsYWJlbCddIH19IgogICAgICAgICAgICAgICAgICAgICAgIEBjbGljaz0iaWYgKHdpbmRvdy5pbm5lcldpZHRoIDwgMTAyNCkgc2lkZWJhck9wZW4gPSBmYWxzZSIKICAgICAgICAgICAgICAgICAgICAgICBjbGFzcz0iZ3JvdXAgcmVsYXRpdmUgZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTMgcHgtMyBweS0yLjUgcm91bmRlZC14bCB0ZXh0LXNtIGZvbnQtc2VtaWJvbGQgdHJhbnNpdGlvbi1hbGwgZHVyYXRpb24tMjAwIgogICAgICAgICAgICAgICAgICAgICAgIHN0eWxlPSJ7eyAkYWN0aXZlCiAgICAgICAgICAgICAgICAgICAgICAgICAgID8gJ2JhY2tncm91bmQ6IHZhcigtLXJzLWxpbWUpOyBjb2xvcjogIzE4MzkxZjsgYm94LXNoYWRvdzogMCA0cHggMTRweCByZ2JhKDIwMCwyNDAsMTA2LC4yNSk7JwogICAgICAgICAgICAgICAgICAgICAgICAgICA6ICdjb2xvcjogI2FkYzBiNDsnIH19IgogICAgICAgICAgICAgICAgICAgICAgIEBpZighJGFjdGl2ZSkgb25tb3VzZW92ZXI9InRoaXMuc3R5bGUuYmFja2dyb3VuZD0ncmdiYSgyNTUsMjU1LDI1NSwuMDYpJzt0aGlzLnN0eWxlLmNvbG9yPScjZmZmJyIgb25tb3VzZW91dD0idGhpcy5zdHlsZS5iYWNrZ3JvdW5kPScnO3RoaXMuc3R5bGUuY29sb3I9JyNhZGMwYjQnIiBAZW5kaWY+CiAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJzaHJpbmstMCB0cmFuc2l0aW9uLWFsbCBkdXJhdGlvbi0yMDAgZ3JvdXAtaG92ZXI6c2NhbGUtMTEwIj57ISEgJGljb25zWyRpdGVtWydpY29uJ11dICEhfTwvc3Bhbj4KICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9ImZsZXgtMSB3aGl0ZXNwYWNlLW5vd3JhcCBvdmVyZmxvdy1oaWRkZW4iIDpjbGFzcz0iY29sbGFwc2VkICYmICdsZzpoaWRkZW4nIj57eyAkaXRlbVsnbGFiZWwnXSB9fTwvc3Bhbj4KICAgICAgICAgICAgICAgICAgICAgICAgQGlmKCFlbXB0eSgkaXRlbVsnYmFkZ2UnXSkpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0ibWluLXctWzEuNXJlbV0gaC02IHB4LTEuNSBpbmxpbmUtZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgcm91bmRlZC1mdWxsIHRleHQteHMgZm9udC1ib2xkIHNoYWRvdyIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHN0eWxlPSJiYWNrZ3JvdW5kOiB7eyAkYWN0aXZlID8gJyMxODM5MWYnIDogJyNlOWJjNjUnIH19OyBjb2xvcjoge3sgJGFjdGl2ZSA/ICcjYzhmMDZhJyA6ICcjNDQyODAwJyB9fTsiCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA6Y2xhc3M9ImNvbGxhcHNlZCAmJiAnbGc6aGlkZGVuJyIgdGl0bGU9IkxhdGUgb3JkZXIgbWVudW5nZ3UgcGVyc2V0dWp1YW4iPnt7ICRpdGVtWydiYWRnZSddIH19PC9zcGFuPgogICAgICAgICAgICAgICAgICAgICAgICBAZW5kaWYKICAgICAgICAgICAgICAgICAgICA8L2E+CiAgICAgICAgICAgICAgICBAZW5kZm9yZWFjaAogICAgICAgICAgICA8L2Rpdj4KICAgICAgICBAZW5kZm9yZWFjaAogICAgPC9uYXY+CgogICAgPCEtLSBVc2VyIC0tPgogICAgPGRpdiBjbGFzcz0icC00IHNocmluay0wIGJvcmRlci10IGJvcmRlci13aGl0ZS8xMCI+CiAgICAgICAgPGRpdiBjbGFzcz0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTMgcm91bmRlZC14bCBiZy13aGl0ZS81IHAtMi41Ij4KICAgICAgICAgICAgPGRpdiBjbGFzcz0idy0xMCBoLTEwIHNocmluay0wIHJvdW5kZWQtZnVsbCBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBmb250LWV4dHJhYm9sZCIKICAgICAgICAgICAgICAgICBzdHlsZT0iYmFja2dyb3VuZDogI2U5YmM2NTsgY29sb3I6ICM0NDI4MDA7Ij4KICAgICAgICAgICAgICAgIHt7IHN0cnRvdXBwZXIoc3Vic3RyKEF1dGg6OnVzZXIoKS0+bmFtZSwgMCwgMSkpIH19CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJmbGV4LTEgbWluLXctMCIgOmNsYXNzPSJjb2xsYXBzZWQgJiYgJ2xnOmhpZGRlbiciPgogICAgICAgICAgICAgICAgPHAgY2xhc3M9InRleHQtc20gZm9udC1zZW1pYm9sZCB0cnVuY2F0ZSB0ZXh0LXdoaXRlIj57eyBBdXRoOjp1c2VyKCktPm5hbWUgfX08L3A+CiAgICAgICAgICAgICAgICA8cCBjbGFzcz0idGV4dC14cyIgc3R5bGU9ImNvbG9yOiAjODlhMTkxOyI+e3sgQXV0aDo6dXNlcigpLT5pc0FkbWluSXQoKSA/ICdBZG1pbiBJVCcgOiAnQWRtaW4gUm9zbyBTYXl1cicgfX08L3A+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8Zm9ybSBtZXRob2Q9IlBPU1QiIGFjdGlvbj0ie3sgcm91dGUoJ2xvZ291dCcpIH19IiA6Y2xhc3M9ImNvbGxhcHNlZCAmJiAnbGc6aGlkZGVuJyIgY2xhc3M9InNocmluay0wIj4KICAgICAgICAgICAgICAgIEBjc3JmCiAgICAgICAgICAgICAgICA8YnV0dG9uIHR5cGU9InN1Ym1pdCIgdGl0bGU9IktlbHVhciIKICAgICAgICAgICAgICAgICAgICAgICAgY2xhc3M9InctOSBoLTkgcm91bmRlZC1sZyBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBob3ZlcjpiZy1yZWQtNTAwLzIwIGhvdmVyOnRleHQtcmVkLTIwMCB0cmFuc2l0aW9uIiBzdHlsZT0iY29sb3I6ICNhZGMwYjQ7Ij4KICAgICAgICAgICAgICAgICAgICA8c3ZnIGNsYXNzPSJ3LTUgaC01IiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjIiPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGQ9Ik0xNyAxNmw0LTRtMCAwbC00LTRtNCA0SDdtNiA0djFhMyAzIDAgMDEtMyAzSDZhMyAzIDAgMDEtMy0zVjdhMyAzIDAgMDEzLTNoNGEzIDMgMCAwMTMgM3YxIi8+CiAgICAgICAgICAgICAgICAgICAgPC9zdmc+CiAgICAgICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgPC9mb3JtPgogICAgICAgIDwvZGl2PgogICAgPC9kaXY+CjwvYXNpZGU+Cg==
+@php
+$icons = [
+    'dashboard' => '<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>',
+    'pesanan'   => '<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>',
+    'pembelian' => '<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>',
+    'prediksi'  => '<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>',
+    'notifikasi'=> '<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>',
+    'sisa-stok' => '<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v12a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>',
+    'produk'    => '<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>',
+    'konsumen'  => '<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>',
+    'laporan'   => '<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>',
+    'pengguna'  => '<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>',
+];
+
+$lateCount = \App\Models\Pesanan::where('late_order_status', 'pending_approval')->count();
+
+$groups = [
+    ['label' => 'Navigasi', 'items' => [
+        ['label' => 'Dashboard', 'route' => 'dashboard', 'match' => 'dashboard', 'icon' => 'dashboard'],
+    ]],
+    ['label' => 'Operasional', 'items' => [
+        ['label' => 'Pesanan', 'route' => 'pesanan.index', 'match' => 'pesanan.*', 'icon' => 'pesanan', 'badge' => $lateCount],
+        ['label' => 'Pembelian', 'route' => 'pembelian.index', 'match' => 'pembelian.*', 'icon' => 'pembelian'],
+        ['label' => 'Prediksi', 'route' => 'prediksi.index', 'match' => 'prediksi.*', 'icon' => 'prediksi'],
+        ['label' => 'Notifikasi', 'route' => 'notifikasi.index', 'match' => 'notifikasi.*', 'icon' => 'notifikasi'],
+        ['label' => 'Sisa Stok', 'route' => 'sisa-stok.index', 'match' => 'sisa-stok.*', 'icon' => 'sisa-stok'],
+    ]],
+    ['label' => 'Data Master', 'items' => [
+        ['label' => 'Produk', 'route' => 'produk.index', 'match' => 'produk.*', 'icon' => 'produk'],
+        ['label' => 'Konsumen', 'route' => 'konsumen.index', 'match' => 'konsumen.*', 'icon' => 'konsumen'],
+    ]],
+    ['label' => 'Laporan', 'items' => [
+        ['label' => 'Laporan', 'route' => 'laporan.index', 'match' => 'laporan.*', 'icon' => 'laporan'],
+    ]],
+];
+
+if (auth()->user()?->isAdminIt()) {
+    $groups[] = ['label' => 'Sistem', 'items' => [
+        ['label' => 'Pengguna', 'route' => 'users.index', 'match' => 'users.*', 'icon' => 'pengguna'],
+    ]];
+}
+@endphp
+
+<aside
+    :class="{
+        'translate-x-0': sidebarOpen,
+        '-translate-x-full': !sidebarOpen,
+        'lg:w-20': collapsed,
+        'lg:w-64': !collapsed
+    }"
+    class="fixed inset-y-0 left-0 z-40 flex flex-col w-64 lg:translate-x-0 transition-all duration-300 shadow-2xl"
+    style="background: var(--rs-dark); color: #d9e7dd;"
+>
+    <!-- Logo ala mockup -->
+    <div class="flex items-center gap-3 px-5 h-16 shrink-0 border-b border-white/10">
+        <a href="{{ route('dashboard') }}" class="flex items-center gap-3 min-w-0">
+            <span class="w-10 h-10 shrink-0 rounded-xl flex items-center justify-center font-extrabold text-lg"
+                  style="background: var(--rs-lime); color: #18391f;">RS</span>
+            <span class="min-w-0" :class="collapsed && 'lg:hidden'">
+                <span class="block font-extrabold text-base tracking-tight text-white leading-tight whitespace-nowrap">Roso Sayur</span>
+                <span class="block text-[11px] leading-tight" style="color: #8fa99a;">Stok Adaptif</span>
+            </span>
+        </a>
+        <button @click="toggleCollapse()" title="Ciutkan menu"
+                class="hidden lg:flex ml-auto w-8 h-8 shrink-0 rounded-lg items-center justify-center text-green-200/70 hover:bg-white/10 hover:text-white transition">
+            <svg class="w-5 h-5 transition-transform duration-300" :class="collapsed && 'rotate-180'" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Menu -->
+    <nav class="flex-1 overflow-y-auto nice-scroll px-3 py-4">
+        @foreach($groups as $gi => $group)
+            <p class="px-3 {{ $gi > 0 ? 'pt-6' : 'pt-1' }} pb-2 text-[11px] font-bold uppercase tracking-[0.15em] whitespace-nowrap overflow-hidden"
+               style="color: #8fa99a;" :class="collapsed && 'lg:hidden'">{{ $group['label'] }}</p>
+            <div class="space-y-1">
+                @foreach($group['items'] as $item)
+                    @php $active = request()->routeIs($item['match']); @endphp
+                    <a href="{{ route($item['route']) }}" title="{{ $item['label'] }}"
+                       @click="if (window.innerWidth < 1024) sidebarOpen = false"
+                       class="group relative flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-semibold transition-all duration-200"
+                       style="{{ $active
+                           ? 'background: var(--rs-lime); color: #18391f; box-shadow: 0 4px 14px rgba(200,240,106,.25);'
+                           : 'color: #adc0b4;' }}"
+                       @if(!$active) onmouseover="this.style.background='rgba(255,255,255,.06)';this.style.color='#fff'" onmouseout="this.style.background='';this.style.color='#adc0b4'" @endif>
+                        <span class="shrink-0 transition-all duration-200 group-hover:scale-110">{!! $icons[$item['icon']] !!}</span>
+                        <span class="flex-1 whitespace-nowrap overflow-hidden" :class="collapsed && 'lg:hidden'">{{ $item['label'] }}</span>
+                        @if(!empty($item['badge']))
+                            <span class="min-w-[1.5rem] h-6 px-1.5 inline-flex items-center justify-center rounded-full text-xs font-bold shadow"
+                                  style="background: {{ $active ? '#18391f' : '#e9bc65' }}; color: {{ $active ? '#c8f06a' : '#442800' }};"
+                                  :class="collapsed && 'lg:hidden'" title="Late order menunggu persetujuan">{{ $item['badge'] }}</span>
+                        @endif
+                    </a>
+                @endforeach
+            </div>
+        @endforeach
+    </nav>
+
+    <!-- User -->
+    <div class="p-4 shrink-0 border-t border-white/10">
+        <div class="flex items-center gap-3 rounded-xl bg-white/5 p-2.5">
+            <div class="w-10 h-10 shrink-0 rounded-full flex items-center justify-center font-extrabold"
+                 style="background: #e9bc65; color: #442800;">
+                {{ strtoupper(substr(Auth::user()->name, 0, 1)) }}
+            </div>
+            <div class="flex-1 min-w-0" :class="collapsed && 'lg:hidden'">
+                <p class="text-sm font-semibold truncate text-white">{{ Auth::user()->name }}</p>
+                <p class="text-xs" style="color: #89a191;">{{ Auth::user()->isAdminIt() ? 'Admin IT' : 'Admin Roso Sayur' }}</p>
+            </div>
+            <form method="POST" action="{{ route('logout') }}" :class="collapsed && 'lg:hidden'" class="shrink-0">
+                @csrf
+                <button type="submit" title="Keluar"
+                        class="w-9 h-9 rounded-lg flex items-center justify-center hover:bg-red-500/20 hover:text-red-200 transition" style="color: #adc0b4;">
+                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+</aside>
