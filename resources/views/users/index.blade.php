@@ -12,7 +12,7 @@
                 <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">{{ session('error') }}</div>
             @endif
 
-            <div class="bg-white shadow-sm sm:rounded-lg overflow-hidden">
+            <div class="bg-white shadow-sm sm:rounded-lg overflow-x-auto">
                 <div class="p-4 border-b font-semibold flex items-center">
                     Akun Dashboard
                     <a href="{{ route('users.create') }}" class="ms-auto bg-green-700 text-white px-4 py-2 rounded text-sm">Tambah Akun</a>
