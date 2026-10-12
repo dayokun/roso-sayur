@@ -1,1 +1,159 @@
-PHgtYXBwLWxheW91dD4KICAgIDx4LXNsb3QgbmFtZT0iaGVhZGVyIj4KICAgICAgICA8ZGl2PgogICAgICAgICAgICA8aDIgY2xhc3M9ImZvbnQtZXh0cmFib2xkIHRleHQteGwgbGVhZGluZy10aWdodCIgc3R5bGU9ImNvbG9yOiB2YXIoLS1ycy1pbmspOyI+UGVzYW5hbjwvaDI+CiAgICAgICAgICAgIDxwIGNsYXNzPSJ0ZXh0LXhzIiBzdHlsZT0iY29sb3I6IHZhcigtLXJzLW11dGVkKTsiPktlbG9sYSBwZXNhbmFuIGtvbnN1bWVuIOKAlCB7eyAkdGdsIH19PC9wPgogICAgICAgIDwvZGl2PgogICAgPC94LXNsb3Q+CgogICAgQHBocAogICAgICAgICRzdGF0dXNCYWRnZSA9IGZuKCRzKSA9PiBtYXRjaCgkcykgewogICAgICAgICAgICAncGVuZGluZycgPT4gJ3BlbmRpbmcnLCAnZGl0ZXJpbWEnID0+ICdkaXRlcmltYScsCiAgICAgICAgICAgICdzaWFwX2RpYW1iaWwnID0+ICdzaWFwX2RpYW1iaWwnLCAnc2VsZXNhaScgPT4gJ3NlbGVzYWknLAogICAgICAgICAgICBkZWZhdWx0ID0+ICdjYW5jZWxsZWQnLAogICAgICAgIH07CiAgICAgICAgJHN0YXR1c0xhYmVsID0gZm4oJHMpID0+IG1hdGNoKCRzKSB7CiAgICAgICAgICAgICdwZW5kaW5nJyA9PiAnUGVuZGluZycsICdkaXRlcmltYScgPT4gJ0RpdGVyaW1hJywKICAgICAgICAgICAgJ3NpYXBfZGlhbWJpbCcgPT4gJ1NpYXAgZGlhbWJpbCcsICdzZWxlc2FpJyA9PiAnU2VsZXNhaScsCiAgICAgICAgICAgICdjYW5jZWxsZWQnID0+ICdEaWJhdGFsa2FuJywgZGVmYXVsdCA9PiAkcywKICAgICAgICB9OwogICAgQGVuZHBocAoKICAgIDxkaXYgY2xhc3M9InNwYWNlLXktNSI+CiAgICAgICAgPGRpdiBjbGFzcz0iZmxleCBmbGV4LXdyYXAgaXRlbXMtZW5kIGp1c3RpZnktYmV0d2VlbiBnYXAtNCI+CiAgICAgICAgICAgIDxkaXY+CiAgICAgICAgICAgICAgICA8aDEgY2xhc3M9InRleHQtMnhsIHNtOnRleHQtM3hsIGZvbnQtZXh0cmFib2xkIHRyYWNraW5nLXRpZ2h0IiBzdHlsZT0iY29sb3I6IHZhcigtLXJzLWluayk7Ij5LZWxvbGEgcGVzYW5hbjwvaDE+CiAgICAgICAgICAgICAgICA8cCBjbGFzcz0idGV4dC1zbSBtdC0xIiBzdHlsZT0iY29sb3I6IHZhcigtLXJzLW11dGVkKTsiPlBhbnRhdSBkYW4gcHJvc2VzIHBlc2FuYW4ga29uc3VtZW4gc2VjYXJhIHRlcnB1c2F0LjwvcD4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDxhIGhyZWY9Int7IHJvdXRlKCdwZXNhbmFuLmxhdGUnKSB9fSIgY2xhc3M9InJzLWJ0biBycy1idG4tYW1iZXIiPgogICAgICAgICAgICAgICAgPHN2ZyBjbGFzcz0idy00IGgtNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIj48cGF0aCBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGQ9Ik0xMiA4djRsMyAzbTYtM2E5IDkgMCAxMS0xOCAwIDkgOSAwIDAxMTggMHoiLz48L3N2Zz4KICAgICAgICAgICAgICAgIExhdGUgT3JkZXIKICAgICAgICAgICAgPC9hPgogICAgICAgIDwvZGl2PgoKICAgICAgICA8ZGl2IGNsYXNzPSJycy1jYXJkIHAtNCI+CiAgICAgICAgICAgIDxmb3JtIG1ldGhvZD0iR0VUIiBhY3Rpb249Int7IHJvdXRlKCdwZXNhbmFuLmluZGV4JykgfX0iIGNsYXNzPSJmbGV4IGZsZXgtd3JhcCBnYXAtMyBpdGVtcy1lbmQiPgogICAgICAgICAgICAgICAgPGRpdj4KICAgICAgICAgICAgICAgICAgICA8bGFiZWwgY2xhc3M9InJzLWxhYmVsIj5UYW5nZ2FsIGFtYmlsPC9sYWJlbD4KICAgICAgICAgICAgICAgICAgICA8aW5wdXQgdHlwZT0iZGF0ZSIgbmFtZT0idGdsIiB2YWx1ZT0ie3sgJHRnbCB9fSIgY2xhc3M9InJzLWlucHV0ICF3LWF1dG8iIC8+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDxkaXY+CiAgICAgICAgICAgICAgICAgICAgPGxhYmVsIGNsYXNzPSJycy1sYWJlbCI+U3RhdHVzPC9sYWJlbD4KICAgICAgICAgICAgICAgICAgICA8c2VsZWN0IG5hbWU9InN0YXR1cyIgY2xhc3M9InJzLWlucHV0ICF3LWF1dG8iPgogICAgICAgICAgICAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIiPlNlbXVhPC9vcHRpb24+CiAgICAgICAgICAgICAgICAgICAgICAgIEBmb3JlYWNoIChbJ3BlbmRpbmcnLCdkaXRlcmltYScsJ3NpYXBfZGlhbWJpbCcsJ3NlbGVzYWknLCdjYW5jZWxsZWQnXSBhcyAkcykKICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9Int7ICRzIH19IiBAc2VsZWN0ZWQoJHN0YXR1cyA9PT0gJHMpPnt7ICRzdGF0dXNMYWJlbCgkcykgfX08L29wdGlvbj4KICAgICAgICAgICAgICAgICAgICAgICAgQGVuZGZvcmVhY2gKICAgICAgICAgICAgICAgICAgICA8L3NlbGVjdD4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz0icnMtYnRuIHJzLWJ0bi1kYXJrIj5GaWx0ZXI8L2J1dHRvbj4KICAgICAgICAgICAgPC9mb3JtPgogICAgICAgIDwvZGl2PgoKICAgICAgICA8ZGl2IGNsYXNzPSJycy1jYXJkIHAtNSI+CiAgICAgICAgICAgIDx0YWJsZSBjbGFzcz0iZGF0YXRhYmxlIHctZnVsbCB0ZXh0LXNtIj4KICAgICAgICAgICAgICAgIDx0aGVhZD4KICAgICAgICAgICAgICAgICAgICA8dHI+CiAgICAgICAgICAgICAgICAgICAgICAgIDx0aD5Lb2RlPC90aD4KICAgICAgICAgICAgICAgICAgICAgICAgPHRoPktvbnN1bWVuPC90aD4KICAgICAgICAgICAgICAgICAgICAgICAgPHRoPkl0ZW08L3RoPgogICAgICAgICAgICAgICAgICAgICAgICA8dGg+VGdsIFBlc2FuPC90aD4KICAgICAgICAgICAgICAgICAgICAgICAgPHRoPlN0YXR1czwvdGg+CiAgICAgICAgICAgICAgICAgICAgICAgIDx0aD5Ba3NpPC90aD4KICAgICAgICAgICAgICAgICAgICA8L3RyPgogICAgICAgICAgICAgICAgPC90aGVhZD4KICAgICAgICAgICAgICAgIDx0Ym9keT4KICAgICAgICAgICAgICAgICAgICBAZm9yZWxzZSAoJHBlc2FuYW5zIGFzICRwKQogICAgICAgICAgICAgICAgICAgICAgICA8dHI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQgY2xhc3M9ImZvbnQtbW9ubyBmb250LWJvbGQgd2hpdGVzcGFjZS1ub3dyYXAiIHN0eWxlPSJjb2xvcjogdmFyKC0tcnMtZ3JlZW4pOyI+e3sgJHAtPmtvZGUgPz8gJHAtPmlkIH19PC90ZD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzcz0iZm9udC1zZW1pYm9sZCI+e3sgJHAtPmtvbnN1bWVuLT5uYW1hIH19PC9wPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzPSJ0ZXh0LXhzIiBzdHlsZT0iY29sb3I6IHZhcigtLXJzLW11dGVkKTsiPnt7ICRwLT5rb25zdW1lbi0+bm9faHAgfX08L3A+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RkPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkIGNsYXNzPSJ0ZXh0LXhzIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBAZm9yZWFjaCAoJHAtPmRldGFpbHMgYXMgJGQpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHt7ICRkLT5wcm9kdWstPm5hbWEgfX06IHt7ICRkLT5xdHlfcGVzYW4gfX0ge3sgJGQtPnNhdHVhbiB9fUBpZighaXNfbnVsbCgkZC0+cXR5X2RlbGl2ZXJlZCkpIOKGkiB7eyAkZC0+cXR5X2RlbGl2ZXJlZCB9fUBlbmRpZjxicj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBAZW5kZm9yZWFjaAogICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZCBjbGFzcz0id2hpdGVzcGFjZS1ub3dyYXAgdGV4dC14cyI+e3sgJHAtPnRnbF9wZXNhbi0+Zm9ybWF0KCdkL20gSDppJykgfX08L3RkPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJycy1iYWRnZSB7eyAkc3RhdHVzQmFkZ2UoJHAtPnN0YXR1cykgfX0iPnt7ICRzdGF0dXNMYWJlbCgkcC0+c3RhdHVzKSB9fTwvc3Bhbj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBAaWYoJHAtPmlzX2xhdGVfb3JkZXIpPHNwYW4gY2xhc3M9InJzLWJhZGdlIHBlbmRpbmcgbXMtMSI+bGF0ZTwvc3Bhbj5AZW5kaWYKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBAaWYoJHAtPnN0YXR1cyA9PT0gJ2NhbmNlbGxlZCcgJiYgJHAtPmNhbmNlbF9yZWFzb24pCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzPSJ0ZXh0LVsxMHB4XSBtdC0xIiBzdHlsZT0iY29sb3I6IHZhcigtLXJzLW11dGVkKTsiPkFsYXNhbjoge3sgJHAtPmNhbmNlbF9yZWFzb24gfX08L3A+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQGVuZGlmCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RkPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkIGNsYXNzPSJ3aGl0ZXNwYWNlLW5vd3JhcCI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iZmxleCBmbGV4LXdyYXAgZ2FwLTEuNSI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEBpZiAoJHAtPnN0YXR1cyA9PT0gJ3BlbmRpbmcnKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGZvcm0gbWV0aG9kPSJQT1NUIiBhY3Rpb249Int7IHJvdXRlKCdwZXNhbmFuLnRlcmltYScsICRwKSB9fSIgY2xhc3M9ImlubGluZSI+QGNzcmYKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIGNsYXNzPSJycy1idG4gcnMtYnRuLXNlY29uZGFyeSAhcHktMS41ICFweC0zICF0ZXh0LVsxMXB4XSI+VGVyaW1hPC9idXR0b24+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Zvcm0+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEBlbmRpZgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBAaWYgKGluX2FycmF5KCRwLT5zdGF0dXMsIFsnZGl0ZXJpbWEnLCdzaWFwX2RpYW1iaWwnXSkpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YSBocmVmPSJ7eyByb3V0ZSgncGVzYW5hbi5kZWxpdmVyZWQnLCAkcCkgfX0iIGNsYXNzPSJycy1idG4gcnMtYnRuLXByaW1hcnkgIXB5LTEuNSAhcHgtMyAhdGV4dC1bMTFweF0iPklucHV0IERlbGl2ZXJlZDwvYT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQGVuZGlmCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEBpZiAoISBpbl9hcnJheSgkcC0+c3RhdHVzLCBbJ3NlbGVzYWknLCdjYW5jZWxsZWQnLCdzaWFwX2RpYW1iaWwnXSkpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIHR5cGU9ImJ1dHRvbiIgb25jbGljaz0iYnVrYU1vZGFsQmF0YWwoJ3t7IHJvdXRlKCdwZXNhbmFuLmJhdGFsJywgJHApIH19JywgJ3t7ICRwLT5rb2RlID8/ICRwLT5pZCB9fScpIiBjbGFzcz0icnMtYnRuIHJzLWJ0bi1kYW5nZXIgIXB5LTEuNSAhcHgtMyAhdGV4dC1bMTFweF0iPkJhdGFsPC9idXR0b24+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEBlbmRpZgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZD4KICAgICAgICAgICAgICAgICAgICAgICAgPC90cj4KICAgICAgICAgICAgICAgICAgICBAZW1wdHkKICAgICAgICAgICAgICAgICAgICAgICAgPHRyPjx0ZCBjb2xzcGFuPSI2IiBjbGFzcz0icC00IHRleHQtY2VudGVyIiBzdHlsZT0iY29sb3I6IHZhcigtLXJzLW11dGVkKTsiPlRpZGFrIGFkYSBwZXNhbmFuLjwvdGQ+PC90cj4KICAgICAgICAgICAgICAgICAgICBAZW5kZm9yZWxzZQogICAgICAgICAgICAgICAgPC90Ym9keT4KICAgICAgICAgICAgPC90YWJsZT4KICAgICAgICA8L2Rpdj4KICAgIDwvZGl2PgoKICAgIHt7LS0gTW9kYWwga29uZmlybWFzaSBwZW1iYXRhbGFuICsgYWxhc2FuIC0tfX0KICAgIDxkaXYgaWQ9Im1vZGFsLWJhdGFsIiBjbGFzcz0iaGlkZGVuIGZpeGVkIGluc2V0LTAgei01MCBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBiZy1ibGFjay81MCBwLTQiPgogICAgICAgIDxkaXYgY2xhc3M9InJvdW5kZWQtMnhsIHNoYWRvdy14bCB3LWZ1bGwgbWF4LXctbWQgb3ZlcmZsb3ctaGlkZGVuIiBzdHlsZT0iYmFja2dyb3VuZDogdmFyKC0tcnMtc3VyZmFjZSk7Ij4KICAgICAgICAgICAgPGRpdiBjbGFzcz0icHgtNiBweS00IiBzdHlsZT0iYmFja2dyb3VuZDogdmFyKC0tcnMtcmVkKTsiPgogICAgICAgICAgICAgICAgPGgzIGNsYXNzPSJ0ZXh0LWxnIGZvbnQtYm9sZCB0ZXh0LXdoaXRlIj5CYXRhbGthbiBQZXNhbmFuPC9oMz4KICAgICAgICAgICAgICAgIDxwIGNsYXNzPSJ0ZXh0LXNtIiBzdHlsZT0iY29sb3I6ICNmYmQ1ZDU7Ij5Lb2RlOiA8c3BhbiBpZD0ibW9kYWwtYmF0YWwta29kZSIgY2xhc3M9ImZvbnQtbW9ubyBmb250LWJvbGQiPjwvc3Bhbj48L3A+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8Zm9ybSBpZD0ibW9kYWwtYmF0YWwtZm9ybSIgbWV0aG9kPSJQT1NUIiBjbGFzcz0icHgtNiBweS01Ij4KICAgICAgICAgICAgICAgIEBjc3JmCiAgICAgICAgICAgICAgICA8bGFiZWwgZm9yPSJhbGFzYW4tYmF0YWwiIGNsYXNzPSJycy1sYWJlbCI+QWxhc2FuIHBlbWJhdGFsYW4gPHNwYW4gc3R5bGU9ImNvbG9yOiB2YXIoLS1ycy1yZWQpOyI+Kjwvc3Bhbj48L2xhYmVsPgogICAgICAgICAgICAgICAgPHRleHRhcmVhIGlkPSJhbGFzYW4tYmF0YWwiIG5hbWU9ImFsYXNhbiIgcm93cz0iMyIgcmVxdWlyZWQgbWF4bGVuZ3RoPSIyNTUiCiAgICAgICAgICAgICAgICAgICAgcGxhY2Vob2xkZXI9IkNvbnRvaDogU3RvayBoYWJpcywgcGVzYW5hbiBnYW5kYSwgY3VzdG9tZXIgbWVtaW50YSBiYXRhbC4uLiIKICAgICAgICAgICAgICAgICAgICBjbGFzcz0icnMtdGV4dGFyZWEiPjwvdGV4dGFyZWE+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJmbGV4IGZsZXgtd3JhcCBnYXAtMiBtdC0yIj4KICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIHR5cGU9ImJ1dHRvbiIgb25jbGljaz0iaXNpQWxhc2FuKCdTdG9rIHByb2R1ayBoYWJpcycpIiBjbGFzcz0idGV4dC14cyBweC0zIHB5LTEgcm91bmRlZC1mdWxsIGZvbnQtc2VtaWJvbGQgdHJhbnNpdGlvbiBob3ZlcjpvcGFjaXR5LTgwIiBzdHlsZT0iYmFja2dyb3VuZDogdmFyKC0tcnMtc3VyZmFjZS0yKTsgY29sb3I6IHZhcigtLXJzLW11dGVkKTsiPlN0b2sgaGFiaXM8L2J1dHRvbj4KICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIHR5cGU9ImJ1dHRvbiIgb25jbGljaz0iaXNpQWxhc2FuKCdQZXNhbmFuIGdhbmRhJykiIGNsYXNzPSJ0ZXh0LXhzIHB4LTMgcHktMSByb3VuZGVkLWZ1bGwgZm9udC1zZW1pYm9sZCB0cmFuc2l0aW9uIGhvdmVyOm9wYWNpdHktODAiIHN0eWxlPSJiYWNrZ3JvdW5kOiB2YXIoLS1ycy1zdXJmYWNlLTIpOyBjb2xvcjogdmFyKC0tcnMtbXV0ZWQpOyI+UGVzYW5hbiBnYW5kYTwvYnV0dG9uPgogICAgICAgICAgICAgICAgICAgIDxidXR0b24gdHlwZT0iYnV0dG9uIiBvbmNsaWNrPSJpc2lBbGFzYW4oJ0N1c3RvbWVyIG1lbWludGEgZGliYXRhbGthbicpIiBjbGFzcz0idGV4dC14cyBweC0zIHB5LTEgcm91bmRlZC1mdWxsIGZvbnQtc2VtaWJvbGQgdHJhbnNpdGlvbiBob3ZlcjpvcGFjaXR5LTgwIiBzdHlsZT0iYmFja2dyb3VuZDogdmFyKC0tcnMtc3VyZmFjZS0yKTsgY29sb3I6IHZhcigtLXJzLW11dGVkKTsiPkN1c3RvbWVyIG1lbWludGEgYmF0YWw8L2J1dHRvbj4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgPHAgY2xhc3M9InRleHQteHMgbXQtMyIgc3R5bGU9ImNvbG9yOiB2YXIoLS1ycy1tdXRlZCk7Ij5DdXN0b21lciBha2FuIG1lbmVyaW1hIG5vdGlmaWthc2kgV2hhdHNBcHAgYmVyaXNpIGFsYXNhbiBpbmkuPC9wPgogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iZmxleCBqdXN0aWZ5LWVuZCBnYXAtMyBtdC01Ij4KICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIHR5cGU9ImJ1dHRvbiIgb25jbGljaz0idHV0dXBNb2RhbEJhdGFsKCkiIGNsYXNzPSJycy1idG4gcnMtYnRuLXNlY29uZGFyeSI+S2VtYmFsaTwvYnV0dG9uPgogICAgICAgICAgICAgICAgICAgIDxidXR0b24gdHlwZT0ic3VibWl0IiBjbGFzcz0icnMtYnRuIHRleHQtd2hpdGUgZm9udC1ib2xkIiBzdHlsZT0iYmFja2dyb3VuZDogdmFyKC0tcnMtcmVkKTsiPllhLCBCYXRhbGthbjwvYnV0dG9uPgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDwvZm9ybT4KICAgICAgICA8L2Rpdj4KICAgIDwvZGl2PgoKICAgIEBwdXNoKCdzY3JpcHRzJykKICAgIDxzY3JpcHQ+CiAgICAgICAgZnVuY3Rpb24gYnVrYU1vZGFsQmF0YWwoYWN0aW9uLCBrb2RlKSB7CiAgICAgICAgICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdtb2RhbC1iYXRhbC1mb3JtJykuYWN0aW9uID0gYWN0aW9uOwogICAgICAgICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnbW9kYWwtYmF0YWwta29kZScpLnRleHRDb250ZW50ID0ga29kZTsKICAgICAgICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2FsYXNhbi1iYXRhbCcpLnZhbHVlID0gJyc7CiAgICAgICAgICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdtb2RhbC1iYXRhbCcpLmNsYXNzTGlzdC5yZW1vdmUoJ2hpZGRlbicpOwogICAgICAgIH0KICAgICAgICBmdW5jdGlvbiB0dXR1cE1vZGFsQmF0YWwoKSB7CiAgICAgICAgICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdtb2RhbC1iYXRhbCcpLmNsYXNzTGlzdC5hZGQoJ2hpZGRlbicpOwogICAgICAgIH0KICAgICAgICBmdW5jdGlvbiBpc2lBbGFzYW4odGVrcykgewogICAgICAgICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnYWxhc2FuLWJhdGFsJykudmFsdWUgPSB0ZWtzOwogICAgICAgIH0KICAgICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnbW9kYWwtYmF0YWwnKS5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsIGZ1bmN0aW9uIChlKSB7CiAgICAgICAgICAgIGlmIChlLnRhcmdldCA9PT0gdGhpcykgdHV0dXBNb2RhbEJhdGFsKCk7CiAgICAgICAgfSk7CiAgICAgICAgZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcigna2V5ZG93bicsIGZ1bmN0aW9uIChlKSB7CiAgICAgICAgICAgIGlmIChlLmtleSA9PT0gJ0VzY2FwZScpIHR1dHVwTW9kYWxCYXRhbCgpOwogICAgICAgIH0pOwogICAgPC9zY3JpcHQ+CiAgICBAZW5kcHVzaAo8L3gtYXBwLWxheW91dD4K
+<x-app-layout>
+    <x-slot name="header">
+        <div>
+            <h2 class="font-extrabold text-xl leading-tight" style="color: var(--rs-ink);">Pesanan</h2>
+            <p class="text-xs" style="color: var(--rs-muted);">Kelola pesanan konsumen — {{ $tgl }}</p>
+        </div>
+    </x-slot>
+
+    @php
+        $statusBadge = fn($s) => match($s) {
+            'pending' => 'pending', 'diterima' => 'diterima',
+            'siap_diambil' => 'siap_diambil', 'selesai' => 'selesai',
+            default => 'cancelled',
+        };
+        $statusLabel = fn($s) => match($s) {
+            'pending' => 'Pending', 'diterima' => 'Diterima',
+            'siap_diambil' => 'Siap diambil', 'selesai' => 'Selesai',
+            'cancelled' => 'Dibatalkan', default => $s,
+        };
+    @endphp
+
+    <div class="space-y-5">
+        <div class="flex flex-wrap items-end justify-between gap-4">
+            <div>
+                <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight" style="color: var(--rs-ink);">Kelola pesanan</h1>
+                <p class="text-sm mt-1" style="color: var(--rs-muted);">Pantau dan proses pesanan konsumen secara terpusat.</p>
+            </div>
+            <a href="{{ route('pesanan.late') }}" class="rs-btn rs-btn-amber">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                Late Order
+            </a>
+        </div>
+
+        <div class="rs-card p-4">
+            <form method="GET" action="{{ route('pesanan.index') }}" class="flex flex-wrap gap-3 items-end">
+                <div>
+                    <label class="rs-label">Tanggal ambil</label>
+                    <input type="date" name="tgl" value="{{ $tgl }}" class="rs-input !w-auto" />
+                </div>
+                <div>
+                    <label class="rs-label">Status</label>
+                    <select name="status" class="rs-input !w-auto">
+                        <option value="">Semua</option>
+                        @foreach (['pending','diterima','siap_diambil','selesai','cancelled'] as $s)
+                            <option value="{{ $s }}" @selected($status === $s)>{{ $statusLabel($s) }}</option>
+                        @endforeach
+                    </select>
+                </div>
+                <button class="rs-btn rs-btn-dark">Filter</button>
+            </form>
+        </div>
+
+        <div class="rs-card p-5">
+            <table class="datatable w-full text-sm">
+                <thead>
+                    <tr>
+                        <th>Kode</th>
+                        <th>Konsumen</th>
+                        <th>Item</th>
+                        <th>Tgl Pesan</th>
+                        <th>Status</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @forelse ($pesanans as $p)
+                        <tr>
+                            <td class="font-mono font-bold whitespace-nowrap" style="color: var(--rs-green);">{{ $p->kode ?? $p->id }}</td>
+                            <td>
+                                <p class="font-semibold">{{ $p->konsumen->nama }}</p>
+                                <p class="text-xs" style="color: var(--rs-muted);">{{ $p->konsumen->no_hp }}</p>
+                            </td>
+                            <td class="text-xs">
+                                @foreach ($p->details as $d)
+                                    {{ $d->produk->nama }}: {{ $d->qty_pesan }} {{ $d->satuan }}@if(!is_null($d->qty_delivered)) → {{ $d->qty_delivered }}@endif<br>
+                                @endforeach
+                            </td>
+                            <td class="whitespace-nowrap text-xs">{{ $p->tgl_pesan->format('d/m H:i') }}</td>
+                            <td>
+                                <span class="rs-badge {{ $statusBadge($p->status) }}">{{ $statusLabel($p->status) }}</span>
+                                @if($p->is_late_order)<span class="rs-badge pending ms-1">late</span>@endif
+                                @if($p->status === 'cancelled' && $p->cancel_reason)
+                                    <p class="text-[10px] mt-1" style="color: var(--rs-muted);">Alasan: {{ $p->cancel_reason }}</p>
+                                @endif
+                            </td>
+                            <td class="whitespace-nowrap">
+                                <div class="flex flex-wrap gap-1.5">
+                                    @if ($p->status === 'pending')
+                                        <form method="POST" action="{{ route('pesanan.terima', $p) }}" class="inline">@csrf
+                                            <button class="rs-btn rs-btn-secondary !py-1.5 !px-3 !text-[11px]">Terima</button>
+                                        </form>
+                                    @endif
+                                    @if (in_array($p->status, ['diterima','siap_diambil']))
+                                        <a href="{{ route('pesanan.delivered', $p) }}" class="rs-btn rs-btn-primary !py-1.5 !px-3 !text-[11px]">Input Delivered</a>
+                                    @endif
+                                    @if (! in_array($p->status, ['selesai','cancelled','siap_diambil']))
+                                        <button type="button" onclick="bukaModalBatal('{{ route('pesanan.batal', $p) }}', '{{ $p->kode ?? $p->id }}')" class="rs-btn rs-btn-danger !py-1.5 !px-3 !text-[11px]">Batal</button>
+                                    @endif
+                                </div>
+                            </td>
+                        </tr>
+                    @empty
+                        <tr><td colspan="6" class="p-4 text-center" style="color: var(--rs-muted);">Tidak ada pesanan.</td></tr>
+                    @endforelse
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    {{-- Modal konfirmasi pembatalan + alasan --}}
+    <div id="modal-batal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
+        <div class="rounded-2xl shadow-xl w-full max-w-md overflow-hidden" style="background: var(--rs-surface);">
+            <div class="px-6 py-4" style="background: var(--rs-red);">
+                <h3 class="text-lg font-bold text-white">Batalkan Pesanan</h3>
+                <p class="text-sm" style="color: #fbd5d5;">Kode: <span id="modal-batal-kode" class="font-mono font-bold"></span></p>
+            </div>
+            <form id="modal-batal-form" method="POST" class="px-6 py-5">
+                @csrf
+                <label for="alasan-batal" class="rs-label">Alasan pembatalan <span style="color: var(--rs-red);">*</span></label>
+                <textarea id="alasan-batal" name="alasan" rows="3" required maxlength="255"
+                    placeholder="Contoh: Stok habis, pesanan ganda, customer meminta batal..."
+                    class="rs-textarea"></textarea>
+                <div class="flex flex-wrap gap-2 mt-2">
+                    <button type="button" onclick="isiAlasan('Stok produk habis')" class="text-xs px-3 py-1 rounded-full font-semibold transition hover:opacity-80" style="background: var(--rs-surface-2); color: var(--rs-muted);">Stok habis</button>
+                    <button type="button" onclick="isiAlasan('Pesanan ganda')" class="text-xs px-3 py-1 rounded-full font-semibold transition hover:opacity-80" style="background: var(--rs-surface-2); color: var(--rs-muted);">Pesanan ganda</button>
+                    <button type="button" onclick="isiAlasan('Customer meminta dibatalkan')" class="text-xs px-3 py-1 rounded-full font-semibold transition hover:opacity-80" style="background: var(--rs-surface-2); color: var(--rs-muted);">Customer meminta batal</button>
+                </div>
+                <p class="text-xs mt-3" style="color: var(--rs-muted);">Customer akan menerima notifikasi WhatsApp berisi alasan ini.</p>
+                <div class="flex justify-end gap-3 mt-5">
+                    <button type="button" onclick="tutupModalBatal()" class="rs-btn rs-btn-secondary">Kembali</button>
+                    <button type="submit" class="rs-btn text-white font-bold" style="background: var(--rs-red);">Ya, Batalkan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    @push('scripts')
+    <script>
+        function bukaModalBatal(action, kode) {
+            document.getElementById('modal-batal-form').action = action;
+            document.getElementById('modal-batal-kode').textContent = kode;
+            document.getElementById('alasan-batal').value = '';
+            document.getElementById('modal-batal').classList.remove('hidden');
+        }
+        function tutupModalBatal() {
+            document.getElementById('modal-batal').classList.add('hidden');
+        }
+        function isiAlasan(teks) {
+            document.getElementById('alasan-batal').value = teks;
+        }
+        document.getElementById('modal-batal').addEventListener('click', function (e) {
+            if (e.target === this) tutupModalBatal();
+        });
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') tutupModalBatal();
+        });
+    </script>
+    @endpush
+</x-app-layout>
