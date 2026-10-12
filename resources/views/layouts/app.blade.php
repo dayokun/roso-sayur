@@ -16,7 +16,7 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
         <!-- DataTables -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/datatables.net-dt@2.3.7/css/dataTables.dataTables.min.css">
+        <!-- DataTables diganti RsTable vanilla (tanpa CDN) -->
         <!-- Chart.js -->
         <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
 
@@ -204,6 +204,35 @@
             table.datatable tbody tr:last-child td { border-bottom: none; }
             table.datatable thead .dt-orderable-asc .dt-column-order::before,
             table.datatable thead .dt-orderable-desc .dt-column-order::after { color: var(--rs-green); }
+        
+            /* ===== RsTable: search + length + pagination (vanilla) ===== */
+            .rs-table-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; margin: .9rem 0; }
+            .rs-table-length, .rs-table-search { display: flex; align-items: center; gap: .5rem; color: #4b5563; font-size: .875rem; }
+            .rs-table-search input, .rs-table-length select {
+                border: 1px solid #d1d5db; border-radius: .75rem; padding: .5rem .75rem;
+                font-size: .875rem; background: #fff; transition: border-color .15s, box-shadow .15s;
+            }
+            .rs-table-search input:focus, .rs-table-length select:focus {
+                outline: none; border-color: #16a34a; box-shadow: 0 0 0 3px rgba(22,163,74,.15);
+            }
+            .rs-table-scroll { overflow-x: auto; border-radius: .75rem; }
+            .rs-table-footer { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; margin: .9rem 0 .2rem; }
+            .rs-table-info { color: #6b7280; font-size: .8rem; }
+            .rs-table-paging { display: flex; gap: .25rem; flex-wrap: wrap; }
+            .rs-page-btn {
+                min-width: 2.25rem; height: 2.25rem; padding: 0 .55rem;
+                display: inline-flex; align-items: center; justify-content: center;
+                border-radius: .75rem; border: 1px solid #e5e7eb; background: #fff;
+                color: #374151; font-size: .875rem; cursor: pointer; transition: all .15s;
+            }
+            .rs-page-btn:hover:not(.disabled):not(.active) { border-color: #16a34a; color: #15803d; transform: translateY(-1px); }
+            .rs-page-btn.active { background: #16a34a; border-color: #16a34a; color: #fff; font-weight: 700; box-shadow: 0 2px 6px rgba(22,163,74,.35); }
+            .rs-page-btn.disabled { opacity: .35; cursor: default; }
+            @media (max-width: 640px) {
+                .rs-table-toolbar { flex-direction: column; align-items: stretch; }
+                .rs-table-search input { flex: 1; }
+            }
+
         </style>
     </head>
     <body class="antialiased" style="background: var(--rs-bg); color: var(--rs-ink);">
@@ -311,7 +340,7 @@
         </div>
 
         <!-- DataTables -->
-        <script src="https://cdn.jsdelivr.net/npm/datatables.net-dt@2.3.7/js/dataTables.dataTables.min.js"></script>
+        <!-- DataTables JS dihapus, pakai RsTable vanilla -->
         <script>
             // Toast global ala mockup: slide-in kanan bawah, auto-dismiss 2.5 detik
             window.rsToast = function(msg, type = 'success') {
@@ -332,23 +361,104 @@
                     rsToast(@json(session('error')), 'error');
                 @endif
 
-                document.querySelectorAll('table.datatable').forEach((el) => {
-                    new DataTable(el, {
-                        pageLength: 10,
-                        lengthMenu: [10, 25, 50, 100],
-                        language: {
-                            search: 'Cari:',
-                            searchPlaceholder: 'Ketik kata kunci…',
-                            lengthMenu: 'Tampilkan _MENU_ data',
-                            info: 'Menampilkan _START_–_END_ dari _TOTAL_ data',
-                            infoEmpty: 'Tidak ada data',
-                            infoFiltered: '(disaring dari _MAX_ total data)',
-                            zeroRecords: 'Data tidak ditemukan',
-                            emptyTable: 'Belum ada data',
-                            paginate: { first: '«', previous: '‹', next: '›', last: '»' },
-                        },
-                    });
-                });
+                // RsTable: pencarian + pilihan jumlah data + pagination (vanilla JS, tanpa CDN)
+            document.querySelectorAll('table.datatable').forEach((table) => {
+                if (table.dataset.rsEnhanced) return;
+                table.dataset.rsEnhanced = '1';
+
+                const tbody = table.querySelector('tbody');
+                const allRows = Array.from(tbody.querySelectorAll('tr'));
+                // Abaikan baris "empty" (colspan)
+                const dataRows = allRows.filter(r => r.querySelectorAll('td').length > 1 || !r.querySelector('td[colspan]'));
+                const emptyRow = allRows.find(r => r.querySelector('td[colspan]'));
+
+                let pageLength = 10, currentPage = 1, query = '';
+
+                // Bungkus tabel
+                const wrap = document.createElement('div');
+                wrap.className = 'rs-table-wrap';
+                table.parentNode.insertBefore(wrap, table);
+
+                // Toolbar: search + length
+                const toolbar = document.createElement('div');
+                toolbar.className = 'rs-table-toolbar';
+                toolbar.innerHTML = `
+                    <label class="rs-table-length">Tampilkan
+                        <select>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                        </select> data
+                    </label>
+                    <label class="rs-table-search">Cari:
+                        <input type="search" placeholder="Ketik kata kunci…">
+                    </label>`;
+                wrap.appendChild(toolbar);
+
+                const scrollDiv = document.createElement('div');
+                scrollDiv.className = 'rs-table-scroll';
+                scrollDiv.appendChild(table);
+                wrap.appendChild(scrollDiv);
+
+                const footer = document.createElement('div');
+                footer.className = 'rs-table-footer';
+                footer.innerHTML = `<span class="rs-table-info"></span><nav class="rs-table-paging"></nav>`;
+                wrap.appendChild(footer);
+
+                const info = footer.querySelector('.rs-table-info');
+                const paging = footer.querySelector('.rs-table-paging');
+                const searchInput = toolbar.querySelector('input');
+                const lengthSelect = toolbar.querySelector('select');
+
+                function filtered() {
+                    if (!query) return dataRows;
+                    const q = query.toLowerCase();
+                    return dataRows.filter(r => r.textContent.toLowerCase().includes(q));
+                }
+
+                function render() {
+                    const rows = filtered();
+                    const total = rows.length;
+                    const pages = Math.max(1, Math.ceil(total / pageLength));
+                    if (currentPage > pages) currentPage = pages;
+                    const start = (currentPage - 1) * pageLength;
+                    const end = Math.min(start + pageLength, total);
+
+                    dataRows.forEach(r => r.style.display = 'none');
+                    rows.slice(start, end).forEach(r => r.style.display = '');
+                    if (emptyRow) emptyRow.style.display = total ? 'none' : '';
+
+                    info.textContent = total
+                        ? `Menampilkan ${start + 1}–${end} dari ${total} data`
+                        : 'Tidak ada data';
+
+                    // Pagination buttons
+                    paging.innerHTML = '';
+                    const btn = (label, page, disabled, active) => {
+                        const b = document.createElement('button');
+                        b.type = 'button'; b.textContent = label;
+                        b.className = 'rs-page-btn' + (active ? ' active' : '') + (disabled ? ' disabled' : '');
+                        b.disabled = !!disabled;
+                        b.addEventListener('click', () => { currentPage = page; render(); });
+                        paging.appendChild(b);
+                    };
+                    btn('«', 1, currentPage === 1);
+                    btn('‹', currentPage - 1, currentPage === 1);
+                    // nomor halaman (maks 5)
+                    let s = Math.max(1, Math.min(currentPage - 2, pages - 4));
+                    let e = Math.min(pages, s + 4);
+                    for (let i = s; i <= e; i++) btn(String(i), i, false, i === currentPage);
+                    btn('›', currentPage + 1, currentPage === pages);
+                    btn('»', pages, currentPage === pages);
+                }
+
+                searchInput.addEventListener('input', () => { query = searchInput.value.trim(); currentPage = 1; render(); });
+                lengthSelect.addEventListener('change', () => { pageLength = parseInt(lengthSelect.value, 10); currentPage = 1; render(); });
+
+                render();
+            });
             });
         </script>
         @stack('scripts')
