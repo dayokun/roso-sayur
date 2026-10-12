@@ -1,1 +1,195 @@
-PHgtYXBwLWxheW91dD4KICAgIDx4LXNsb3QgbmFtZT0iaGVhZGVyIj4KICAgICAgICA8ZGl2PgogICAgICAgICAgICA8aDIgY2xhc3M9ImZvbnQtZXh0cmFib2xkIHRleHQteGwgbGVhZGluZy10aWdodCIgc3R5bGU9ImNvbG9yOiB2YXIoLS1ycy1pbmspOyI+TGFwb3JhbjwvaDI+CiAgICAgICAgICAgIDxwIGNsYXNzPSJ0ZXh0LXhzIiBzdHlsZT0iY29sb3I6IHZhcigtLXJzLW11dGVkKTsiPkV2YWx1YXNpIHByZWRpa3NpICYgcGVyZm9ybWEgb3BlcmFzaW9uYWw8L3A+CiAgICAgICAgPC9kaXY+CiAgICA8L3gtc2xvdD4KCiAgICBAcGhwCiAgICAgICAgLy8gUmluZ2thc2FuIG1ldHJpayB1bnR1ayBrYXJ0dSBzY29yZQogICAgICAgICRtYXBlVmFscyA9IGNvbGxlY3QoJHJpbmdrYXNhblsnYWt1cmFzaSddID8/IFtdKS0+ZmlsdGVyKGZuKCRyKSA9PiAkci0+YXZnX21hcGUgIT09IG51bGwpOwogICAgICAgICRhdmdNYXBlID0gJG1hcGVWYWxzLT5jb3VudCgpID8gJG1hcGVWYWxzLT5hdmcoJ2F2Z19tYXBlJykgOiBudWxsOwogICAgICAgICRha3VyYXNpID0gJGF2Z01hcGUgIT09IG51bGwgPyBtYXgoMCwgMTAwIC0gJGF2Z01hcGUpIDogbnVsbDsKCiAgICAgICAgJGZ1bFZhbHMgPSBjb2xsZWN0KCRyaW5na2FzYW5bJ2Z1bGZpbGxtZW50J10gPz8gW10pLT5maWx0ZXIoZm4oJGYpID0+ICRmLT50b3RhbF9wZXNhbiA+IDApOwogICAgICAgICRhdmdGdWwgPSAkZnVsVmFscy0+Y291bnQoKQogICAgICAgICAgICA/ICRmdWxWYWxzLT5zdW0oZm4oJGYpID0+ICRmLT50b3RhbF9kZWxpdmVyZWQpIC8gbWF4KCRmdWxWYWxzLT5zdW0oZm4oJGYpID0+ICRmLT50b3RhbF9wZXNhbiksIDEpICogMTAwCiAgICAgICAgICAgIDogbnVsbDsKCiAgICAgICAgJHdhc3RlVmFscyA9IGNvbGxlY3QoJHJpbmdrYXNhblsnd2FzdGVfcmF0ZSddID8/IFtdKS0+ZmlsdGVyKGZuKCR3KSA9PiAkdy0+dG90YWxfYmVsaSA+IDApOwogICAgICAgICRhdmdXYXN0ZSA9ICR3YXN0ZVZhbHMtPmNvdW50KCkKICAgICAgICAgICAgPyAkd2FzdGVWYWxzLT5zdW0oZm4oJHcpID0+ICR3LT50b3RhbF9kaWJ1YW5nKSAvIG1heCgkd2FzdGVWYWxzLT5zdW0oZm4oJHcpID0+ICR3LT50b3RhbF9iZWxpKSwgMSkgKiAxMDAKICAgICAgICAgICAgOiBudWxsOwogICAgQGVuZHBocAoKICAgIDxkaXYgY2xhc3M9InNwYWNlLXktNSI+CiAgICAgICAgPGRpdiBjbGFzcz0iZmxleCBmbGV4LXdyYXAgaXRlbXMtZW5kIGp1c3RpZnktYmV0d2VlbiBnYXAtNCI+CiAgICAgICAgICAgIDxkaXY+CiAgICAgICAgICAgICAgICA8aDEgY2xhc3M9InRleHQtMnhsIHNtOnRleHQtM3hsIGZvbnQtZXh0cmFib2xkIHRyYWNraW5nLXRpZ2h0IiBzdHlsZT0iY29sb3I6IHZhcigtLXJzLWluayk7Ij5MYXBvcmFuICYgZXZhbHVhc2k8L2gxPgogICAgICAgICAgICAgICAgPHAgY2xhc3M9InRleHQtc20gbXQtMSIgc3R5bGU9ImNvbG9yOiB2YXIoLS1ycy1tdXRlZCk7Ij5CYW5kaW5na2FuIHByZWRpa3NpLCByZWFsaXNhc2ksIGRhbiBwZXJmb3JtYSBvcGVyYXNpb25hbC48L3A+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJmbGV4IGdhcC0yIj4KICAgICAgICAgICAgICAgIDxhIGhyZWY9Int7IHJvdXRlKCdsYXBvcmFuLmV4cG9ydC1leGNlbCcsIFsnZGFyaScgPT4gJGRhcmksICdzYW1wYWknID0+ICRzYW1wYWldKSB9fSIgY2xhc3M9InJzLWJ0biBycy1idG4tc2Vjb25kYXJ5Ij4KICAgICAgICAgICAgICAgICAgICA8c3ZnIGNsYXNzPSJ3LTQgaC00IiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0iTTEyIDN2MTJtLTUtNWw1IDUgNS01TTQgMjBoMTYiLz48L3N2Zz4KICAgICAgICAgICAgICAgICAgICBFeHBvcnQgRXhjZWwKICAgICAgICAgICAgICAgIDwvYT4KICAgICAgICAgICAgICAgIDxhIGhyZWY9Int7IHJvdXRlKCdsYXBvcmFuLmV4cG9ydC1wZGYnLCBbJ2RhcmknID0+ICRkYXJpLCAnc2FtcGFpJyA9PiAkc2FtcGFpXSkgfX0iIGNsYXNzPSJycy1idG4gcnMtYnRuLXByaW1hcnkiPgogICAgICAgICAgICAgICAgICAgIDxzdmcgY2xhc3M9InctNCBoLTQiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMiI+PHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBkPSJNMTIgM3YxMm0tNS01bDUgNSA1LTVNNCAyMGgxNiIvPjwvc3ZnPgogICAgICAgICAgICAgICAgICAgIEV4cG9ydCBQREYKICAgICAgICAgICAgICAgIDwvYT4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CgogICAgICAgIHt7LS0gRmlsdGVyIHBlcmlvZGUgLS19fQogICAgICAgIDxkaXYgY2xhc3M9InJzLWNhcmQgcC00Ij4KICAgICAgICAgICAgPGZvcm0gbWV0aG9kPSJHRVQiIGFjdGlvbj0ie3sgcm91dGUoJ2xhcG9yYW4uaW5kZXgnKSB9fSIgY2xhc3M9ImZsZXggZmxleC13cmFwIGdhcC0zIGl0ZW1zLWVuZCI+CiAgICAgICAgICAgICAgICA8ZGl2PgogICAgICAgICAgICAgICAgICAgIDxsYWJlbCBjbGFzcz0icnMtbGFiZWwiPkRhcmk8L2xhYmVsPgogICAgICAgICAgICAgICAgICAgIDxpbnB1dCB0eXBlPSJkYXRlIiBuYW1lPSJkYXJpIiB2YWx1ZT0ie3sgJGRhcmkgfX0iIGNsYXNzPSJycy1pbnB1dCAhdy1hdXRvIiAvPgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICA8ZGl2PgogICAgICAgICAgICAgICAgICAgIDxsYWJlbCBjbGFzcz0icnMtbGFiZWwiPlNhbXBhaTwvbGFiZWw+CiAgICAgICAgICAgICAgICAgICAgPGlucHV0IHR5cGU9ImRhdGUiIG5hbWU9InNhbXBhaSIgdmFsdWU9Int7ICRzYW1wYWkgfX0iIGNsYXNzPSJycy1pbnB1dCAhdy1hdXRvIiAvPgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICA8YnV0dG9uIGNsYXNzPSJycy1idG4gcnMtYnRuLWRhcmsiPlRhbXBpbGthbjwvYnV0dG9uPgogICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9Im1zLWF1dG8gdGV4dC14cyBmb250LXNlbWlib2xkIiBzdHlsZT0iY29sb3I6IHZhcigtLXJzLW11dGVkKTsiPnt7ICRkYXJpIH19IHMvZCB7eyAkc2FtcGFpIH19PC9zcGFuPgogICAgICAgICAgICA8L2Zvcm0+CiAgICAgICAgPC9kaXY+CgogICAgICAgIHt7LS0gS2FydHUgbWV0cmlrIGRlbmdhbiBzY29yZSByaW5nIC0tfX0KICAgICAgICA8ZGl2IGNsYXNzPSJncmlkIGdyaWQtY29scy0xIG1kOmdyaWQtY29scy0zIGdhcC00Ij4KICAgICAgICAgICAgPGRpdiBjbGFzcz0icnMtY2FyZCBwLTUgZmxleCBqdXN0aWZ5LWJldHdlZW4gaXRlbXMtY2VudGVyIGdhcC00Ij4KICAgICAgICAgICAgICAgIDxkaXY+CiAgICAgICAgICAgICAgICAgICAgPGgzIGNsYXNzPSJ0ZXh0LXhzIGZvbnQtc2VtaWJvbGQiIHN0eWxlPSJjb2xvcjogdmFyKC0tcnMtbXV0ZWQpOyI+QWt1cmFzaSBwcmVkaWtzaTwvaDM+CiAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3M9InRleHQtMnhsIGZvbnQtZXh0cmFib2xkIG10LTEiIHN0eWxlPSJjb2xvcjogdmFyKC0tcnMtaW5rKTsiPnt7ICRha3VyYXNpICE9PSBudWxsID8gbnVtYmVyX2Zvcm1hdCgkYWt1cmFzaSwgMSkgLiAnJScgOiAn4oCTJyB9fTwvcD4KICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0idGV4dC14cyIgc3R5bGU9ImNvbG9yOiB2YXIoLS1ycy1tdXRlZCk7Ij5NQVBFIHt7ICRhdmdNYXBlICE9PSBudWxsID8gbnVtYmVyX2Zvcm1hdCgkYXZnTWFwZSwgMSkgLiAnJScgOiAn4oCTJyB9fSAodGFyZ2V0ICZsdDsyMCUpPC9zcGFuPgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJycy1zY29yZS1yaW5nIiBzdHlsZT0iLS1ycy1zY29yZToge3sgJGFrdXJhc2kgPz8gMCB9fSU7Ij48Yj57eyAkYWt1cmFzaSAhPT0gbnVsbCAmJiAkYXZnTWFwZSA8IDIwID8gJ0JhaWsnIDogKCRha3VyYXNpICE9PSBudWxsID8gbnVtYmVyX2Zvcm1hdCgkYWt1cmFzaSwgMCkgLiAnJScgOiAn4oCTJykgfX08L2I+PC9kaXY+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJycy1jYXJkIHAtNSBmbGV4IGp1c3RpZnktYmV0d2VlbiBpdGVtcy1jZW50ZXIgZ2FwLTQiPgogICAgICAgICAgICAgICAgPGRpdj4KICAgICAgICAgICAgICAgICAgICA8aDMgY2xhc3M9InRleHQteHMgZm9udC1zZW1pYm9sZCIgc3R5bGU9ImNvbG9yOiB2YXIoLS1ycy1tdXRlZCk7Ij5GdWxmaWxsbWVudCByYXRlPC9oMz4KICAgICAgICAgICAgICAgICAgICA8cCBjbGFzcz0idGV4dC0yeGwgZm9udC1leHRyYWJvbGQgbXQtMSIgc3R5bGU9ImNvbG9yOiB2YXIoLS1ycy1pbmspOyI+e3sgJGF2Z0Z1bCAhPT0gbnVsbCA/IG51bWJlcl9mb3JtYXQoJGF2Z0Z1bCwgMSkgLiAnJScgOiAn4oCTJyB9fTwvcD4KICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0idGV4dC14cyIgc3R5bGU9ImNvbG9yOiB2YXIoLS1ycy1tdXRlZCk7Ij5UYXJnZXQgJmd0Ozk1JTwvc3Bhbj4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0icnMtc2NvcmUtcmluZyIgc3R5bGU9Ii0tcnMtc2NvcmU6IHt7ICRhdmdGdWwgPz8gMCB9fSU7Ij48Yj57eyAkYXZnRnVsICE9PSBudWxsID8gbnVtYmVyX2Zvcm1hdCgkYXZnRnVsLCAwKSAuICclJyA6ICfigJMnIH19PC9iPjwvZGl2PgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPGRpdiBjbGFzcz0icnMtY2FyZCBwLTUgZmxleCBqdXN0aWZ5LWJldHdlZW4gaXRlbXMtY2VudGVyIGdhcC00Ij4KICAgICAgICAgICAgICAgIDxkaXY+CiAgICAgICAgICAgICAgICAgICAgPGgzIGNsYXNzPSJ0ZXh0LXhzIGZvbnQtc2VtaWJvbGQiIHN0eWxlPSJjb2xvcjogdmFyKC0tcnMtbXV0ZWQpOyI+V2FzdGUgcmF0ZTwvaDM+CiAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3M9InRleHQtMnhsIGZvbnQtZXh0cmFib2xkIG10LTEiIHN0eWxlPSJjb2xvcjogdmFyKC0tcnMtaW5rKTsiPnt7ICRhdmdXYXN0ZSAhPT0gbnVsbCA/IG51bWJlcl9mb3JtYXQoJGF2Z1dhc3RlLCAxKSAuICclJyA6ICfigJMnIH19PC9wPgogICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJ0ZXh0LXhzIiBzdHlsZT0iY29sb3I6IHZhcigtLXJzLW11dGVkKTsiPlRhcmdldCAmbHQ7MTAlPC9zcGFuPgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJycy1zY29yZS1yaW5nIiBzdHlsZT0iLS1ycy1zY29yZToge3sgJGF2Z1dhc3RlICE9PSBudWxsID8gbWluKDEwMCwgJGF2Z1dhc3RlICogMTApIDogMCB9fSU7Ij48Yj57eyAkYXZnV2FzdGUgIT09IG51bGwgPyBudW1iZXJfZm9ybWF0KCRhdmdXYXN0ZSwgMSkgLiAnJScgOiAn4oCTJyB9fTwvYj48L2Rpdj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CgogICAgICAgIHt7LS0gVGFiZWwgYWt1cmFzaSAtLX19CiAgICAgICAgPGRpdiBjbGFzcz0icnMtY2FyZCBwLTUiPgogICAgICAgICAgICA8aDIgY2xhc3M9ImZvbnQtYm9sZCB0ZXh0LWJhc2UgbWItNCIgc3R5bGU9ImNvbG9yOiB2YXIoLS1ycy1pbmspOyI+QWt1cmFzaSBQcmVkaWtzaSAoTUFQRSAvIE1BRSk8L2gyPgogICAgICAgICAgICA8dGFibGUgY2xhc3M9ImRhdGF0YWJsZSB3LWZ1bGwgdGV4dC1zbSI+CiAgICAgICAgICAgICAgICA8dGhlYWQ+CiAgICAgICAgICAgICAgICAgICAgPHRyPgogICAgICAgICAgICAgICAgICAgICAgICA8dGg+UHJvZHVrPC90aD4KICAgICAgICAgICAgICAgICAgICAgICAgPHRoPk48L3RoPgogICAgICAgICAgICAgICAgICAgICAgICA8dGg+UmF0YS1yYXRhIE1BUEU8L3RoPgogICAgICAgICAgICAgICAgICAgICAgICA8dGg+UmF0YS1yYXRhIE1BRTwvdGg+CiAgICAgICAgICAgICAgICAgICAgICAgIDx0aD5TdGF0dXMgVGFyZ2V0PC90aD4KICAgICAgICAgICAgICAgICAgICA8L3RyPgogICAgICAgICAgICAgICAgPC90aGVhZD4KICAgICAgICAgICAgICAgIDx0Ym9keT4KICAgICAgICAgICAgICAgICAgICBAZm9yZWxzZSAoJHJpbmdrYXNhblsnYWt1cmFzaSddIGFzICRyKQogICAgICAgICAgICAgICAgICAgICAgICA8dHI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQgY2xhc3M9ImZvbnQtc2VtaWJvbGQiPnt7ICRyLT5uYW1hIH19PC90ZD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZD57eyAkci0+biB9fTwvdGQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQ+e3sgJHItPmF2Z19tYXBlICE9PSBudWxsID8gbnVtYmVyX2Zvcm1hdCgkci0+YXZnX21hcGUsIDIpIC4gJyUnIDogJy0nIH19PC90ZD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZD57eyAkci0+YXZnX21hZSAhPT0gbnVsbCA/IG51bWJlcl9mb3JtYXQoJHItPmF2Z19tYWUsIDIpIDogJy0nIH19PC90ZD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBAaWYgKCRyLT5hdmdfbWFwZSAhPT0gbnVsbCkKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9InJzLWJhZGdlIHt7ICRyLT5hdmdfbWFwZSA8IDIwID8gJ3NpYXBfZGlhbWJpbCcgOiAnY2FuY2VsbGVkJyB9fSI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB7eyAkci0+YXZnX21hcGUgPCAyMCA/ICdNZW1lbnVoaSAoPDIwJSknIDogJ0JlbHVtIG1lbWVudWhpJyB9fQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQGVsc2UKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gc3R5bGU9ImNvbG9yOiB2YXIoLS1ycy1tdXRlZCk7Ij4tPC9zcGFuPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEBlbmRpZgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZD4KICAgICAgICAgICAgICAgICAgICAgICAgPC90cj4KICAgICAgICAgICAgICAgICAgICBAZW1wdHkKICAgICAgICAgICAgICAgICAgICAgICAgPHRyPjx0ZCBjb2xzcGFuPSI1IiBjbGFzcz0icC00IHRleHQtY2VudGVyIiBzdHlsZT0iY29sb3I6IHZhcigtLXJzLW11dGVkKTsiPkJlbHVtIGFkYSBkYXRhIGV2YWx1YXNpLjwvdGQ+PC90cj4KICAgICAgICAgICAgICAgICAgICBAZW5kZm9yZWxzZQogICAgICAgICAgICAgICAgPC90Ym9keT4KICAgICAgICAgICAgPC90YWJsZT4KICAgICAgICA8L2Rpdj4KCiAgICAgICAge3stLSBUYWJlbCBmdWxmaWxsbWVudCAtLX19CiAgICAgICAgPGRpdiBjbGFzcz0icnMtY2FyZCBwLTUiPgogICAgICAgICAgICA8aDIgY2xhc3M9ImZvbnQtYm9sZCB0ZXh0LWJhc2UgbWItNCIgc3R5bGU9ImNvbG9yOiB2YXIoLS1ycy1pbmspOyI+RnVsZmlsbG1lbnQgUmF0ZSAoZGVsaXZlcmVkIC8gZGlwZXNhbik8L2gyPgogICAgICAgICAgICA8dGFibGUgY2xhc3M9ImRhdGF0YWJsZSB3LWZ1bGwgdGV4dC1zbSI+CiAgICAgICAgICAgICAgICA8dGhlYWQ+CiAgICAgICAgICAgICAgICAgICAgPHRyPgogICAgICAgICAgICAgICAgICAgICAgICA8dGg+UHJvZHVrPC90aD4KICAgICAgICAgICAgICAgICAgICAgICAgPHRoPlRvdGFsIFBlc2FuPC90aD4KICAgICAgICAgICAgICAgICAgICAgICAgPHRoPlRvdGFsIERlbGl2ZXJlZDwvdGg+CiAgICAgICAgICAgICAgICAgICAgICAgIDx0aD5GdWxmaWxsbWVudDwvdGg+CiAgICAgICAgICAgICAgICAgICAgPC90cj4KICAgICAgICAgICAgICAgIDwvdGhlYWQ+CiAgICAgICAgICAgICAgICA8dGJvZHk+CiAgICAgICAgICAgICAgICAgICAgQGZvcmVsc2UgKCRyaW5na2FzYW5bJ2Z1bGZpbGxtZW50J10gYXMgJGYpCiAgICAgICAgICAgICAgICAgICAgICAgIEBwaHAgJHJhdGUgPSAkZi0+dG90YWxfcGVzYW4gPiAwID8gJGYtPnRvdGFsX2RlbGl2ZXJlZCAvICRmLT50b3RhbF9wZXNhbiAqIDEwMCA6IG51bGw7IEBlbmRwaHAKICAgICAgICAgICAgICAgICAgICAgICAgPHRyPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkIGNsYXNzPSJmb250LXNlbWlib2xkIj57eyAkZi0+bmFtYSB9fTwvdGQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQ+e3sgbnVtYmVyX2Zvcm1hdCgkZi0+dG90YWxfcGVzYW4sIDIpIH19PC90ZD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZD57eyBudW1iZXJfZm9ybWF0KCRmLT50b3RhbF9kZWxpdmVyZWQsIDIpIH19PC90ZD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBAaWYgKCRyYXRlICE9PSBudWxsKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0icnMtYmFkZ2Uge3sgJHJhdGUgPiA5NSA/ICdzaWFwX2RpYW1iaWwnIDogJ3BlbmRpbmcnIH19Ij57eyBudW1iZXJfZm9ybWF0KCRyYXRlLCAxKSB9fSU8L3NwYW4+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQGVsc2UKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gc3R5bGU9ImNvbG9yOiB2YXIoLS1ycy1tdXRlZCk7Ij4tPC9zcGFuPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEBlbmRpZgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZD4KICAgICAgICAgICAgICAgICAgICAgICAgPC90cj4KICAgICAgICAgICAgICAgICAgICBAZW1wdHkKICAgICAgICAgICAgICAgICAgICAgICAgPHRyPjx0ZCBjb2xzcGFuPSI0IiBjbGFzcz0icC00IHRleHQtY2VudGVyIiBzdHlsZT0iY29sb3I6IHZhcigtLXJzLW11dGVkKTsiPkJlbHVtIGFkYSBkYXRhLjwvdGQ+PC90cj4KICAgICAgICAgICAgICAgICAgICBAZW5kZm9yZWxzZQogICAgICAgICAgICAgICAgPC90Ym9keT4KICAgICAgICAgICAgPC90YWJsZT4KICAgICAgICA8L2Rpdj4KCiAgICAgICAge3stLSBUYWJlbCB3YXN0ZSAtLX19CiAgICAgICAgPGRpdiBjbGFzcz0icnMtY2FyZCBwLTUiPgogICAgICAgICAgICA8aDIgY2xhc3M9ImZvbnQtYm9sZCB0ZXh0LWJhc2UgbWItNCIgc3R5bGU9ImNvbG9yOiB2YXIoLS1ycy1pbmspOyI+V2FzdGUgUmF0ZSAoZGlidWFuZyAvIGRpYmVsaSkg4oCUIHRhcmdldCAmbHQ7MTAlPC9oMj4KICAgICAgICAgICAgPHRhYmxlIGNsYXNzPSJkYXRhdGFibGUgdy1mdWxsIHRleHQtc20iPgogICAgICAgICAgICAgICAgPHRoZWFkPgogICAgICAgICAgICAgICAgICAgIDx0cj4KICAgICAgICAgICAgICAgICAgICAgICAgPHRoPlByb2R1azwvdGg+CiAgICAgICAgICAgICAgICAgICAgICAgIDx0aD5Ub3RhbCBCZWxpPC90aD4KICAgICAgICAgICAgICAgICAgICAgICAgPHRoPlRvdGFsIERpYnVhbmc8L3RoPgogICAgICAgICAgICAgICAgICAgICAgICA8dGg+VG90YWwgSnVhbCBNdXJhaDwvdGg+CiAgICAgICAgICAgICAgICAgICAgICAgIDx0aD5XYXN0ZSBSYXRlPC90aD4KICAgICAgICAgICAgICAgICAgICA8L3RyPgogICAgICAgICAgICAgICAgPC90aGVhZD4KICAgICAgICAgICAgICAgIDx0Ym9keT4KICAgICAgICAgICAgICAgICAgICBAZm9yZWxzZSAoJHJpbmdrYXNhblsnd2FzdGVfcmF0ZSddIGFzICR3KQogICAgICAgICAgICAgICAgICAgICAgICBAcGhwICRyYXRlID0gJHctPnRvdGFsX2JlbGkgPiAwID8gJHctPnRvdGFsX2RpYnVhbmcgLyAkdy0+dG90YWxfYmVsaSAqIDEwMCA6IG51bGw7IEBlbmRwaHAKICAgICAgICAgICAgICAgICAgICAgICAgPHRyPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkIGNsYXNzPSJmb250LXNlbWlib2xkIj57eyAkdy0+bmFtYSB9fTwvdGQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQ+e3sgbnVtYmVyX2Zvcm1hdCgkdy0+dG90YWxfYmVsaSwgMikgfX08L3RkPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkPnt7IG51bWJlcl9mb3JtYXQoJHctPnRvdGFsX2RpYnVhbmcsIDIpIH19PC90ZD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZD57eyBudW1iZXJfZm9ybWF0KCR3LT50b3RhbF9qdWFsX211cmFoLCAyKSB9fTwvdGQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQGlmICgkcmF0ZSAhPT0gbnVsbCkKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9InJzLWJhZGdlIHt7ICRyYXRlIDwgMTAgPyAnc2lhcF9kaWFtYmlsJyA6ICdjYW5jZWxsZWQnIH19Ij57eyBudW1iZXJfZm9ybWF0KCRyYXRlLCAyKSB9fSU8L3NwYW4+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQGVsc2UKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gc3R5bGU9ImNvbG9yOiB2YXIoLS1ycy1tdXRlZCk7Ij4tPC9zcGFuPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEBlbmRpZgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZD4KICAgICAgICAgICAgICAgICAgICAgICAgPC90cj4KICAgICAgICAgICAgICAgICAgICBAZW1wdHkKICAgICAgICAgICAgICAgICAgICAgICAgPHRyPjx0ZCBjb2xzcGFuPSI1IiBjbGFzcz0icC00IHRleHQtY2VudGVyIiBzdHlsZT0iY29sb3I6IHZhcigtLXJzLW11dGVkKTsiPkJlbHVtIGFkYSBkYXRhLjwvdGQ+PC90cj4KICAgICAgICAgICAgICAgICAgICBAZW5kZm9yZWxzZQogICAgICAgICAgICAgICAgPC90Ym9keT4KICAgICAgICAgICAgPC90YWJsZT4KICAgICAgICA8L2Rpdj4KICAgIDwvZGl2Pgo8L3gtYXBwLWxheW91dD4K
+<x-app-layout>
+    <x-slot name="header">
+        <div>
+            <h2 class="font-extrabold text-xl leading-tight" style="color: var(--rs-ink);">Laporan</h2>
+            <p class="text-xs" style="color: var(--rs-muted);">Evaluasi prediksi & performa operasional</p>
+        </div>
+    </x-slot>
+
+    @php
+        // Ringkasan metrik untuk kartu score
+        $mapeVals = collect($ringkasan['akurasi'] ?? [])->filter(fn($r) => $r->avg_mape !== null);
+        $avgMape = $mapeVals->count() ? $mapeVals->avg('avg_mape') : null;
+        $akurasi = $avgMape !== null ? max(0, 100 - $avgMape) : null;
+
+        $fulVals = collect($ringkasan['fulfillment'] ?? [])->filter(fn($f) => $f->total_pesan > 0);
+        $avgFul = $fulVals->count()
+            ? $fulVals->sum(fn($f) => $f->total_delivered) / max($fulVals->sum(fn($f) => $f->total_pesan), 1) * 100
+            : null;
+
+        $wasteVals = collect($ringkasan['waste_rate'] ?? [])->filter(fn($w) => $w->total_beli > 0);
+        $avgWaste = $wasteVals->count()
+            ? $wasteVals->sum(fn($w) => $w->total_dibuang) / max($wasteVals->sum(fn($w) => $w->total_beli), 1) * 100
+            : null;
+    @endphp
+
+    <div class="space-y-5">
+        <div class="flex flex-wrap items-end justify-between gap-4">
+            <div>
+                <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight" style="color: var(--rs-ink);">Laporan & evaluasi</h1>
+                <p class="text-sm mt-1" style="color: var(--rs-muted);">Bandingkan prediksi, realisasi, dan performa operasional.</p>
+            </div>
+            <div class="flex gap-2">
+                <a href="{{ route('laporan.export-excel', ['dari' => $dari, 'sampai' => $sampai]) }}" class="rs-btn rs-btn-secondary">
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m-5-5l5 5 5-5M4 20h16"/></svg>
+                    Export Excel
+                </a>
+                <a href="{{ route('laporan.export-pdf', ['dari' => $dari, 'sampai' => $sampai]) }}" class="rs-btn rs-btn-primary">
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m-5-5l5 5 5-5M4 20h16"/></svg>
+                    Export PDF
+                </a>
+            </div>
+        </div>
+
+        {{-- Filter periode --}}
+        <div class="rs-card p-4">
+            <form method="GET" action="{{ route('laporan.index') }}" class="flex flex-wrap gap-3 items-end">
+                <div>
+                    <label class="rs-label">Dari</label>
+                    <input type="date" name="dari" value="{{ $dari }}" class="rs-input !w-auto" />
+                </div>
+                <div>
+                    <label class="rs-label">Sampai</label>
+                    <input type="date" name="sampai" value="{{ $sampai }}" class="rs-input !w-auto" />
+                </div>
+                <button class="rs-btn rs-btn-dark">Tampilkan</button>
+                <span class="ms-auto text-xs font-semibold" style="color: var(--rs-muted);">{{ $dari }} s/d {{ $sampai }}</span>
+            </form>
+        </div>
+
+        {{-- Kartu metrik dengan score ring --}}
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="rs-card p-5 flex justify-between items-center gap-4">
+                <div>
+                    <h3 class="text-xs font-semibold" style="color: var(--rs-muted);">Akurasi prediksi</h3>
+                    <p class="text-2xl font-extrabold mt-1" style="color: var(--rs-ink);">{{ $akurasi !== null ? number_format($akurasi, 1) . '%' : '–' }}</p>
+                    <span class="text-xs" style="color: var(--rs-muted);">MAPE {{ $avgMape !== null ? number_format($avgMape, 1) . '%' : '–' }} (target &lt;20%)</span>
+                </div>
+                <div class="rs-score-ring" style="--rs-score: {{ $akurasi ?? 0 }}%;"><b>{{ $akurasi !== null && $avgMape < 20 ? 'Baik' : ($akurasi !== null ? number_format($akurasi, 0) . '%' : '–') }}</b></div>
+            </div>
+            <div class="rs-card p-5 flex justify-between items-center gap-4">
+                <div>
+                    <h3 class="text-xs font-semibold" style="color: var(--rs-muted);">Fulfillment rate</h3>
+                    <p class="text-2xl font-extrabold mt-1" style="color: var(--rs-ink);">{{ $avgFul !== null ? number_format($avgFul, 1) . '%' : '–' }}</p>
+                    <span class="text-xs" style="color: var(--rs-muted);">Target &gt;95%</span>
+                </div>
+                <div class="rs-score-ring" style="--rs-score: {{ $avgFul ?? 0 }}%;"><b>{{ $avgFul !== null ? number_format($avgFul, 0) . '%' : '–' }}</b></div>
+            </div>
+            <div class="rs-card p-5 flex justify-between items-center gap-4">
+                <div>
+                    <h3 class="text-xs font-semibold" style="color: var(--rs-muted);">Waste rate</h3>
+                    <p class="text-2xl font-extrabold mt-1" style="color: var(--rs-ink);">{{ $avgWaste !== null ? number_format($avgWaste, 1) . '%' : '–' }}</p>
+                    <span class="text-xs" style="color: var(--rs-muted);">Target &lt;10%</span>
+                </div>
+                <div class="rs-score-ring" style="--rs-score: {{ $avgWaste !== null ? min(100, $avgWaste * 10) : 0 }}%;"><b>{{ $avgWaste !== null ? number_format($avgWaste, 1) . '%' : '–' }}</b></div>
+            </div>
+        </div>
+
+        {{-- Tabel akurasi --}}
+        <div class="rs-card p-5">
+            <h2 class="font-bold text-base mb-4" style="color: var(--rs-ink);">Akurasi Prediksi (MAPE / MAE)</h2>
+            <table class="datatable w-full text-sm">
+                <thead>
+                    <tr>
+                        <th>Produk</th>
+                        <th>N</th>
+                        <th>Rata-rata MAPE</th>
+                        <th>Rata-rata MAE</th>
+                        <th>Status Target</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @forelse ($ringkasan['akurasi'] as $r)
+                        <tr>
+                            <td class="font-semibold">{{ $r->nama }}</td>
+                            <td>{{ $r->n }}</td>
+                            <td>{{ $r->avg_mape !== null ? number_format($r->avg_mape, 2) . '%' : '-' }}</td>
+                            <td>{{ $r->avg_mae !== null ? number_format($r->avg_mae, 2) : '-' }}</td>
+                            <td>
+                                @if ($r->avg_mape !== null)
+                                    <span class="rs-badge {{ $r->avg_mape < 20 ? 'siap_diambil' : 'cancelled' }}">
+                                        {{ $r->avg_mape < 20 ? 'Memenuhi (<20%)' : 'Belum memenuhi' }}
+                                    </span>
+                                @else
+                                    <span style="color: var(--rs-muted);">-</span>
+                                @endif
+                            </td>
+                        </tr>
+                    @empty
+                        <tr><td colspan="5" class="p-4 text-center" style="color: var(--rs-muted);">Belum ada data evaluasi.</td></tr>
+                    @endforelse
+                </tbody>
+            </table>
+        </div>
+
+        {{-- Tabel fulfillment --}}
+        <div class="rs-card p-5">
+            <h2 class="font-bold text-base mb-4" style="color: var(--rs-ink);">Fulfillment Rate (delivered / dipesan)</h2>
+            <table class="datatable w-full text-sm">
+                <thead>
+                    <tr>
+                        <th>Produk</th>
+                        <th>Total Pesan</th>
+                        <th>Total Delivered</th>
+                        <th>Fulfillment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @forelse ($ringkasan['fulfillment'] as $f)
+                        @php $rate = $f->total_pesan > 0 ? $f->total_delivered / $f->total_pesan * 100 : null; @endphp
+                        <tr>
+                            <td class="font-semibold">{{ $f->nama }}</td>
+                            <td>{{ number_format($f->total_pesan, 2) }}</td>
+                            <td>{{ number_format($f->total_delivered, 2) }}</td>
+                            <td>
+                                @if ($rate !== null)
+                                    <span class="rs-badge {{ $rate > 95 ? 'siap_diambil' : 'pending' }}">{{ number_format($rate, 1) }}%</span>
+                                @else
+                                    <span style="color: var(--rs-muted);">-</span>
+                                @endif
+                            </td>
+                        </tr>
+                    @empty
+                        <tr><td colspan="4" class="p-4 text-center" style="color: var(--rs-muted);">Belum ada data.</td></tr>
+                    @endforelse
+                </tbody>
+            </table>
+        </div>
+
+        {{-- Tabel waste --}}
+        <div class="rs-card p-5">
+            <h2 class="font-bold text-base mb-4" style="color: var(--rs-ink);">Waste Rate (dibuang / dibeli) — target &lt;10%</h2>
+            <table class="datatable w-full text-sm">
+                <thead>
+                    <tr>
+                        <th>Produk</th>
+                        <th>Total Beli</th>
+                        <th>Total Dibuang</th>
+                        <th>Total Jual Murah</th>
+                        <th>Waste Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @forelse ($ringkasan['waste_rate'] as $w)
+                        @php $rate = $w->total_beli > 0 ? $w->total_dibuang / $w->total_beli * 100 : null; @endphp
+                        <tr>
+                            <td class="font-semibold">{{ $w->nama }}</td>
+                            <td>{{ number_format($w->total_beli, 2) }}</td>
+                            <td>{{ number_format($w->total_dibuang, 2) }}</td>
+                            <td>{{ number_format($w->total_jual_murah, 2) }}</td>
+                            <td>
+                                @if ($rate !== null)
+                                    <span class="rs-badge {{ $rate < 10 ? 'siap_diambil' : 'cancelled' }}">{{ number_format($rate, 2) }}%</span>
+                                @else
+                                    <span style="color: var(--rs-muted);">-</span>
+                                @endif
+                            </td>
+                        </tr>
+                    @empty
+                        <tr><td colspan="5" class="p-4 text-center" style="color: var(--rs-muted);">Belum ada data.</td></tr>
+                    @endforelse
+                </tbody>
+            </table>
+        </div>
+    </div>
+</x-app-layout>
