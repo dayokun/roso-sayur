@@ -20,7 +20,7 @@
                 <a href="{{ route('pembelian.create', ['tgl' => $tgl]) }}" class="ms-auto bg-green-700 text-white px-4 py-2 rounded">Input Actual</a>
             </div>
 
-            <div class="bg-white shadow-sm sm:rounded-lg overflow-hidden">
+            <div class="bg-white shadow-sm sm:rounded-lg overflow-x-auto">
                 <table class="datatable w-full text-sm">
                     <thead class="bg-gray-100">
                         <tr>
