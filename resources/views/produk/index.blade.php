@@ -17,7 +17,7 @@
                 </div>
             @endif
 
-            <div class="bg-white shadow-sm sm:rounded-lg overflow-hidden">
+            <div class="bg-white shadow-sm sm:rounded-lg overflow-x-auto">
                 <div class="p-4 border-b font-semibold flex items-center">
                     Produk
                     <a href="{{ route('produk.create') }}" class="ms-auto bg-green-700 text-white px-4 py-2 rounded text-sm">Tambah Produk</a>
@@ -51,7 +51,7 @@
                 </table>
             </div>
 
-            <div class="bg-white shadow-sm sm:rounded-lg overflow-hidden">
+            <div class="bg-white shadow-sm sm:rounded-lg overflow-x-auto">
                 <div class="p-4 border-b font-semibold">Kategori & Safety Buffer</div>
                 <table class="datatable w-full text-sm">
                     <thead class="bg-gray-100">
