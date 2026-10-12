@@ -47,7 +47,7 @@
                 </div>
             @endif
 
-            <div class="bg-white shadow-sm sm:rounded-lg overflow-hidden">
+            <div class="bg-white shadow-sm sm:rounded-lg overflow-x-auto">
                 <table class="datatable w-full text-sm">
                     <thead class="bg-gray-100">
                         <tr>
