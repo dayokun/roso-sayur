@@ -1,1 +1,176 @@
-PHgtYXBwLWxheW91dD4KICAgIDx4LXNsb3QgbmFtZT0iaGVhZGVyIj4KICAgICAgICA8ZGl2PgogICAgICAgICAgICA8aDIgY2xhc3M9ImZvbnQtZXh0cmFib2xkIHRleHQteGwgbGVhZGluZy10aWdodCIgc3R5bGU9ImNvbG9yOiB2YXIoLS1ycy1pbmspOyI+SW5wdXQgUGVtYmVsaWFuPC9oMj4KICAgICAgICAgICAgPHAgY2xhc3M9InRleHQteHMiIHN0eWxlPSJjb2xvcjogdmFyKC0tcnMtbXV0ZWQpOyI+QWN0dWFsIHBlbWJlbGlhbiDigJQge3sgJHRnbCB9fTwvcD4KICAgICAgICA8L2Rpdj4KICAgIDwveC1zbG90PgoKICAgIDxkaXYgY2xhc3M9InNwYWNlLXktNSI+CiAgICAgICAgPGRpdiBjbGFzcz0iZmxleCBmbGV4LXdyYXAgaXRlbXMtZW5kIGp1c3RpZnktYmV0d2VlbiBnYXAtNCI+CiAgICAgICAgICAgIDxkaXY+CiAgICAgICAgICAgICAgICA8aDEgY2xhc3M9InRleHQtMnhsIHNtOnRleHQtM3hsIGZvbnQtZXh0cmFib2xkIHRyYWNraW5nLXRpZ2h0IiBzdHlsZT0iY29sb3I6IHZhcigtLXJzLWluayk7Ij5JbnB1dCBwZW1iZWxpYW48L2gxPgogICAgICAgICAgICAgICAgPHAgY2xhc3M9InRleHQtc20gbXQtMSIgc3R5bGU9ImNvbG9yOiB2YXIoLS1ycy1tdXRlZCk7Ij5Jc2kganVtbGFoIGFrdHVhbCBkYW4gaGFyZ2EgYmVsaSBkYXJpIHBlbWFzb2suPC9wPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgQGlmICghJHJla29tZW5kYXNpLT5pc0VtcHR5KCkpCiAgICAgICAgICAgICAgICA8YnV0dG9uIHR5cGU9ImJ1dHRvbiIgaWQ9ImJ0bi1wYWthaS1yZWtvbWVuZGFzaSIgY2xhc3M9InJzLWJ0biBycy1idG4tc2Vjb25kYXJ5Ij4KICAgICAgICAgICAgICAgICAgICBQYWthaSBzZW11YSByZWtvbWVuZGFzaQogICAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgIEBlbmRpZgogICAgICAgIDwvZGl2PgoKICAgICAgICA8ZGl2IGNsYXNzPSJycy1jYXJkIHAtNSI+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImZsZXggZmxleC13cmFwIGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4gZ2FwLTMgbWItNCI+CiAgICAgICAgICAgICAgICA8ZGl2PgogICAgICAgICAgICAgICAgICAgIDxoMiBjbGFzcz0iZm9udC1ib2xkIHRleHQtYmFzZSIgc3R5bGU9ImNvbG9yOiB2YXIoLS1ycy1pbmspOyI+UGVtYmVsaWFuIHt7IFxDYXJib25cQ2FyYm9uOjpwYXJzZSgkdGdsKS0+dHJhbnNsYXRlZEZvcm1hdCgnZCBGIFknKSB9fTwvaDI+CiAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3M9InRleHQteHMiIHN0eWxlPSJjb2xvcjogdmFyKC0tcnMtbXV0ZWQpOyI+S2xpayBhbmdrYSByZWtvbWVuZGFzaSB1bnR1ayBtZW5naXNpIGp1bWxhaCBha3R1YWw8L3A+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJycy1iYWRnZSBwZW5kaW5nIiBpZD0ic3RhdHVzLXNpbXBhbiI+QmVsdW0gZGlzaW1wYW48L3NwYW4+CiAgICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgICAgQGlmICgkZXJyb3JzLT5hbnkoKSkKICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InJvdW5kZWQteGwgcHgtNCBweS0zIG1iLTQgdGV4dC1zbSBmb250LXNlbWlib2xkIiBzdHlsZT0iYmFja2dyb3VuZDogdmFyKC0tcnMtcmVkLXNvZnQpOyBjb2xvcjogdmFyKC0tcnMtcmVkKTsiPgogICAgICAgICAgICAgICAgICAgIEBmb3JlYWNoICgkZXJyb3JzLT5hbGwoKSBhcyAkZSk8ZGl2Pnt7ICRlIH19PC9kaXY+QGVuZGZvcmVhY2gKICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICBAZW5kaWYKCiAgICAgICAgICAgIEBpZiAoJHJla29tZW5kYXNpLT5pc0VtcHR5KCkpCiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJyb3VuZGVkLXhsIHB4LTQgcHktMyBtYi00IHRleHQtc20iIHN0eWxlPSJiYWNrZ3JvdW5kOiB2YXIoLS1ycy1hbWJlci1zb2Z0KTsgY29sb3I6IHZhcigtLXJzLWFtYmVyKTsiPgogICAgICAgICAgICAgICAgICAgIEJlbHVtIGFkYSBwcmVkaWtzaSB1bnR1ayB0YW5nZ2FsIHt7ICR0Z2wgfX0uIFByZWRpa3NpIGRpYnVhdCBvdG9tYXRpcyBzZXRpYXAgcHVrdWwgMjA6MDAgdW50dWsga2Vlc29rYW4gaGFyaW55YSDigJQKICAgICAgICAgICAgICAgICAgICBhbmdrYSByZWtvbWVuZGFzaSBha2FuIG11bmN1bCBkaSBzaW5pIHNldGVsYWggcHJlZGlrc2kgdGVyc2VkaWEuCiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgQGVuZGlmCgogICAgICAgICAgICA8Zm9ybSBtZXRob2Q9IlBPU1QiIGFjdGlvbj0ie3sgcm91dGUoJ3BlbWJlbGlhbi5zdG9yZScpIH19IiBpZD0iZm9ybS1wZW1iZWxpYW4iPgogICAgICAgICAgICAgICAgQGNzcmYKICAgICAgICAgICAgICAgIDxpbnB1dCB0eXBlPSJoaWRkZW4iIG5hbWU9InRnbCIgdmFsdWU9Int7ICR0Z2wgfX0iIC8+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJvdmVyZmxvdy14LWF1dG8gLW14LTEiPgogICAgICAgICAgICAgICAgICAgIDx0YWJsZSBjbGFzcz0idy1mdWxsIHRleHQtc20iPgogICAgICAgICAgICAgICAgICAgICAgICA8dGhlYWQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dHIgY2xhc3M9InRleHQtbGVmdCB0ZXh0LVsxMHB4XSB1cHBlcmNhc2UgdHJhY2tpbmctd2lkZXIiIHN0eWxlPSJjb2xvcjogdmFyKC0tcnMtbXV0ZWQpOyI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRoIGNsYXNzPSJwYi0yIHByLTMgZm9udC1ib2xkIj5Qcm9kdWs8L3RoPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0aCBjbGFzcz0icGItMiBwci0zIGZvbnQtYm9sZCI+UmVrb21lbmRhc2k8L3RoPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0aCBjbGFzcz0icGItMiBwci0zIGZvbnQtYm9sZCI+VGVyc2VkaWE/PC90aD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGggY2xhc3M9InBiLTIgcHItMyBmb250LWJvbGQiPlF0eSBCZWxpPC90aD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGggY2xhc3M9InBiLTIgcHItMyBmb250LWJvbGQiPkhhcmdhIEJlbGkgKFJwKTwvdGg+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRoIGNsYXNzPSJwYi0yIGZvbnQtYm9sZCB0ZXh0LXJpZ2h0Ij5TdWJ0b3RhbDwvdGg+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RyPgogICAgICAgICAgICAgICAgICAgICAgICA8L3RoZWFkPgogICAgICAgICAgICAgICAgICAgICAgICA8dGJvZHk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBAZm9yZWFjaCAoJHByb2R1a3MgYXMgJGkgPT4gJHApCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQHBocCAkcm93ID0gJHN1ZGFoWyRwLT5pZF0gPz8gbnVsbDsgQGVuZHBocAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ciBjbGFzcz0iYm9yZGVyLXQiIHN0eWxlPSJib3JkZXItY29sb3I6IHZhcigtLXJzLWxpbmUpOyI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZCBjbGFzcz0icHktMyBwci0zIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0yLjUiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJ3LTggaC04IHJvdW5kZWQtbGcgZ3JpZCBwbGFjZS1pdGVtcy1jZW50ZXIgZm9udC1leHRyYWJvbGQgdGV4dC1bMTFweF0gc2hyaW5rLTAiCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgc3R5bGU9ImJhY2tncm91bmQ6IHZhcigtLXJzLWdyZWVuLXNvZnQpOyBjb2xvcjogdmFyKC0tcnMtZ3JlZW4pOyI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHt7IHN0cnRvdXBwZXIoc3Vic3RyKCRwLT5uYW1hLCAwLCAyKSkgfX0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3M9ImZvbnQtYm9sZCB0ZXh0LXhzIiBzdHlsZT0iY29sb3I6IHZhcigtLXJzLWluayk7Ij57eyAkcC0+bmFtYSB9fTwvcD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3M9InRleHQtWzEwcHhdIiBzdHlsZT0iY29sb3I6IHZhcigtLXJzLW11dGVkKTsiPnt7ICRwLT5zYXR1YW4gfX08L3A+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxpbnB1dCB0eXBlPSJoaWRkZW4iIG5hbWU9Iml0ZW1zW3t7ICRpIH19XVtwcm9kdWtfaWRdIiB2YWx1ZT0ie3sgJHAtPmlkIH19IiAvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RkPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQgY2xhc3M9InB5LTMgcHItMyI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBAaWYgKGlzc2V0KCRyZWtvbWVuZGFzaVskcC0+aWRdKSkKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIHR5cGU9ImJ1dHRvbiIgY2xhc3M9ImJ0bi1wYWthaS1zYXR1IGZvbnQtZXh0cmFib2xkIHRleHQteHMgcHgtMi41IHB5LTEuNSByb3VuZGVkLWxnIHRyYW5zaXRpb24gaG92ZXI6b3BhY2l0eS04MCBhY3RpdmU6c2NhbGUtOTUiCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzdHlsZT0iYmFja2dyb3VuZDogdmFyKC0tcnMtZ3JlZW4tc29mdCk7IGNvbG9yOiB2YXIoLS1ycy1ncmVlbik7IgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZGF0YS1wcm9kdWs9Int7ICRwLT5pZCB9fSIgZGF0YS1pZHg9Int7ICRpIH19IgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdGl0bGU9IklzaSBxdHkgYmVsaSBkZW5nYW4gcmVrb21lbmRhc2kiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB7eyBudW1iZXJfZm9ybWF0KCRyZWtvbWVuZGFzaVskcC0+aWRdLCAyKSB9fSB7eyAkcC0+c2F0dWFuIH19CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBAZWxzZQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIHN0eWxlPSJjb2xvcjogdmFyKC0tcnMtbXV0ZWQpOyI+4oCTPC9zcGFuPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQGVuZGlmCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvdGQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZCBjbGFzcz0icHktMyBwci0zIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxpbnB1dCB0eXBlPSJjaGVja2JveCIgbmFtZT0iaXRlbXNbe3sgJGkgfX1dW2lzX2F2YWlsYWJsZV90b2RheV0iIHZhbHVlPSIxIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEBjaGVja2VkKG9sZCgiaXRlbXMuJGkuaXNfYXZhaWxhYmxlX3RvZGF5IiwgJHJvdz8tPmlzX2F2YWlsYWJsZV90b2RheSA/PyB0cnVlKSkKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBjbGFzcz0idy00IGgtNCByb3VuZGVkIGFjY2VudC1ncmVlbi03MDAiIC8+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvdGQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZCBjbGFzcz0icHktMyBwci0zIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxpbnB1dCB0eXBlPSJudW1iZXIiIHN0ZXA9IjAuMDEiIG1pbj0iMCIgbmFtZT0iaXRlbXNbe3sgJGkgfX1dW3F0eV9iZWxpXSIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB2YWx1ZT0ie3sgb2xkKCJpdGVtcy4kaS5xdHlfYmVsaSIsICRyb3c/LT5xdHlfYmVsaSkgfX0iCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgY2xhc3M9InJzLWlucHV0IHF0eS1iZWxpICF3LTI4IiBkYXRhLWlkeD0ie3sgJGkgfX0iIHBsYWNlaG9sZGVyPSIwIiAvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RkPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQgY2xhc3M9InB5LTMgcHItMyI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aW5wdXQgdHlwZT0ibnVtYmVyIiBzdGVwPSIwLjAxIiBtaW49IjAiIG5hbWU9Iml0ZW1zW3t7ICRpIH19XVtoYXJnYV9iZWxpXSIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB2YWx1ZT0ie3sgb2xkKCJpdGVtcy4kaS5oYXJnYV9iZWxpIiwgJHJvdz8tPmhhcmdhX2JlbGkpIH19IgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNsYXNzPSJycy1pbnB1dCBoYXJnYS1iZWxpICF3LTM2IiBkYXRhLWlkeD0ie3sgJGkgfX0iIHBsYWNlaG9sZGVyPSJScDAiIC8+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvdGQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZCBjbGFzcz0icHktMyB0ZXh0LXJpZ2h0IGZvbnQtYm9sZCB0ZXh0LXhzIHdoaXRlc3BhY2Utbm93cmFwIHN1YnRvdGFsIiBkYXRhLWlkeD0ie3sgJGkgfX0iIHN0eWxlPSJjb2xvcjogdmFyKC0tcnMtaW5rKTsiPlJwMDwvdGQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90cj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIEBlbmRmb3JlYWNoCiAgICAgICAgICAgICAgICAgICAgICAgIDwvdGJvZHk+CiAgICAgICAgICAgICAgICAgICAgPC90YWJsZT4KICAgICAgICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9Im10LTQiPgogICAgICAgICAgICAgICAgICAgIDxsYWJlbCBjbGFzcz0icnMtbGFiZWwiPkNhdGF0YW48L2xhYmVsPgogICAgICAgICAgICAgICAgICAgIDx0ZXh0YXJlYSBuYW1lPSJjYXRhdGFuIiBjbGFzcz0icnMtdGV4dGFyZWEiIHJvd3M9IjIiIHBsYWNlaG9sZGVyPSJDYXRhdGFuIHBlbWJlbGlhbiAob3BzaW9uYWwpIj57eyBvbGQoJ2NhdGF0YW4nKSB9fTwvdGV4dGFyZWE+CiAgICAgICAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJmbGV4IGZsZXgtd3JhcCBpdGVtcy1jZW50ZXIganVzdGlmeS1iZXR3ZWVuIGdhcC00IG10LTUgcHQtNCBib3JkZXItdCIgc3R5bGU9ImJvcmRlci1jb2xvcjogdmFyKC0tcnMtbGluZSk7Ij4KICAgICAgICAgICAgICAgICAgICA8YSBocmVmPSJ7eyByb3V0ZSgncGVtYmVsaWFuLmluZGV4JywgWyd0Z2wnID0+ICR0Z2xdKSB9fSIgY2xhc3M9InRleHQtc20gZm9udC1ib2xkIHVuZGVybGluZSIgc3R5bGU9ImNvbG9yOiB2YXIoLS1ycy1tdXRlZCk7Ij7ihpAgS2VtYmFsaTwvYT4KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtNCI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJ0ZXh0LXNtIiBzdHlsZT0iY29sb3I6IHZhcigtLXJzLW11dGVkKTsiPlRvdGFsIGVzdGltYXNpIDxzdHJvbmcgaWQ9InRvdGFsLWVzdGltYXNpIiBjbGFzcz0idGV4dC1sZyBmb250LWV4dHJhYm9sZCIgc3R5bGU9ImNvbG9yOiB2YXIoLS1ycy1pbmspOyI+UnAwPC9zdHJvbmc+PC9zcGFuPgogICAgICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIHR5cGU9InN1Ym1pdCIgY2xhc3M9InJzLWJ0biBycy1idG4tcHJpbWFyeSI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIGNsYXNzPSJ3LTQgaC00IiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0iTTUgMTNsNCA0TDE5IDciLz48L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIFNpbXBhbiBwZW1iZWxpYW4KICAgICAgICAgICAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9mb3JtPgogICAgICAgIDwvZGl2PgogICAgPC9kaXY+CgogICAgQHB1c2goJ3NjcmlwdHMnKQogICAgPHNjcmlwdD4KICAgICAgICBjb25zdCByZWtvbWVuZGFzaSA9IEBqc29uKCRyZWtvbWVuZGFzaS0+bWFwKGZuKCR2KSA9PiAoZmxvYXQpICR2KSk7CiAgICAgICAgY29uc3QgZm10UnAgPSBuID0+ICdScCcgKyBNYXRoLnJvdW5kKG4pLnRvTG9jYWxlU3RyaW5nKCdpZC1JRCcpOwoKICAgICAgICBmdW5jdGlvbiBoaXR1bmdTdWJ0b3RhbCgpIHsKICAgICAgICAgICAgbGV0IHRvdGFsID0gMDsKICAgICAgICAgICAgZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgnLnF0eS1iZWxpJykuZm9yRWFjaChxdHlFbCA9PiB7CiAgICAgICAgICAgICAgICBjb25zdCBpZHggPSBxdHlFbC5kYXRhc2V0LmlkeDsKICAgICAgICAgICAgICAgIGNvbnN0IHF0eSA9IHBhcnNlRmxvYXQocXR5RWwudmFsdWUpIHx8IDA7CiAgICAgICAgICAgICAgICBjb25zdCBoYXJnYUVsID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihgLmhhcmdhLWJlbGlbZGF0YS1pZHg9IiR7aWR4fSJdYCk7CiAgICAgICAgICAgICAgICBjb25zdCBoYXJnYSA9IHBhcnNlRmxvYXQoaGFyZ2FFbD8udmFsdWUpIHx8IDA7CiAgICAgICAgICAgICAgICBjb25zdCBzdWIgPSBxdHkgKiBoYXJnYTsKICAgICAgICAgICAgICAgIGNvbnN0IHN1YkVsID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihgLnN1YnRvdGFsW2RhdGEtaWR4PSIke2lkeH0iXWApOwogICAgICAgICAgICAgICAgaWYgKHN1YkVsKSBzdWJFbC50ZXh0Q29udGVudCA9IGZtdFJwKHN1Yik7CiAgICAgICAgICAgICAgICB0b3RhbCArPSBzdWI7CiAgICAgICAgICAgIH0pOwogICAgICAgICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndG90YWwtZXN0aW1hc2knKS50ZXh0Q29udGVudCA9IGZtdFJwKHRvdGFsKTsKICAgICAgICB9CgogICAgICAgIGZ1bmN0aW9uIGlzaVF0eShpZHgsIHByb2R1a0lkKSB7CiAgICAgICAgICAgIGNvbnN0IHZhbCA9IHJla29tZW5kYXNpW3Byb2R1a0lkXTsKICAgICAgICAgICAgaWYgKHZhbCA9PT0gdW5kZWZpbmVkIHx8IHZhbCA9PT0gbnVsbCkgcmV0dXJuOwogICAgICAgICAgICBjb25zdCBpbnB1dCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYGlucHV0W25hbWU9Iml0ZW1zWyR7aWR4fV1bcXR5X2JlbGldIl1gKTsKICAgICAgICAgICAgaWYgKGlucHV0KSB7IGlucHV0LnZhbHVlID0gdmFsOyBoaXR1bmdTdWJ0b3RhbCgpOyB9CiAgICAgICAgfQoKICAgICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnYnRuLXBha2FpLXJla29tZW5kYXNpJyk/LmFkZEV2ZW50TGlzdGVuZXIoJ2NsaWNrJywgKCkgPT4gewogICAgICAgICAgICBkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCcuYnRuLXBha2FpLXNhdHUnKS5mb3JFYWNoKGJ0biA9PiBpc2lRdHkoYnRuLmRhdGFzZXQuaWR4LCBidG4uZGF0YXNldC5wcm9kdWspKTsKICAgICAgICAgICAgcnNUb2FzdCgnU2VtdWEgcmVrb21lbmRhc2kgZGlzYWxpbiBrZSBpbnB1dCBha3R1YWwnKTsKICAgICAgICB9KTsKCiAgICAgICAgZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgnLmJ0bi1wYWthaS1zYXR1JykuZm9yRWFjaChidG4gPT4gewogICAgICAgICAgICBidG4uYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLCAoKSA9PiBpc2lRdHkoYnRuLmRhdGFzZXQuaWR4LCBidG4uZGF0YXNldC5wcm9kdWspKTsKICAgICAgICB9KTsKCiAgICAgICAgZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgnLnF0eS1iZWxpLCAuaGFyZ2EtYmVsaScpLmZvckVhY2goZWwgPT4gewogICAgICAgICAgICBlbC5hZGRFdmVudExpc3RlbmVyKCdpbnB1dCcsIGhpdHVuZ1N1YnRvdGFsKTsKICAgICAgICB9KTsKCiAgICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2Zvcm0tcGVtYmVsaWFuJyk/LmFkZEV2ZW50TGlzdGVuZXIoJ3N1Ym1pdCcsICgpID0+IHsKICAgICAgICAgICAgcnNUb2FzdCgnTWVueWltcGFuIHBlbWJlbGlhbuKApicpOwogICAgICAgIH0pOwoKICAgICAgICBoaXR1bmdTdWJ0b3RhbCgpOwogICAgPC9zY3JpcHQ+CiAgICBAZW5kcHVzaAo8L3gtYXBwLWxheW91dD4K
+<x-app-layout>
+    <x-slot name="header">
+        <div>
+            <h2 class="font-extrabold text-xl leading-tight" style="color: var(--rs-ink);">Input Pembelian</h2>
+            <p class="text-xs" style="color: var(--rs-muted);">Actual pembelian — {{ $tgl }}</p>
+        </div>
+    </x-slot>
+
+    <div class="space-y-5">
+        <div class="flex flex-wrap items-end justify-between gap-4">
+            <div>
+                <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight" style="color: var(--rs-ink);">Input pembelian</h1>
+                <p class="text-sm mt-1" style="color: var(--rs-muted);">Isi jumlah aktual dan harga beli dari pemasok.</p>
+            </div>
+            @if (!$rekomendasi->isEmpty())
+                <button type="button" id="btn-pakai-rekomendasi" class="rs-btn rs-btn-secondary">
+                    Pakai semua rekomendasi
+                </button>
+            @endif
+        </div>
+
+        <div class="rs-card p-5">
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+                <div>
+                    <h2 class="font-bold text-base" style="color: var(--rs-ink);">Pembelian {{ \Carbon\Carbon::parse($tgl)->translatedFormat('d F Y') }}</h2>
+                    <p class="text-xs" style="color: var(--rs-muted);">Klik angka rekomendasi untuk mengisi jumlah aktual</p>
+                </div>
+                <span class="rs-badge pending" id="status-simpan">Belum disimpan</span>
+            </div>
+
+            @if ($errors->any())
+                <div class="rounded-xl px-4 py-3 mb-4 text-sm font-semibold" style="background: var(--rs-red-soft); color: var(--rs-red);">
+                    @foreach ($errors->all() as $e)<div>{{ $e }}</div>@endforeach
+                </div>
+            @endif
+
+            @if ($rekomendasi->isEmpty())
+                <div class="rounded-xl px-4 py-3 mb-4 text-sm" style="background: var(--rs-amber-soft); color: var(--rs-amber);">
+                    Belum ada prediksi untuk tanggal {{ $tgl }}. Prediksi dibuat otomatis setiap pukul 20:00 untuk keesokan harinya —
+                    angka rekomendasi akan muncul di sini setelah prediksi tersedia.
+                </div>
+            @endif
+
+            <form method="POST" action="{{ route('pembelian.store') }}" id="form-pembelian">
+                @csrf
+                <input type="hidden" name="tgl" value="{{ $tgl }}" />
+                <div class="overflow-x-auto -mx-1">
+                    <table class="w-full text-sm">
+                        <thead>
+                            <tr class="text-left text-[10px] uppercase tracking-wider" style="color: var(--rs-muted);">
+                                <th class="pb-2 pr-3 font-bold">Produk</th>
+                                <th class="pb-2 pr-3 font-bold">Rekomendasi</th>
+                                <th class="pb-2 pr-3 font-bold">Tersedia?</th>
+                                <th class="pb-2 pr-3 font-bold">Qty Beli</th>
+                                <th class="pb-2 pr-3 font-bold">Harga Beli (Rp)</th>
+                                <th class="pb-2 font-bold text-right">Subtotal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($produks as $i => $p)
+                                @php $row = $sudah[$p->id] ?? null; @endphp
+                                <tr class="border-t" style="border-color: var(--rs-line);">
+                                    <td class="py-3 pr-3">
+                                        <div class="flex items-center gap-2.5">
+                                            <span class="w-8 h-8 rounded-lg grid place-items-center font-extrabold text-[11px] shrink-0"
+                                                  style="background: var(--rs-green-soft); color: var(--rs-green);">
+                                                {{ strtoupper(substr($p->nama, 0, 2)) }}
+                                            </span>
+                                            <div>
+                                                <p class="font-bold text-xs" style="color: var(--rs-ink);">{{ $p->nama }}</p>
+                                                <p class="text-[10px]" style="color: var(--rs-muted);">{{ $p->satuan }}</p>
+                                            </div>
+                                        </div>
+                                        <input type="hidden" name="items[{{ $i }}][produk_id]" value="{{ $p->id }}" />
+                                    </td>
+                                    <td class="py-3 pr-3">
+                                        @if (isset($rekomendasi[$p->id]))
+                                            <button type="button" class="btn-pakai-satu font-extrabold text-xs px-2.5 py-1.5 rounded-lg transition hover:opacity-80 active:scale-95"
+                                                    style="background: var(--rs-green-soft); color: var(--rs-green);"
+                                                    data-produk="{{ $p->id }}" data-idx="{{ $i }}"
+                                                    title="Isi qty beli dengan rekomendasi">
+                                                {{ number_format($rekomendasi[$p->id], 2) }} {{ $p->satuan }}
+                                            </button>
+                                        @else
+                                            <span style="color: var(--rs-muted);">–</span>
+                                        @endif
+                                    </td>
+                                    <td class="py-3 pr-3">
+                                        <input type="checkbox" name="items[{{ $i }}][is_available_today]" value="1"
+                                               @checked(old("items.$i.is_available_today", $row?->is_available_today ?? true))
+                                               class="w-4 h-4 rounded accent-green-700" />
+                                    </td>
+                                    <td class="py-3 pr-3">
+                                        <input type="number" step="0.01" min="0" name="items[{{ $i }}][qty_beli]"
+                                               value="{{ old("items.$i.qty_beli", $row?->qty_beli) }}"
+                                               class="rs-input qty-beli !w-28" data-idx="{{ $i }}" placeholder="0" />
+                                    </td>
+                                    <td class="py-3 pr-3">
+                                        <input type="number" step="0.01" min="0" name="items[{{ $i }}][harga_beli]"
+                                               value="{{ old("items.$i.harga_beli", $row?->harga_beli) }}"
+                                               class="rs-input harga-beli !w-36" data-idx="{{ $i }}" placeholder="Rp0" />
+                                    </td>
+                                    <td class="py-3 text-right font-bold text-xs whitespace-nowrap subtotal" data-idx="{{ $i }}" style="color: var(--rs-ink);">Rp0</td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="mt-4">
+                    <label class="rs-label">Catatan</label>
+                    <textarea name="catatan" class="rs-textarea" rows="2" placeholder="Catatan pembelian (opsional)">{{ old('catatan') }}</textarea>
+                </div>
+
+                <div class="flex flex-wrap items-center justify-between gap-4 mt-5 pt-4 border-t" style="border-color: var(--rs-line);">
+                    <a href="{{ route('pembelian.index', ['tgl' => $tgl]) }}" class="text-sm font-bold underline" style="color: var(--rs-muted);">← Kembali</a>
+                    <div class="flex items-center gap-4">
+                        <span class="text-sm" style="color: var(--rs-muted);">Total estimasi <strong id="total-estimasi" class="text-lg font-extrabold" style="color: var(--rs-ink);">Rp0</strong></span>
+                        <button type="submit" class="rs-btn rs-btn-primary">
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                            Simpan pembelian
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    @push('scripts')
+    <script>
+        const rekomendasi = @json($rekomendasi->map(fn($v) => (float) $v));
+        const fmtRp = n => 'Rp' + Math.round(n).toLocaleString('id-ID');
+
+        function hitungSubtotal() {
+            let total = 0;
+            document.querySelectorAll('.qty-beli').forEach(qtyEl => {
+                const idx = qtyEl.dataset.idx;
+                const qty = parseFloat(qtyEl.value) || 0;
+                const hargaEl = document.querySelector(`.harga-beli[data-idx="${idx}"]`);
+                const harga = parseFloat(hargaEl?.value) || 0;
+                const sub = qty * harga;
+                const subEl = document.querySelector(`.subtotal[data-idx="${idx}"]`);
+                if (subEl) subEl.textContent = fmtRp(sub);
+                total += sub;
+            });
+            document.getElementById('total-estimasi').textContent = fmtRp(total);
+        }
+
+        function isiQty(idx, produkId) {
+            const val = rekomendasi[produkId];
+            if (val === undefined || val === null) return;
+            const input = document.querySelector(`input[name="items[${idx}][qty_beli]"]`);
+            if (input) { input.value = val; hitungSubtotal(); }
+        }
+
+        document.getElementById('btn-pakai-rekomendasi')?.addEventListener('click', () => {
+            document.querySelectorAll('.btn-pakai-satu').forEach(btn => isiQty(btn.dataset.idx, btn.dataset.produk));
+            rsToast('Semua rekomendasi disalin ke input aktual');
+        });
+
+        document.querySelectorAll('.btn-pakai-satu').forEach(btn => {
+            btn.addEventListener('click', () => isiQty(btn.dataset.idx, btn.dataset.produk));
+        });
+
+        document.querySelectorAll('.qty-beli, .harga-beli').forEach(el => {
+            el.addEventListener('input', hitungSubtotal);
+        });
+
+        document.getElementById('form-pembelian')?.addEventListener('submit', () => {
+            rsToast('Menyimpan pembelian…');
+        });
+
+        hitungSubtotal();
+    </script>
+    @endpush
+</x-app-layout>
