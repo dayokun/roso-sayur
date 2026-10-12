@@ -9,7 +9,7 @@
                 <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded">{{ session('sukses') }}</div>
             @endif
 
-            <div class="bg-white shadow-sm sm:rounded-lg overflow-hidden">
+            <div class="bg-white shadow-sm sm:rounded-lg overflow-x-auto">
                 <table class="datatable w-full text-sm">
                     <thead class="bg-gray-100">
                         <tr>
